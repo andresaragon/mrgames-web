@@ -1,26 +1,70 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-navy-950: #060a12;
+  --color-navy-900: #0a0f1a;
+  --color-navy-800: #0d1b2a;
+  --color-navy-700: #16273a;
+  --color-red-700: #9c2c20;
+  --color-red-600: #c0392b;
+  --color-red-500: #e14a3a;
+  --color-red-400: #ff6b57;
+  --background: var(--color-navy-950);
+  --foreground: #f3f4f6;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-navy-950: var(--color-navy-950);
+  --color-navy-900: var(--color-navy-900);
+  --color-navy-800: var(--color-navy-800);
+  --color-navy-700: var(--color-navy-700);
+  --color-red-700: var(--color-red-700);
+  --color-red-600: var(--color-red-600);
+  --color-red-500: var(--color-red-500);
+  --color-red-400: var(--color-red-400);
   --font-sans: var(--font-geist-sans);
+  --font-display: var(--font-display);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: var(--color-red-600);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-navy-950);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-navy-700);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-red-600);
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-b from-red-500 to-red-600 px-6 py-3 font-bold text-white shadow-[0_4px_20px_-4px_rgba(192,57,43,0.6)] transition-all duration-200 hover:shadow-[0_6px_28px_-4px_rgba(231,76,60,0.8)] hover:brightness-110 active:scale-[0.97] disabled:opacity-50 disabled:pointer-events-none disabled:shadow-none;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg border border-navy-700 bg-navy-900/60 px-4 py-2 font-semibold text-gray-200 transition-all duration-200 hover:border-red-500/60 hover:text-white active:scale-[0.97] disabled:opacity-50;
+}
+
+.input-field {
+  @apply w-full rounded-lg border border-navy-700 bg-navy-900/50 p-3 text-gray-100 placeholder:text-gray-500 outline-none transition-all duration-200 focus:border-red-500 focus:ring-2 focus:ring-red-500/30;
+}
+
+.card-glow {
+  @apply border border-navy-700/80 bg-navy-900/40 backdrop-blur-sm transition-all duration-300 hover:border-red-500/50 hover:shadow-[0_8px_30px_-8px_rgba(192,57,43,0.5)] hover:-translate-y-1;
 }
