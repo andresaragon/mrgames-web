@@ -1,14 +1,13 @@
 import { createClient } from '@/utils/supabase/server'
 import { cookies } from 'next/headers'
-import { redirect } from 'next/navigation'
+import { requireAdmin } from '@/utils/supabase/require-admin'
 import NewSharedAccountForm from '@/components/admin/NewSharedAccountForm'
 import NewSlotForm from '@/components/admin/NewSlotForm'
 
 export default async function AdminPage() {
+  await requireAdmin()
   const cookieStore = await cookies()
   const supabase = createClient(cookieStore)
-  const { data: { user } } = await supabase.auth.getUser()
-  if (!user) redirect('/login')
   const { data: accounts } = await supabase
     .from('shared_accounts')
     .select('id, platform, identifier, capacity, status')

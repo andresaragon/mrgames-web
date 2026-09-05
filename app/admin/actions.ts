@@ -1,23 +1,14 @@
 "use server"
-import { cookies } from "next/headers"
 import { revalidatePath } from "next/cache"
-import { createClient } from "@/utils/supabase/server"
 import { createAdminClient } from "@/utils/supabase/admin"
-
-async function requireUser() {
-  const cookieStore = await cookies()
-  const supabase = createClient(cookieStore)
-  const { data: { user } } = await supabase.auth.getUser()
-  if (!user) throw new Error("No autorizado")
-  return user
-}
+import { requireAdmin } from "@/utils/supabase/require-admin"
 
 export async function createSharedAccount(formData: {
   platform: string
   identifier: string
   capacity: number
 }) {
-  await requireUser()
+  await requireAdmin()
   const admin = createAdminClient()
   const { error } = await admin.from("shared_accounts").insert({
     platform: formData.platform,
@@ -35,7 +26,7 @@ export async function createSlot(formData: {
   startsAt: string
   endsAt: string
 }) {
-  await requireUser()
+  await requireAdmin()
   const admin = createAdminClient()
   const { data: account } = await admin
     .from("shared_accounts")
