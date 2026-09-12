@@ -17,6 +17,15 @@ interface CreateOrderInput {
 }
 
 export async function createOrder(input: CreateOrderInput) {
+  if (!input.items.length) {
+    throw new Error("El carrito está vacío")
+  }
+  for (const item of input.items) {
+    if (!Number.isInteger(item.quantity) || item.quantity <= 0) {
+      throw new Error(`Cantidad inválida para el producto ${item.id}`)
+    }
+  }
+
   const cookieStore = await cookies()
   const supabase = createClient(cookieStore)
 
