@@ -1,0 +1,4375 @@
+{
+  "updatedCount": 597,
+  "skippedAlreadyUpdated": 0,
+  "skippedNoMatch": 31,
+  "errorCount": 0,
+  "noMatches": [
+    {
+      "id": "6d29e583-8de5-4ed0-8d62-bcb1ec016be1",
+      "name": "Animal Friends Adventure",
+      "slug": "animal-friends-adventure-304",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_304.jpg"
+    },
+    {
+      "id": "b473adbc-4bc1-4c5c-ab08-160bb3a6f48f",
+      "name": "Another Dawn",
+      "slug": "another-dawn-424",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_424.jpg"
+    },
+    {
+      "id": "45dc0022-f1d9-453b-9dc7-406e97119aed",
+      "name": "Arkane 20th Anniversary Collection",
+      "slug": "arkane-20th-anniversary-collection-532",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_532.jpg"
+    },
+    {
+      "id": "265efc1e-bbb2-4043-88dd-68a85324ee30",
+      "name": "Beast Quest",
+      "slug": "beast-quest-276",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_276.jpg"
+    },
+    {
+      "id": "20571127-3606-4f86-be4c-d5c1ddf0ec0b",
+      "name": "Black Legend",
+      "slug": "black-legend-577",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_577.jpg"
+    },
+    {
+      "id": "e905e63e-16fd-42b5-8231-f2d1a3821391",
+      "name": "Blizzard Gift Card 50 EUR",
+      "slug": "blizzard-gift-card-50-eur-220",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_220.jpg"
+    },
+    {
+      "id": "2688ea88-8ed3-43c2-8a48-f702c6c10d33",
+      "name": "Crimson Keep",
+      "slug": "crimson-keep-210",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_210.jpg"
+    },
+    {
+      "id": "72ef10e3-af5d-4c3b-9474-8129a2a0a628",
+      "name": "Glaive Brick Breaker",
+      "slug": "glaive-brick-breaker-081",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_081.jpg"
+    },
+    {
+      "id": "406f6363-57cf-4ab3-a6b0-e461671b7749",
+      "name": "Hookbots",
+      "slug": "hookbots-167",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_167.jpg"
+    },
+    {
+      "id": "6d1284c1-e773-429c-9712-6957448d824d",
+      "name": "Jet Set Knights",
+      "slug": "jet-set-knights-621",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_621.jpg"
+    },
+    {
+      "id": "e6bc0dce-3b6b-424c-8eb3-bbfbdc9bf533",
+      "name": "Le Donjon de Naheulbeuk L'Amulette du Désordre Chicken Edition",
+      "slug": "le-donjon-de-naheulbeuk-l-amulette-du-desordre-chicken-edition-055",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_055.jpg"
+    },
+    {
+      "id": "422e6eeb-f6ac-4075-bde1-6034554b213a",
+      "name": "Masked Ninja Action",
+      "slug": "masked-ninja-action-422",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_422.jpg"
+    },
+    {
+      "id": "e830aed3-dcaa-4a94-9f82-783067337e93",
+      "name": "Murder Diaries 2",
+      "slug": "murder-diaries-2-491",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_491.jpg"
+    },
+    {
+      "id": "4829c5e3-362a-43ca-bec7-8aa33585dd0f",
+      "name": "On The Road Truck Simulator",
+      "slug": "on-the-road-truck-simulator-249",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_249.jpg"
+    },
+    {
+      "id": "911294cd-ac3a-41a5-bfad-c12a1988d189",
+      "name": "One of Us Bundle (Statik + Statik VR)",
+      "slug": "one-of-us-bundle-statik-statik-vr-547",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_547.jpg"
+    },
+    {
+      "id": "314ebe51-0962-44a4-9605-6683e2591493",
+      "name": "Pig Eat Ball",
+      "slug": "pig-eat-ball-365",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_365.jpg"
+    },
+    {
+      "id": "32733b21-0fd7-4484-9125-9dfe7ec95369",
+      "name": "PlayerUnknown's Battlegrounds (paquete de skins)",
+      "slug": "playerunknown-s-battlegrounds-paquete-de-skins-574",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_574.jpg"
+    },
+    {
+      "id": "62d75d8d-72ec-4e91-bb1d-38f1fae9041e",
+      "name": "PlayStation Store $10 (Tarjeta prepago)",
+      "slug": "playstation-store-10-tarjeta-prepago-265",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_265.jpg"
+    },
+    {
+      "id": "7fcee2ee-d327-420e-a6da-d33cc08c97c5",
+      "name": "PlayStation Store 20 EUR (Tarjeta prepago)",
+      "slug": "playstation-store-20-eur-tarjeta-prepago-140",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_140.jpg"
+    },
+    {
+      "id": "c453f229-ad33-4645-8739-41ae28fefa15",
+      "name": "Razer Gold Gift Card",
+      "slug": "razer-gold-gift-card-474",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_474.jpg"
+    },
+    {
+      "id": "cadb31f7-fb46-437a-9140-0e22ad10b14f",
+      "name": "Rev Ersi Quest",
+      "slug": "rev-ersi-quest-094",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_094.jpg"
+    },
+    {
+      "id": "e9b9cdaa-aad2-4fb2-b903-a50e165952f8",
+      "name": "Rigid Force Redux",
+      "slug": "rigid-force-redux-536",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_536.jpg"
+    },
+    {
+      "id": "1a2a228a-55fa-428a-be9c-ea180b5d2b24",
+      "name": "Tarjeta Steam Wallet",
+      "slug": "tarjeta-steam-wallet-608",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_608.jpg"
+    },
+    {
+      "id": "950a878a-dd84-4b13-8dc1-7939318a8c6f",
+      "name": "Tarjeta Steam Wallet $1",
+      "slug": "tarjeta-steam-wallet-1-062",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_062.jpg"
+    },
+    {
+      "id": "9a241dc1-c6cc-4d0d-ad01-1d0cb60d9321",
+      "name": "The Plane Effect",
+      "slug": "the-plane-effect-119",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_119.jpg"
+    },
+    {
+      "id": "f51e8560-6c09-449b-8ee4-54ef32ccaa34",
+      "name": "UFC 4",
+      "slug": "ufc-4-078",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_078.jpg"
+    },
+    {
+      "id": "22920c7e-cd21-4d45-b95f-0dd5d47f97f0",
+      "name": "UFC 4 Deluxe Edition",
+      "slug": "ufc-4-deluxe-edition-292",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_292.jpg"
+    },
+    {
+      "id": "8c649942-b654-4b65-9328-dc80625dc89b",
+      "name": "WRC 8 The Official Game",
+      "slug": "wrc-8-the-official-game-163",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_163.jpg"
+    },
+    {
+      "id": "3f8205d3-c938-4f78-b08e-0bc942442852",
+      "name": "WRC 9 The Official Game",
+      "slug": "wrc-9-the-official-game-205",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_205.jpg"
+    },
+    {
+      "id": "3d5fbff7-0987-4c9d-b799-35d854a19ddc",
+      "name": "Wreckateer",
+      "slug": "wreckateer-097",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_097.jpg"
+    },
+    {
+      "id": "b571e278-0242-4665-9e14-6b446c7b6a8c",
+      "name": "Xbox Live Gold 3 Meses",
+      "slug": "xbox-live-gold-3-meses-516",
+      "current_image": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/products/caratula_516.jpg"
+    }
+  ],
+  "report": [
+    {
+      "name": "12 Minutes",
+      "slug": "12-minutes-417",
+      "matchedName": "Twelve Minutes",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/12-minutes-417.png"
+    },
+    {
+      "name": "7 Days to Die",
+      "slug": "7-days-to-die-217",
+      "matchedName": "7 Days to Die",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/7-days-to-die-217.png"
+    },
+    {
+      "name": "A Plague Tale Innocence",
+      "slug": "a-plague-tale-innocence-244",
+      "matchedName": "A Plague Tale: Innocence",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/a-plague-tale-innocence-244.png"
+    },
+    {
+      "name": "A Way Out",
+      "slug": "a-way-out-539",
+      "matchedName": "A Way Out",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/a-way-out-539.png"
+    },
+    {
+      "name": "Abzu",
+      "slug": "abzu-160",
+      "matchedName": "ABZÛ",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/abzu-160.png"
+    },
+    {
+      "name": "Ace Combat 7 Skies Unknown",
+      "slug": "ace-combat-7-skies-unknown-453",
+      "matchedName": "Ace Combat 7: Skies Unknown",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/ace-combat-7-skies-unknown-453.png"
+    },
+    {
+      "name": "Agony",
+      "slug": "agony-385",
+      "matchedName": "Agony",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/agony-385.png"
+    },
+    {
+      "name": "Aground",
+      "slug": "aground-533",
+      "matchedName": "Aground",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/aground-533.png"
+    },
+    {
+      "name": "Alan Wake",
+      "slug": "alan-wake-048",
+      "matchedName": "Alan Wake",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/alan-wake-048.png"
+    },
+    {
+      "name": "Alan Wake Remastered",
+      "slug": "alan-wake-remastered-492",
+      "matchedName": "Alan Wake Remastered",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/alan-wake-remastered-492.png"
+    },
+    {
+      "name": "Amnesia Collection",
+      "slug": "amnesia-collection-567",
+      "matchedName": "Amnesia: Collection",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/amnesia-collection-567.png"
+    },
+    {
+      "name": "Among Us",
+      "slug": "among-us-266",
+      "matchedName": "Among Us",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/among-us-266.jpg"
+    },
+    {
+      "name": "Ancestors The Humankind Odyssey",
+      "slug": "ancestors-the-humankind-odyssey-080",
+      "matchedName": "Ancestors: The Humankind Odyssey ",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/ancestors-the-humankind-odyssey-080.png"
+    },
+    {
+      "name": "Animal Rivals",
+      "slug": "animal-rivals-411",
+      "matchedName": "Animal Rivals",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/animal-rivals-411.png"
+    },
+    {
+      "name": "Anthem",
+      "slug": "anthem-317",
+      "matchedName": "Anthem",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/anthem-317.jpg"
+    },
+    {
+      "name": "AO Tennis 2",
+      "slug": "ao-tennis-2-363",
+      "matchedName": "AO Tennis 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/ao-tennis-2-363.png"
+    },
+    {
+      "name": "Aqua",
+      "slug": "aqua-232",
+      "matchedName": "Aqua Kitty - Milk Mine Defender",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/aqua-232.png"
+    },
+    {
+      "name": "Aqua",
+      "slug": "aqua-278",
+      "matchedName": "Aqua Kitty - Milk Mine Defender",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/aqua-278.png"
+    },
+    {
+      "name": "Aragami 2",
+      "slug": "aragami-2-486",
+      "matchedName": "Aragami 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/aragami-2-486.jpg"
+    },
+    {
+      "name": "Archaica The Path of Light",
+      "slug": "archaica-the-path-of-light-435",
+      "matchedName": "Archaica: The Path of Light",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/archaica-the-path-of-light-435.png"
+    },
+    {
+      "name": "ARK Survival Evolved",
+      "slug": "ark-survival-evolved-552",
+      "matchedName": "ARK: Survival Evolved",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/ark-survival-evolved-552.png"
+    },
+    {
+      "name": "Arkham Horror Mother's Embrace",
+      "slug": "arkham-horror-mother-s-embrace-027",
+      "matchedName": "Arkham Horror: Mother's Embrace",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/arkham-horror-mother-s-embrace-027.png"
+    },
+    {
+      "name": "Arslan The Warriors of Legend",
+      "slug": "arslan-the-warriors-of-legend-484",
+      "matchedName": "ARSLAN: THE WARRIORS OF LEGEND",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/arslan-the-warriors-of-legend-484.jpg"
+    },
+    {
+      "name": "Assassin's Creed",
+      "slug": "assassin-s-creed-091",
+      "matchedName": "Assassin's Creed",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/assassin-s-creed-091.png"
+    },
+    {
+      "name": "Assassin's Creed Chronicles",
+      "slug": "assassin-s-creed-chronicles-594",
+      "matchedName": "Assassin's Creed Chronicles",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/assassin-s-creed-chronicles-594.jpg"
+    },
+    {
+      "name": "Assassin's Creed III Remastered",
+      "slug": "assassin-s-creed-iii-remastered-011",
+      "matchedName": "Assassin's Creed III Remastered",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/assassin-s-creed-iii-remastered-011.jpg"
+    },
+    {
+      "name": "Assassin's Creed IV Black Flag",
+      "slug": "assassin-s-creed-iv-black-flag-061",
+      "matchedName": "Assassin's Creed IV: Black Flag",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/assassin-s-creed-iv-black-flag-061.png"
+    },
+    {
+      "name": "Assassin's Creed Liberation HD",
+      "slug": "assassin-s-creed-liberation-hd-104",
+      "matchedName": "Assassin's Creed: Liberation HD",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/assassin-s-creed-liberation-hd-104.png"
+    },
+    {
+      "name": "Assassin's Creed Odyssey",
+      "slug": "assassin-s-creed-odyssey-367",
+      "matchedName": "Assassin's Creed Odyssey",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/assassin-s-creed-odyssey-367.png"
+    },
+    {
+      "name": "Assassin's Creed Odyssey Deluxe Edition",
+      "slug": "assassin-s-creed-odyssey-deluxe-edition-029",
+      "matchedName": "Assassin's Creed Odyssey",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/assassin-s-creed-odyssey-deluxe-edition-029.png"
+    },
+    {
+      "name": "Assassin's Creed Odyssey Gold Edition",
+      "slug": "assassin-s-creed-odyssey-gold-edition-315",
+      "matchedName": "Assassin's Creed Odyssey",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/assassin-s-creed-odyssey-gold-edition-315.png"
+    },
+    {
+      "name": "Assassin's Creed Odyssey Ultimate Edition",
+      "slug": "assassin-s-creed-odyssey-ultimate-edition-219",
+      "matchedName": "Assassin's Creed Odyssey",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/assassin-s-creed-odyssey-ultimate-edition-219.png"
+    },
+    {
+      "name": "Assassin's Creed Origins",
+      "slug": "assassin-s-creed-origins-481",
+      "matchedName": "Assassin's Creed Origins",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/assassin-s-creed-origins-481.png"
+    },
+    {
+      "name": "Assassin's Creed Origins Deluxe Edition",
+      "slug": "assassin-s-creed-origins-deluxe-edition-153",
+      "matchedName": "Assassin's Creed Origins",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/assassin-s-creed-origins-deluxe-edition-153.png"
+    },
+    {
+      "name": "Assassin's Creed Origins Deluxe Edition",
+      "slug": "assassin-s-creed-origins-deluxe-edition-369",
+      "matchedName": "Assassin's Creed Origins",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/assassin-s-creed-origins-deluxe-edition-369.png"
+    },
+    {
+      "name": "Assassin's Creed Origins Gold Edition",
+      "slug": "assassin-s-creed-origins-gold-edition-587",
+      "matchedName": "Assassin's Creed Origins",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/assassin-s-creed-origins-gold-edition-587.png"
+    },
+    {
+      "name": "Assassin's Creed Rogue Remastered",
+      "slug": "assassin-s-creed-rogue-remastered-084",
+      "matchedName": "Assassin's Creed Rogue Remastered",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/assassin-s-creed-rogue-remastered-084.png"
+    },
+    {
+      "name": "Assassin's Creed The Ezio Collection",
+      "slug": "assassin-s-creed-the-ezio-collection-290",
+      "matchedName": "Assassin's Creed: The Ezio Collection",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/assassin-s-creed-the-ezio-collection-290.png"
+    },
+    {
+      "name": "Assassin's Creed Triple Pack",
+      "slug": "assassin-s-creed-triple-pack-246",
+      "matchedName": "Assassin's Creed",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/assassin-s-creed-triple-pack-246.png"
+    },
+    {
+      "name": "Assassin's Creed Unity",
+      "slug": "assassin-s-creed-unity-499",
+      "matchedName": "Assassin's Creed Unity",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/assassin-s-creed-unity-499.png"
+    },
+    {
+      "name": "Assassin's Creed Valhalla",
+      "slug": "assassin-s-creed-valhalla-381",
+      "matchedName": "Assassin's Creed Valhalla",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/assassin-s-creed-valhalla-381.png"
+    },
+    {
+      "name": "Assetto Corsa",
+      "slug": "assetto-corsa-370",
+      "matchedName": "Assetto Corsa",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/assetto-corsa-370.png"
+    },
+    {
+      "name": "Assetto Corsa Ultimate Edition",
+      "slug": "assetto-corsa-ultimate-edition-326",
+      "matchedName": "Assetto Corsa",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/assetto-corsa-ultimate-edition-326.png"
+    },
+    {
+      "name": "Asterix & Obelix XXL Romastered",
+      "slug": "asterix-obelix-xxl-romastered-191",
+      "matchedName": "Asterix & Obelix XXL: Romastered",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/asterix-obelix-xxl-romastered-191.jpg"
+    },
+    {
+      "name": "Attack on Titan 2",
+      "slug": "attack-on-titan-2-282",
+      "matchedName": "Attack on Titan 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/attack-on-titan-2-282.png"
+    },
+    {
+      "name": "Attack on Titan 2 Final Battle",
+      "slug": "attack-on-titan-2-final-battle-613",
+      "matchedName": "Attack on Titan 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/attack-on-titan-2-final-battle-613.png"
+    },
+    {
+      "name": "Baldo The Guardian Owls",
+      "slug": "baldo-the-guardian-owls-162",
+      "matchedName": "Baldo: The Guardian Owls",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/baldo-the-guardian-owls-162.jpg"
+    },
+    {
+      "name": "Baldur's Gate + Baldur's Gate II Enhanced Editions",
+      "slug": "baldur-s-gate-baldur-s-gate-ii-enhanced-editions-376",
+      "matchedName": "Baldur's Gate and Baldur's Gate II: Enhanced Editions",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/baldur-s-gate-baldur-s-gate-ii-enhanced-editions-376.jpg"
+    },
+    {
+      "name": "Batman Arkham Knight",
+      "slug": "batman-arkham-knight-463",
+      "matchedName": "Batman: Arkham Knight",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/batman-arkham-knight-463.jpg"
+    },
+    {
+      "name": "Batman Arkham Knight Premium Edition",
+      "slug": "batman-arkham-knight-premium-edition-510",
+      "matchedName": "Batman: Arkham Knight",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/batman-arkham-knight-premium-edition-510.jpg"
+    },
+    {
+      "name": "Batman Return to Arkham",
+      "slug": "batman-return-to-arkham-189",
+      "matchedName": "Batman: Return to Arkham - Arkham Asylum",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/batman-return-to-arkham-189.png"
+    },
+    {
+      "name": "Batman The Telltale Series",
+      "slug": "batman-the-telltale-series-052",
+      "matchedName": "Batman: The Telltale Series",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/batman-the-telltale-series-052.png"
+    },
+    {
+      "name": "Battlefield 1",
+      "slug": "battlefield-1-047",
+      "matchedName": "Battlefield 1",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/battlefield-1-047.png"
+    },
+    {
+      "name": "Battlefield 1 Revolution",
+      "slug": "battlefield-1-revolution-357",
+      "matchedName": "Battlefield 1",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/battlefield-1-revolution-357.png"
+    },
+    {
+      "name": "Battlefield 1 Revolution Edition + Battlefield 1943",
+      "slug": "battlefield-1-revolution-edition-battlefield-1943-627",
+      "matchedName": "Battlefield 1",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/battlefield-1-revolution-edition-battlefield-1943-627.png"
+    },
+    {
+      "name": "Battlefield 1943",
+      "slug": "battlefield-1943-341",
+      "matchedName": "Battlefield 1943",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/battlefield-1943-341.png"
+    },
+    {
+      "name": "Battlefield 4",
+      "slug": "battlefield-4-004",
+      "matchedName": "Battlefield 4",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/battlefield-4-004.png"
+    },
+    {
+      "name": "Battlefield 4 Premium Edition",
+      "slug": "battlefield-4-premium-edition-366",
+      "matchedName": "Battlefield 4",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/battlefield-4-premium-edition-366.png"
+    },
+    {
+      "name": "Battlefield V",
+      "slug": "battlefield-v-092",
+      "matchedName": "Battlefield V",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/battlefield-v-092.png"
+    },
+    {
+      "name": "Battlefield V Definitive Edition",
+      "slug": "battlefield-v-definitive-edition-087",
+      "matchedName": "Battlefield V",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/battlefield-v-definitive-edition-087.png"
+    },
+    {
+      "name": "Battlefield V Deluxe Edition",
+      "slug": "battlefield-v-deluxe-edition-093",
+      "matchedName": "Battlefield V",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/battlefield-v-deluxe-edition-093.png"
+    },
+    {
+      "name": "Battletoads",
+      "slug": "battletoads-002",
+      "matchedName": "Battletoads",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/battletoads-002.png"
+    },
+    {
+      "name": "Bayonetta",
+      "slug": "bayonetta-098",
+      "matchedName": "Bayonetta",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/bayonetta-098.jpg"
+    },
+    {
+      "name": "Beholder 2",
+      "slug": "beholder-2-423",
+      "matchedName": "Beholder 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/beholder-2-423.png"
+    },
+    {
+      "name": "Ben 10 Power Trip",
+      "slug": "ben-10-power-trip-264",
+      "matchedName": "Ben 10: Power Trip",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/ben-10-power-trip-264.png"
+    },
+    {
+      "name": "Big Pharma",
+      "slug": "big-pharma-549",
+      "matchedName": "Big Pharma",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/big-pharma-549.png"
+    },
+    {
+      "name": "BioShock",
+      "slug": "bioshock-448",
+      "matchedName": "BioShock",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/bioshock-448.png"
+    },
+    {
+      "name": "BioShock The Collection",
+      "slug": "bioshock-the-collection-334",
+      "matchedName": "BioShock: The Collection",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/bioshock-the-collection-334.png"
+    },
+    {
+      "name": "Bladed Fury",
+      "slug": "bladed-fury-012",
+      "matchedName": "Bladed Fury",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/bladed-fury-012.png"
+    },
+    {
+      "name": "Bleeding Edge",
+      "slug": "bleeding-edge-281",
+      "matchedName": "Bleeding Edge",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/bleeding-edge-281.png"
+    },
+    {
+      "name": "BloodRayne Betrayal Fresh Bites",
+      "slug": "bloodrayne-betrayal-fresh-bites-079",
+      "matchedName": "BloodRayne Betrayal: Fresh Bites",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/bloodrayne-betrayal-fresh-bites-079.png"
+    },
+    {
+      "name": "Borderlands 3",
+      "slug": "borderlands-3-239",
+      "matchedName": "Borderlands 3",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/borderlands-3-239.png"
+    },
+    {
+      "name": "Borderlands 3 Ultimate Edition",
+      "slug": "borderlands-3-ultimate-edition-233",
+      "matchedName": "Borderlands 3",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/borderlands-3-ultimate-edition-233.png"
+    },
+    {
+      "name": "Borderlands Game of the Year Edition",
+      "slug": "borderlands-game-of-the-year-edition-175",
+      "matchedName": "Borderlands: Game of the Year Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/borderlands-game-of-the-year-edition-175.jpg"
+    },
+    {
+      "name": "Borderlands The Handsome Collection",
+      "slug": "borderlands-the-handsome-collection-168",
+      "matchedName": "Borderlands: The Handsome Collection",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/borderlands-the-handsome-collection-168.jpg"
+    },
+    {
+      "name": "Brothers a Tale of Two Sons",
+      "slug": "brothers-a-tale-of-two-sons-073",
+      "matchedName": "Brothers: A Tale of Two Sons",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/brothers-a-tale-of-two-sons-073.png"
+    },
+    {
+      "name": "Bulletstorm Full Clip Edition",
+      "slug": "bulletstorm-full-clip-edition-164",
+      "matchedName": "Bulletstorm: Full Clip Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/bulletstorm-full-clip-edition-164.png"
+    },
+    {
+      "name": "Bully Scholarship Edition",
+      "slug": "bully-scholarship-edition-185",
+      "matchedName": "Bully: Scholarship Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/bully-scholarship-edition-185.jpg"
+    },
+    {
+      "name": "Burnout Paradise Remastered",
+      "slug": "burnout-paradise-remastered-147",
+      "matchedName": "Burnout Paradise Remastered",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/burnout-paradise-remastered-147.png"
+    },
+    {
+      "name": "Bus Simulator 21",
+      "slug": "bus-simulator-21-169",
+      "matchedName": "Bus Simulator 21",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/bus-simulator-21-169.png"
+    },
+    {
+      "name": "Bus Simulator 21 Extended Edition",
+      "slug": "bus-simulator-21-extended-edition-252",
+      "matchedName": "Bus Simulator 21",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/bus-simulator-21-extended-edition-252.png"
+    },
+    {
+      "name": "Call of Duty Advanced Warfare",
+      "slug": "call-of-duty-advanced-warfare-593",
+      "matchedName": "Call of Duty: Advanced Warfare",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/call-of-duty-advanced-warfare-593.jpg"
+    },
+    {
+      "name": "Call of Duty Advanced Warfare Digital Pro Edition",
+      "slug": "call-of-duty-advanced-warfare-digital-pro-edition-076",
+      "matchedName": "Call of Duty: Advanced Warfare",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/call-of-duty-advanced-warfare-digital-pro-edition-076.jpg"
+    },
+    {
+      "name": "Call of Duty Black Ops 4",
+      "slug": "call-of-duty-black-ops-4-310",
+      "matchedName": "Call of Duty: Black Ops 4",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/call-of-duty-black-ops-4-310.png"
+    },
+    {
+      "name": "Call of Duty Black Ops III Zombies Chronicles Edition",
+      "slug": "call-of-duty-black-ops-iii-zombies-chronicles-edition-433",
+      "matchedName": "Call of Duty: Black Ops III",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/call-of-duty-black-ops-iii-zombies-chronicles-edition-433.png"
+    },
+    {
+      "name": "Call of Duty Ghosts Hardened Edition",
+      "slug": "call-of-duty-ghosts-hardened-edition-182",
+      "matchedName": "Call of Duty: Ghosts",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/call-of-duty-ghosts-hardened-edition-182.jpg"
+    },
+    {
+      "name": "Call of Duty Infinite Warfare",
+      "slug": "call-of-duty-infinite-warfare-375",
+      "matchedName": "Call of Duty: Infinite Warfare",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/call-of-duty-infinite-warfare-375.png"
+    },
+    {
+      "name": "Call of Duty Modern Warfare",
+      "slug": "call-of-duty-modern-warfare-262",
+      "matchedName": "Call of Duty: Modern Warfare",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/call-of-duty-modern-warfare-262.png"
+    },
+    {
+      "name": "Call of Duty Modern Warfare Remastered",
+      "slug": "call-of-duty-modern-warfare-remastered-523",
+      "matchedName": "Call of Duty: Modern Warfare Remastered",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/call-of-duty-modern-warfare-remastered-523.png"
+    },
+    {
+      "name": "Call of Duty WWII Gold Edition",
+      "slug": "call-of-duty-wwii-gold-edition-019",
+      "matchedName": "Call of Duty: WWII",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/call-of-duty-wwii-gold-edition-019.png"
+    },
+    {
+      "name": "Car Mechanic Simulator",
+      "slug": "car-mechanic-simulator-042",
+      "matchedName": "Car Mechanic Simulator 2014",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/car-mechanic-simulator-042.png"
+    },
+    {
+      "name": "Car Mechanic Simulator 2021",
+      "slug": "car-mechanic-simulator-2021-325",
+      "matchedName": "Car Mechanic Simulator 2021",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/car-mechanic-simulator-2021-325.png"
+    },
+    {
+      "name": "Car Mechanic Simulator Classic",
+      "slug": "car-mechanic-simulator-classic-066",
+      "matchedName": "Car Mechanic Simulator 2014",
+      "similarity": 0.75,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/car-mechanic-simulator-classic-066.png"
+    },
+    {
+      "name": "Car Mechanic Simulator Deluxe Edition",
+      "slug": "car-mechanic-simulator-deluxe-edition-498",
+      "matchedName": "Car Mechanic Simulator 2014",
+      "similarity": 0.75,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/car-mechanic-simulator-deluxe-edition-498.png"
+    },
+    {
+      "name": "Carnival Games",
+      "slug": "carnival-games-590",
+      "matchedName": "Carnival Games",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/carnival-games-590.jpg"
+    },
+    {
+      "name": "Child of Light",
+      "slug": "child-of-light-469",
+      "matchedName": "Child of Light",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/child-of-light-469.png"
+    },
+    {
+      "name": "Circuit Breakers",
+      "slug": "circuit-breakers-507",
+      "matchedName": "Circuit Breakers",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/circuit-breakers-507.png"
+    },
+    {
+      "name": "Cities Skylines Xbox One Edition",
+      "slug": "cities-skylines-xbox-one-edition-089",
+      "matchedName": "Cities: Skylines",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/cities-skylines-xbox-one-edition-089.png"
+    },
+    {
+      "name": "Clone Drone in the Danger Zone",
+      "slug": "clone-drone-in-the-danger-zone-565",
+      "matchedName": "Clone Drone in the Danger Zone",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/clone-drone-in-the-danger-zone-565.png"
+    },
+    {
+      "name": "Cloudpunk",
+      "slug": "cloudpunk-531",
+      "matchedName": "Cloudpunk",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/cloudpunk-531.png"
+    },
+    {
+      "name": "Clustertruck / Hello Neighbor / No Time to Explain",
+      "slug": "clustertruck-hello-neighbor-no-time-to-explain-273",
+      "matchedName": "Clustertruck",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/clustertruck-hello-neighbor-no-time-to-explain-273.png"
+    },
+    {
+      "name": "Comic Jumper",
+      "slug": "comic-jumper-332",
+      "matchedName": "Comic Jumper: The Adventures of Captain Smiley",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/comic-jumper-332.png"
+    },
+    {
+      "name": "Comic Jumper",
+      "slug": "comic-jumper-564",
+      "matchedName": "Comic Jumper: The Adventures of Captain Smiley",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/comic-jumper-564.png"
+    },
+    {
+      "name": "Cooking Simulator",
+      "slug": "cooking-simulator-198",
+      "matchedName": "Cooking Simulator",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/cooking-simulator-198.png"
+    },
+    {
+      "name": "Crash Bandicoot 4: It's About Time",
+      "slug": "crash-bandicoot-4-it-s-about-time-001",
+      "matchedName": "Crash Bandicoot 4: It's About Time",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/crash-bandicoot-4-it-s-about-time-001.jpg"
+    },
+    {
+      "name": "Crash Bandicoot N. Sane Trilogy",
+      "slug": "crash-bandicoot-n-sane-trilogy-615",
+      "matchedName": "Crash Bandicoot: N. Sane Trilogy",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/crash-bandicoot-n-sane-trilogy-615.png"
+    },
+    {
+      "name": "Crash Team Racing Nitro-Fueled",
+      "slug": "crash-team-racing-nitro-fueled-236",
+      "matchedName": "CTR: Crash Team Racing - Nitro-Fueled",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/crash-team-racing-nitro-fueled-236.png"
+    },
+    {
+      "name": "Crysis Remastered",
+      "slug": "crysis-remastered-005",
+      "matchedName": "Crysis Remastered",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/crysis-remastered-005.png"
+    },
+    {
+      "name": "Cyberpunk 2077",
+      "slug": "cyberpunk-2077-032",
+      "matchedName": "Cyberpunk 2077",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/cyberpunk-2077-032.png"
+    },
+    {
+      "name": "D/Generation",
+      "slug": "d-generation-287",
+      "matchedName": "D/Generation",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/d-generation-287.png"
+    },
+    {
+      "name": "Dadish",
+      "slug": "dadish-192",
+      "matchedName": "Dadish",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dadish-192.png"
+    },
+    {
+      "name": "Dadish 2",
+      "slug": "dadish-2-622",
+      "matchedName": "Dadish 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dadish-2-622.png"
+    },
+    {
+      "name": "Dark Souls II Scholar of the First Sin",
+      "slug": "dark-souls-ii-scholar-of-the-first-sin-025",
+      "matchedName": "Dark Souls II: Scholar of the First Sin",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dark-souls-ii-scholar-of-the-first-sin-025.png"
+    },
+    {
+      "name": "Dark Souls III",
+      "slug": "dark-souls-iii-572",
+      "matchedName": "Dark Souls III",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dark-souls-iii-572.png"
+    },
+    {
+      "name": "Dark Souls Remastered",
+      "slug": "dark-souls-remastered-275",
+      "matchedName": "Dark Souls: Remastered",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dark-souls-remastered-275.png"
+    },
+    {
+      "name": "Darksiders Fury's Collection War & Death",
+      "slug": "darksiders-fury-s-collection-war-death-328",
+      "matchedName": "Darksiders: Fury's Collection - War and Death",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/darksiders-fury-s-collection-war-death-328.png"
+    },
+    {
+      "name": "Darksiders II Deathinitive Edition",
+      "slug": "darksiders-ii-deathinitive-edition-386",
+      "matchedName": "Darksiders II Deathinitive Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/darksiders-ii-deathinitive-edition-386.png"
+    },
+    {
+      "name": "Darksiders III Blades & Whip Edition",
+      "slug": "darksiders-iii-blades-whip-edition-186",
+      "matchedName": "Darksiders III",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/darksiders-iii-blades-whip-edition-186.png"
+    },
+    {
+      "name": "Darksiders Warmastered Edition",
+      "slug": "darksiders-warmastered-edition-051",
+      "matchedName": "Darksiders Warmastered Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/darksiders-warmastered-edition-051.png"
+    },
+    {
+      "name": "DayZ",
+      "slug": "dayz-451",
+      "matchedName": "DayZ",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dayz-451.png"
+    },
+    {
+      "name": "DCL The Game",
+      "slug": "dcl-the-game-504",
+      "matchedName": "DCL - The Game",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dcl-the-game-504.png"
+    },
+    {
+      "name": "Dead Island Definitive Collection",
+      "slug": "dead-island-definitive-collection-387",
+      "matchedName": "Dead Island: Definitive Edition",
+      "similarity": 0.75,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dead-island-definitive-collection-387.png"
+    },
+    {
+      "name": "Dead Island Definitive Edition",
+      "slug": "dead-island-definitive-edition-415",
+      "matchedName": "Dead Island: Definitive Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dead-island-definitive-edition-415.png"
+    },
+    {
+      "name": "Dead Island Riptide Definitive Edition",
+      "slug": "dead-island-riptide-definitive-edition-148",
+      "matchedName": "Dead Island: Riptide - Definitive Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dead-island-riptide-definitive-edition-148.png"
+    },
+    {
+      "name": "Dead or Alive 5 Last Round",
+      "slug": "dead-or-alive-5-last-round-099",
+      "matchedName": "Dead or Alive 5: Last Round",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dead-or-alive-5-last-round-099.jpg"
+    },
+    {
+      "name": "Dead or Alive 6 Digital Deluxe Edition",
+      "slug": "dead-or-alive-6-digital-deluxe-edition-336",
+      "matchedName": "Dead or Alive 6",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dead-or-alive-6-digital-deluxe-edition-336.png"
+    },
+    {
+      "name": "Dead Rising",
+      "slug": "dead-rising-541",
+      "matchedName": "Dead Rising",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dead-rising-541.jpg"
+    },
+    {
+      "name": "Dead Rising 2",
+      "slug": "dead-rising-2-568",
+      "matchedName": "Dead Rising 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dead-rising-2-568.png"
+    },
+    {
+      "name": "Dead Rising 4",
+      "slug": "dead-rising-4-090",
+      "matchedName": "Dead Rising 4",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dead-rising-4-090.png"
+    },
+    {
+      "name": "Dead Rising Triple Pack",
+      "slug": "dead-rising-triple-pack-513",
+      "matchedName": "Dead Rising",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dead-rising-triple-pack-513.jpg"
+    },
+    {
+      "name": "Dead Space 3",
+      "slug": "dead-space-3-407",
+      "matchedName": "Dead Space 3",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dead-space-3-407.png"
+    },
+    {
+      "name": "Deadbeat Heroes",
+      "slug": "deadbeat-heroes-245",
+      "matchedName": "Deadbeat Heroes",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/deadbeat-heroes-245.png"
+    },
+    {
+      "name": "Death's Door",
+      "slug": "death-s-door-028",
+      "matchedName": "Death's Door",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/death-s-door-028.png"
+    },
+    {
+      "name": "Deep Rock Galactic",
+      "slug": "deep-rock-galactic-618",
+      "matchedName": "Deep Rock Galactic",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/deep-rock-galactic-618.png"
+    },
+    {
+      "name": "Desperados III",
+      "slug": "desperados-iii-490",
+      "matchedName": "Desperados III",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/desperados-iii-490.jpg"
+    },
+    {
+      "name": "Desperados III Deluxe Edition",
+      "slug": "desperados-iii-deluxe-edition-155",
+      "matchedName": "Desperados III",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/desperados-iii-deluxe-edition-155.jpg"
+    },
+    {
+      "name": "Destroy All Humans!",
+      "slug": "destroy-all-humans-476",
+      "matchedName": "Destroy All Humans!",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/destroy-all-humans-476.jpg"
+    },
+    {
+      "name": "Deus Ex Mankind Divided",
+      "slug": "deus-ex-mankind-divided-626",
+      "matchedName": "Deus Ex: Mankind Divided™",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/deus-ex-mankind-divided-626.png"
+    },
+    {
+      "name": "Devil May Cry 4 Special Edition",
+      "slug": "devil-may-cry-4-special-edition-039",
+      "matchedName": "Devil May Cry 4: Special Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/devil-may-cry-4-special-edition-039.jpg"
+    },
+    {
+      "name": "Devil May Cry HD Collection",
+      "slug": "devil-may-cry-hd-collection-156",
+      "matchedName": "Devil May Cry HD Collection",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/devil-may-cry-hd-collection-156.png"
+    },
+    {
+      "name": "Diablo III Eternal Collection",
+      "slug": "diablo-iii-eternal-collection-017",
+      "matchedName": "Diablo III: Eternal Collection",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/diablo-iii-eternal-collection-017.png"
+    },
+    {
+      "name": "DiRT 4",
+      "slug": "dirt-4-070",
+      "matchedName": "DiRT 4",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dirt-4-070.png"
+    },
+    {
+      "name": "Dirt 5",
+      "slug": "dirt-5-340",
+      "matchedName": "DIRT 5",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dirt-5-340.jpg"
+    },
+    {
+      "name": "DiRT Rally 2.0",
+      "slug": "dirt-rally-2-0-604",
+      "matchedName": "DiRT Rally 2.0",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dirt-rally-2-0-604.png"
+    },
+    {
+      "name": "DiRT Rally 2.0 Game of the Year",
+      "slug": "dirt-rally-2-0-game-of-the-year-582",
+      "matchedName": "DiRT Rally 2.0",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dirt-rally-2-0-game-of-the-year-582.png"
+    },
+    {
+      "name": "Dishonored 2",
+      "slug": "dishonored-2-583",
+      "matchedName": "Dishonored 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dishonored-2-583.png"
+    },
+    {
+      "name": "Dishonored Death of the Outsider",
+      "slug": "dishonored-death-of-the-outsider-379",
+      "matchedName": "Dishonored: Death of the Outsider",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dishonored-death-of-the-outsider-379.png"
+    },
+    {
+      "name": "Dishonored Definitive Edition",
+      "slug": "dishonored-definitive-edition-612",
+      "matchedName": "Dishonored",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dishonored-definitive-edition-612.png"
+    },
+    {
+      "name": "Disintegration",
+      "slug": "disintegration-253",
+      "matchedName": "Disintegration",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/disintegration-253.jpg"
+    },
+    {
+      "name": "Disneyland Adventures",
+      "slug": "disneyland-adventures-114",
+      "matchedName": "Disneyland Adventures",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/disneyland-adventures-114.png"
+    },
+    {
+      "name": "Divinity Original Sin II Definitive Edition",
+      "slug": "divinity-original-sin-ii-definitive-edition-201",
+      "matchedName": "Divinity: Original Sin 2 - Definitive Edition",
+      "similarity": 0.8333333333333334,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/divinity-original-sin-ii-definitive-edition-201.png"
+    },
+    {
+      "name": "DmC Devil May Cry Definitive Edition",
+      "slug": "dmc-devil-may-cry-definitive-edition-393",
+      "matchedName": "DmC: Devil May Cry - Definitive Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dmc-devil-may-cry-definitive-edition-393.png"
+    },
+    {
+      "name": "Doctor Who The Lonely Assassins",
+      "slug": "doctor-who-the-lonely-assassins-596",
+      "matchedName": "Doctor Who: The Lonely Assassins",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/doctor-who-the-lonely-assassins-596.png"
+    },
+    {
+      "name": "Don't Starve + Shipwrecked",
+      "slug": "don-t-starve-shipwrecked-581",
+      "matchedName": "Don't Starve: Shipwrecked",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/don-t-starve-shipwrecked-581.png"
+    },
+    {
+      "name": "Don't Starve Together Console Edition",
+      "slug": "don-t-starve-together-console-edition-388",
+      "matchedName": "Don't Starve Together: Console Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/don-t-starve-together-console-edition-388.png"
+    },
+    {
+      "name": "Doodle God Crime City",
+      "slug": "doodle-god-crime-city-212",
+      "matchedName": "Doodle God",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/doodle-god-crime-city-212.png"
+    },
+    {
+      "name": "Doom",
+      "slug": "doom-135",
+      "matchedName": "Doom",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/doom-135.png"
+    },
+    {
+      "name": "Doom 64",
+      "slug": "doom-64-434",
+      "matchedName": "DOOM 64",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/doom-64-434.png"
+    },
+    {
+      "name": "Doom Eternal",
+      "slug": "doom-eternal-082",
+      "matchedName": "DOOM Eternal",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/doom-eternal-082.png"
+    },
+    {
+      "name": "Doom II",
+      "slug": "doom-ii-141",
+      "matchedName": "DOOM II",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/doom-ii-141.png"
+    },
+    {
+      "name": "Dragon Age Inquisition",
+      "slug": "dragon-age-inquisition-470",
+      "matchedName": "Dragon Age: Inquisition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dragon-age-inquisition-470.png"
+    },
+    {
+      "name": "Dragon Age Inquisition Game of the Year Edition",
+      "slug": "dragon-age-inquisition-game-of-the-year-edition-619",
+      "matchedName": "Dragon Age: Inquisition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dragon-age-inquisition-game-of-the-year-edition-619.png"
+    },
+    {
+      "name": "Dragon Ball FighterZ",
+      "slug": "dragon-ball-fighterz-123",
+      "matchedName": "Dragon Ball FighterZ",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dragon-ball-fighterz-123.jpg"
+    },
+    {
+      "name": "Dragon Ball Xenoverse",
+      "slug": "dragon-ball-xenoverse-022",
+      "matchedName": "Dragon Ball: Xenoverse",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dragon-ball-xenoverse-022.jpg"
+    },
+    {
+      "name": "Dragon Ball Xenoverse 2",
+      "slug": "dragon-ball-xenoverse-2-606",
+      "matchedName": "Dragon Ball: Xenoverse 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dragon-ball-xenoverse-2-606.png"
+    },
+    {
+      "name": "Dragon Ball Z Kakarot",
+      "slug": "dragon-ball-z-kakarot-174",
+      "matchedName": "Dragon Ball Z: Kakarot",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dragon-ball-z-kakarot-174.png"
+    },
+    {
+      "name": "Dragon's Dogma Dark Arisen",
+      "slug": "dragon-s-dogma-dark-arisen-120",
+      "matchedName": "Dragon's Dogma: Dark Arisen",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dragon-s-dogma-dark-arisen-120.png"
+    },
+    {
+      "name": "Duke Nukem 3D 20th Anniversary World Tour",
+      "slug": "duke-nukem-3d-20th-anniversary-world-tour-116",
+      "matchedName": "Duke Nukem 3D: 20th Anniversary World Tour",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/duke-nukem-3d-20th-anniversary-world-tour-116.jpg"
+    },
+    {
+      "name": "Dungeons & Dragons Dark Alliance",
+      "slug": "dungeons-dragons-dark-alliance-202",
+      "matchedName": "Dungeons & Dragons: Dark Alliance",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dungeons-dragons-dark-alliance-202.png"
+    },
+    {
+      "name": "Dungeons & Dragons Dark Alliance Deluxe Edition",
+      "slug": "dungeons-dragons-dark-alliance-deluxe-edition-616",
+      "matchedName": "Dungeons & Dragons: Dark Alliance",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dungeons-dragons-dark-alliance-deluxe-edition-616.png"
+    },
+    {
+      "name": "Dying Light The Following Enhanced Edition",
+      "slug": "dying-light-the-following-enhanced-edition-420",
+      "matchedName": "Dying Light - The Following",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/dying-light-the-following-enhanced-edition-420.png"
+    },
+    {
+      "name": "Echo Generation",
+      "slug": "echo-generation-298",
+      "matchedName": "Echo Generation",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/echo-generation-298.jpg"
+    },
+    {
+      "name": "eFootball PES 2020",
+      "slug": "efootball-pes-2020-383",
+      "matchedName": "eFootball PES 2020",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/efootball-pes-2020-383.png"
+    },
+    {
+      "name": "Elex",
+      "slug": "elex-077",
+      "matchedName": "ELEX",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/elex-077.png"
+    },
+    {
+      "name": "Elite Dangerous",
+      "slug": "elite-dangerous-209",
+      "matchedName": "Elite Dangerous",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/elite-dangerous-209.png"
+    },
+    {
+      "name": "Evertried",
+      "slug": "evertried-231",
+      "matchedName": "Evertried",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/evertried-231.jpg"
+    },
+    {
+      "name": "F1 2019",
+      "slug": "f1-2019-443",
+      "matchedName": "F1 2019",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/f1-2019-443.png"
+    },
+    {
+      "name": "F1 2020 Deluxe Schumacher Edition",
+      "slug": "f1-2020-deluxe-schumacher-edition-485",
+      "matchedName": "F1 2020",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/f1-2020-deluxe-schumacher-edition-485.png"
+    },
+    {
+      "name": "F1 2021 Deluxe Edition",
+      "slug": "f1-2021-deluxe-edition-346",
+      "matchedName": "F1 2021",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/f1-2021-deluxe-edition-346.png"
+    },
+    {
+      "name": "F1 2021 Deluxe Edition",
+      "slug": "f1-2021-deluxe-edition-299",
+      "matchedName": "F1 2021",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/f1-2021-deluxe-edition-299.png"
+    },
+    {
+      "name": "Fable Heroes",
+      "slug": "fable-heroes-466",
+      "matchedName": "Fable Heroes",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/fable-heroes-466.png"
+    },
+    {
+      "name": "Fallout 4 Game of the Year Edition",
+      "slug": "fallout-4-game-of-the-year-edition-409",
+      "matchedName": "Fallout 4",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/fallout-4-game-of-the-year-edition-409.png"
+    },
+    {
+      "name": "Fallout 76",
+      "slug": "fallout-76-060",
+      "matchedName": "Fallout 76",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/fallout-76-060.png"
+    },
+    {
+      "name": "Far Cry 3 Classic Edition",
+      "slug": "far-cry-3-classic-edition-503",
+      "matchedName": "Far Cry 3",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/far-cry-3-classic-edition-503.png"
+    },
+    {
+      "name": "Far Cry 4",
+      "slug": "far-cry-4-628",
+      "matchedName": "Far Cry 4",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/far-cry-4-628.jpg"
+    },
+    {
+      "name": "Far Cry 5",
+      "slug": "far-cry-5-368",
+      "matchedName": "Far Cry 5",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/far-cry-5-368.png"
+    },
+    {
+      "name": "Far Cry 5 + Far Cry New Dawn Deluxe Edition",
+      "slug": "far-cry-5-far-cry-new-dawn-deluxe-edition-477",
+      "matchedName": "Far Cry 5",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/far-cry-5-far-cry-new-dawn-deluxe-edition-477.png"
+    },
+    {
+      "name": "Far Cry 5 Gold Edition",
+      "slug": "far-cry-5-gold-edition-294",
+      "matchedName": "Far Cry 5",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/far-cry-5-gold-edition-294.png"
+    },
+    {
+      "name": "Far Cry 6",
+      "slug": "far-cry-6-371",
+      "matchedName": "Far Cry 6",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/far-cry-6-371.jpg"
+    },
+    {
+      "name": "Far Cry Anthology Bundle",
+      "slug": "far-cry-anthology-bundle-297",
+      "matchedName": "Far Cry",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/far-cry-anthology-bundle-297.png"
+    },
+    {
+      "name": "Far Cry New Dawn",
+      "slug": "far-cry-new-dawn-289",
+      "matchedName": "Far Cry New Dawn",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/far-cry-new-dawn-289.jpg"
+    },
+    {
+      "name": "Far Cry New Dawn",
+      "slug": "far-cry-new-dawn-040",
+      "matchedName": "Far Cry New Dawn",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/far-cry-new-dawn-040.jpg"
+    },
+    {
+      "name": "Far Cry New Dawn Deluxe Edition + Far Cry 5 Gold Edition",
+      "slug": "far-cry-new-dawn-deluxe-edition-far-cry-5-gold-edition-355",
+      "matchedName": "Far Cry New Dawn",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/far-cry-new-dawn-deluxe-edition-far-cry-5-gold-edition-355.jpg"
+    },
+    {
+      "name": "Far Cry Primal",
+      "slug": "far-cry-primal-374",
+      "matchedName": "Far Cry Primal",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/far-cry-primal-374.png"
+    },
+    {
+      "name": "Far Cry Primal Apex Edition",
+      "slug": "far-cry-primal-apex-edition-126",
+      "matchedName": "Far Cry Primal",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/far-cry-primal-apex-edition-126.png"
+    },
+    {
+      "name": "FIFA 20",
+      "slug": "fifa-20-215",
+      "matchedName": "FIFA 20",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/fifa-20-215.png"
+    },
+    {
+      "name": "FIFA 22",
+      "slug": "fifa-22-165",
+      "matchedName": "FIFA 22",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/fifa-22-165.png"
+    },
+    {
+      "name": "FIFA 22",
+      "slug": "fifa-22-277",
+      "matchedName": "FIFA 22",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/fifa-22-277.png"
+    },
+    {
+      "name": "FIFA 22",
+      "slug": "fifa-22-562",
+      "matchedName": "FIFA 22",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/fifa-22-562.png"
+    },
+    {
+      "name": "Firewatch",
+      "slug": "firewatch-159",
+      "matchedName": "Firewatch",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/firewatch-159.png"
+    },
+    {
+      "name": "Flatout 4 Total Insanity",
+      "slug": "flatout-4-total-insanity-103",
+      "matchedName": "FlatOut 4: Total Insanity",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/flatout-4-total-insanity-103.png"
+    },
+    {
+      "name": "For Honor",
+      "slug": "for-honor-445",
+      "matchedName": "For Honor",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/for-honor-445.png"
+    },
+    {
+      "name": "For Honor Complete Edition",
+      "slug": "for-honor-complete-edition-300",
+      "matchedName": "For Honor",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/for-honor-complete-edition-300.png"
+    },
+    {
+      "name": "For Honor Marching Fire",
+      "slug": "for-honor-marching-fire-166",
+      "matchedName": "For Honor",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/for-honor-marching-fire-166.png"
+    },
+    {
+      "name": "Fortnite",
+      "slug": "fortnite-279",
+      "matchedName": "Fortnite",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/fortnite-279.png"
+    },
+    {
+      "name": "Fortnite",
+      "slug": "fortnite-307",
+      "matchedName": "Fortnite",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/fortnite-307.png"
+    },
+    {
+      "name": "Fortnite 5000 V-Bucks (Gift Card)",
+      "slug": "fortnite-5000-v-bucks-gift-card-068",
+      "matchedName": "Fortnite",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/fortnite-5000-v-bucks-gift-card-068.png"
+    },
+    {
+      "name": "Fortnite Shadows Rising Pack",
+      "slug": "fortnite-shadows-rising-pack-139",
+      "matchedName": "Fortnite",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/fortnite-shadows-rising-pack-139.png"
+    },
+    {
+      "name": "Forza Horizon 4",
+      "slug": "forza-horizon-4-416",
+      "matchedName": "Forza Horizon 4",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/forza-horizon-4-416.png"
+    },
+    {
+      "name": "Forza Horizon 4 + LEGO Speed Champions",
+      "slug": "forza-horizon-4-lego-speed-champions-550",
+      "matchedName": "Forza Horizon 4",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/forza-horizon-4-lego-speed-champions-550.png"
+    },
+    {
+      "name": "Forza Horizon 4 Fortune Island",
+      "slug": "forza-horizon-4-fortune-island-136",
+      "matchedName": "Forza Horizon 4",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/forza-horizon-4-fortune-island-136.png"
+    },
+    {
+      "name": "Forza Motorsport 7",
+      "slug": "forza-motorsport-7-559",
+      "matchedName": "Forza Motorsport 7",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/forza-motorsport-7-559.png"
+    },
+    {
+      "name": "Friday the 13th The Game",
+      "slug": "friday-the-13th-the-game-234",
+      "matchedName": "Friday the 13th: The Game",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/friday-the-13th-the-game-234.png"
+    },
+    {
+      "name": "Frostpunk Console Edition",
+      "slug": "frostpunk-console-edition-258",
+      "matchedName": "Frostpunk",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/frostpunk-console-edition-258.png"
+    },
+    {
+      "name": "Fruit Ninja Kinect",
+      "slug": "fruit-ninja-kinect-323",
+      "matchedName": "Fruit Ninja Kinect",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/fruit-ninja-kinect-323.png"
+    },
+    {
+      "name": "Fruit Ninja Kinect",
+      "slug": "fruit-ninja-kinect-113",
+      "matchedName": "Fruit Ninja Kinect",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/fruit-ninja-kinect-113.png"
+    },
+    {
+      "name": "Fruit Ninja Kinect 2",
+      "slug": "fruit-ninja-kinect-2-494",
+      "matchedName": "Fruit Ninja Kinect",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/fruit-ninja-kinect-2-494.png"
+    },
+    {
+      "name": "Gears 5",
+      "slug": "gears-5-031",
+      "matchedName": "Gears 5",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/gears-5-031.png"
+    },
+    {
+      "name": "Gears 5 Gears of War 4 Bundle",
+      "slug": "gears-5-gears-of-war-4-bundle-041",
+      "matchedName": "Gears 5",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/gears-5-gears-of-war-4-bundle-041.png"
+    },
+    {
+      "name": "Gears of War 2",
+      "slug": "gears-of-war-2-173",
+      "matchedName": "Gears of War 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/gears-of-war-2-173.png"
+    },
+    {
+      "name": "Gears of War 3",
+      "slug": "gears-of-war-3-216",
+      "matchedName": "Gears of War 3",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/gears-of-war-3-216.png"
+    },
+    {
+      "name": "Gears of War 4",
+      "slug": "gears-of-war-4-053",
+      "matchedName": "Gears of War 4",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/gears-of-war-4-053.png"
+    },
+    {
+      "name": "Gears of War Ultimate Edition",
+      "slug": "gears-of-war-ultimate-edition-569",
+      "matchedName": "Gears of War: Ultimate Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/gears-of-war-ultimate-edition-569.png"
+    },
+    {
+      "name": "Gears Tactics",
+      "slug": "gears-tactics-269",
+      "matchedName": "Gears Tactics",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/gears-tactics-269.png"
+    },
+    {
+      "name": "Ghostbusters The Video Game Remastered",
+      "slug": "ghostbusters-the-video-game-remastered-065",
+      "matchedName": "Ghostbusters: The Video Game Remastered",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/ghostbusters-the-video-game-remastered-065.png"
+    },
+    {
+      "name": "Ghostrunner",
+      "slug": "ghostrunner-309",
+      "matchedName": "Ghostrunner",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/ghostrunner-309.png"
+    },
+    {
+      "name": "Golazo! Football League",
+      "slug": "golazo-football-league-154",
+      "matchedName": "Golazo! Soccer League",
+      "similarity": 0.6666666666666666,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/golazo-football-league-154.png"
+    },
+    {
+      "name": "Goroons",
+      "slug": "goroons-398",
+      "matchedName": "Goroons",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/goroons-398.png"
+    },
+    {
+      "name": "Grand Theft Auto V",
+      "slug": "grand-theft-auto-v-132",
+      "matchedName": "Grand Theft Auto V",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/grand-theft-auto-v-132.jpg"
+    },
+    {
+      "name": "Grand Theft Auto V",
+      "slug": "grand-theft-auto-v-519",
+      "matchedName": "Grand Theft Auto V",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/grand-theft-auto-v-519.jpg"
+    },
+    {
+      "name": "Grand Theft Auto V Premium Online Edition",
+      "slug": "grand-theft-auto-v-premium-online-edition-391",
+      "matchedName": "Grand Theft Auto V",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/grand-theft-auto-v-premium-online-edition-391.jpg"
+    },
+    {
+      "name": "Graveyard Keeper",
+      "slug": "graveyard-keeper-158",
+      "matchedName": "Graveyard Keeper",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/graveyard-keeper-158.png"
+    },
+    {
+      "name": "Grid",
+      "slug": "grid-213",
+      "matchedName": "GRID",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/grid-213.jpg"
+    },
+    {
+      "name": "Guacamelee! 2 Complete",
+      "slug": "guacamelee-2-complete-229",
+      "matchedName": "Guacamelee! 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/guacamelee-2-complete-229.png"
+    },
+    {
+      "name": "Guacamelee! Super Turbo Championship Edition",
+      "slug": "guacamelee-super-turbo-championship-edition-438",
+      "matchedName": "Guacamelee! Super Turbo Championship Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/guacamelee-super-turbo-championship-edition-438.jpg"
+    },
+    {
+      "name": "Guards",
+      "slug": "guards-343",
+      "matchedName": "Guards",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/guards-343.png"
+    },
+    {
+      "name": "Guns Gore & Cannoli 2",
+      "slug": "guns-gore-cannoli-2-107",
+      "matchedName": "Guns, Gore and Cannoli 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/guns-gore-cannoli-2-107.png"
+    },
+    {
+      "name": "Hades",
+      "slug": "hades-318",
+      "matchedName": "Hades",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/hades-318.png"
+    },
+    {
+      "name": "Halo 5 Guardians",
+      "slug": "halo-5-guardians-285",
+      "matchedName": "Halo 5: Guardians",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/halo-5-guardians-285.png"
+    },
+    {
+      "name": "Halo Spartan Assault",
+      "slug": "halo-spartan-assault-176",
+      "matchedName": "Halo: Spartan Assault",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/halo-spartan-assault-176.png"
+    },
+    {
+      "name": "Halo The Master Chief Collection",
+      "slug": "halo-the-master-chief-collection-471",
+      "matchedName": "Halo: The Master Chief Collection",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/halo-the-master-chief-collection-471.png"
+    },
+    {
+      "name": "Halo Wars 2",
+      "slug": "halo-wars-2-354",
+      "matchedName": "Halo Wars 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/halo-wars-2-354.png"
+    },
+    {
+      "name": "Halo Wars 2 Ultimate Edition",
+      "slug": "halo-wars-2-ultimate-edition-327",
+      "matchedName": "Halo Wars 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/halo-wars-2-ultimate-edition-327.png"
+    },
+    {
+      "name": "Halo Wars Definitive Edition",
+      "slug": "halo-wars-definitive-edition-014",
+      "matchedName": "Halo Wars: Definitive Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/halo-wars-definitive-edition-014.jpg"
+    },
+    {
+      "name": "Hasbro Family Fun Pack Super Edition",
+      "slug": "hasbro-family-fun-pack-super-edition-458",
+      "matchedName": "Hasbro Family Game Night Fun Pack",
+      "similarity": 0.6666666666666666,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/hasbro-family-fun-pack-super-edition-458.png"
+    },
+    {
+      "name": "Hellblade Senua's Sacrifice",
+      "slug": "hellblade-senua-s-sacrifice-235",
+      "matchedName": "Hellblade: Senua's Sacrifice",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/hellblade-senua-s-sacrifice-235.png"
+    },
+    {
+      "name": "Hindsight 20/20 Wrath of the Raakshasa",
+      "slug": "hindsight-20-20-wrath-of-the-raakshasa-377",
+      "matchedName": "Hindsight 20/20 - Wrath of the Raakshasa",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/hindsight-20-20-wrath-of-the-raakshasa-377.png"
+    },
+    {
+      "name": "Hitman 2",
+      "slug": "hitman-2-488",
+      "matchedName": "HITMAN 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/hitman-2-488.png"
+    },
+    {
+      "name": "Hitman Game of the Year Edition",
+      "slug": "hitman-game-of-the-year-edition-293",
+      "matchedName": "Hitman: Game of the Year Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/hitman-game-of-the-year-edition-293.png"
+    },
+    {
+      "name": "Hollow Knight Voidheart Edition",
+      "slug": "hollow-knight-voidheart-edition-122",
+      "matchedName": "Hollow Knight: Voidheart Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/hollow-knight-voidheart-edition-122.png"
+    },
+    {
+      "name": "Homefront The Revolution Freedom Fighter Bundle",
+      "slug": "homefront-the-revolution-freedom-fighter-bundle-551",
+      "matchedName": "Homefront: The Revolution",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/homefront-the-revolution-freedom-fighter-bundle-551.png"
+    },
+    {
+      "name": "Hot Wheels Unleashed",
+      "slug": "hot-wheels-unleashed-441",
+      "matchedName": "HOT WHEELS UNLEASHED™",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/hot-wheels-unleashed-441.png"
+    },
+    {
+      "name": "How to Survive Storm Warning Edition",
+      "slug": "how-to-survive-storm-warning-edition-394",
+      "matchedName": "How to Survive: Storm Warning Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/how-to-survive-storm-warning-edition-394.png"
+    },
+    {
+      "name": "Human Fall Flat",
+      "slug": "human-fall-flat-044",
+      "matchedName": "Human: Fall Flat",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/human-fall-flat-044.png"
+    },
+    {
+      "name": "Hunting Simulator 2",
+      "slug": "hunting-simulator-2-597",
+      "matchedName": "Hunting Simulator 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/hunting-simulator-2-597.png"
+    },
+    {
+      "name": "Ice Age Scrat's Nutty Adventure",
+      "slug": "ice-age-scrat-s-nutty-adventure-554",
+      "matchedName": "Ice Age: Scrat's Nutty Adventure",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/ice-age-scrat-s-nutty-adventure-554.png"
+    },
+    {
+      "name": "Immortals Fenyx Rising",
+      "slug": "immortals-fenyx-rising-161",
+      "matchedName": "Immortals: Fenyx Rising",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/immortals-fenyx-rising-161.png"
+    },
+    {
+      "name": "Injustice 2 Legendary Edition",
+      "slug": "injustice-2-legendary-edition-225",
+      "matchedName": "Injustice 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/injustice-2-legendary-edition-225.png"
+    },
+    {
+      "name": "Inside / Limbo",
+      "slug": "inside-limbo-255",
+      "matchedName": "INSIDE",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/inside-limbo-255.png"
+    },
+    {
+      "name": "Into the Belly of the Beast",
+      "slug": "into-the-belly-of-the-beast-333",
+      "matchedName": "Into the Belly of the Beast",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/into-the-belly-of-the-beast-333.png"
+    },
+    {
+      "name": "It Takes Two",
+      "slug": "it-takes-two-535",
+      "matchedName": "It Takes Two",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/it-takes-two-535.png"
+    },
+    {
+      "name": "It Takes Two",
+      "slug": "it-takes-two-314",
+      "matchedName": "It Takes Two",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/it-takes-two-314.png"
+    },
+    {
+      "name": "John Wick Hex",
+      "slug": "john-wick-hex-610",
+      "matchedName": "John Wick Hex",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/john-wick-hex-610.png"
+    },
+    {
+      "name": "Just Cause 3",
+      "slug": "just-cause-3-187",
+      "matchedName": "Just Cause 3",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/just-cause-3-187.png"
+    },
+    {
+      "name": "Just Cause 4 Reloaded",
+      "slug": "just-cause-4-reloaded-592",
+      "matchedName": "Just Cause 4",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/just-cause-4-reloaded-592.png"
+    },
+    {
+      "name": "Killer Instinct Definitive Edition",
+      "slug": "killer-instinct-definitive-edition-102",
+      "matchedName": "Killer Instinct",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/killer-instinct-definitive-edition-102.png"
+    },
+    {
+      "name": "Killing Floor 2",
+      "slug": "killing-floor-2-378",
+      "matchedName": "Killing Floor 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/killing-floor-2-378.jpg"
+    },
+    {
+      "name": "Kingdom Come Deliverance",
+      "slug": "kingdom-come-deliverance-206",
+      "matchedName": "Kingdom Come: Deliverance",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/kingdom-come-deliverance-206.png"
+    },
+    {
+      "name": "Kingdoms of Amalur Re-Reckoning",
+      "slug": "kingdoms-of-amalur-re-reckoning-108",
+      "matchedName": "Kingdoms of Amalur: Re-Reckoning",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/kingdoms-of-amalur-re-reckoning-108.jpg"
+    },
+    {
+      "name": "Kingdoms of Amalur Re-Reckoning Fate Edition",
+      "slug": "kingdoms-of-amalur-re-reckoning-fate-edition-316",
+      "matchedName": "Kingdoms of Amalur: Re-Reckoning",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/kingdoms-of-amalur-re-reckoning-fate-edition-316.jpg"
+    },
+    {
+      "name": "L.A. Noire",
+      "slug": "l-a-noire-623",
+      "matchedName": "L.A. Noire",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/l-a-noire-623.png"
+    },
+    {
+      "name": "Lara Croft and the Temple of Osiris",
+      "slug": "lara-croft-and-the-temple-of-osiris-426",
+      "matchedName": "Lara Croft and the Temple of Osiris",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/lara-croft-and-the-temple-of-osiris-426.png"
+    },
+    {
+      "name": "Layers of Fear",
+      "slug": "layers-of-fear-008",
+      "matchedName": "Layers of Fear",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/layers-of-fear-008.png"
+    },
+    {
+      "name": "Layers of Fear",
+      "slug": "layers-of-fear-544",
+      "matchedName": "Layers of Fear",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/layers-of-fear-544.png"
+    },
+    {
+      "name": "Layers of Fear Masterpiece Edition",
+      "slug": "layers-of-fear-masterpiece-edition-497",
+      "matchedName": "Layers of Fear",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/layers-of-fear-masterpiece-edition-497.png"
+    },
+    {
+      "name": "Layers of Fear Observer Bundle",
+      "slug": "layers-of-fear-observer-bundle-105",
+      "matchedName": "Layers of Fear",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/layers-of-fear-observer-bundle-105.png"
+    },
+    {
+      "name": "LEGO Batman 3 Beyond Gotham",
+      "slug": "lego-batman-3-beyond-gotham-339",
+      "matchedName": "LEGO Batman 3: Beyond Gotham",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/lego-batman-3-beyond-gotham-339.png"
+    },
+    {
+      "name": "LEGO Batman 3 Beyond Gotham",
+      "slug": "lego-batman-3-beyond-gotham-344",
+      "matchedName": "LEGO Batman 3: Beyond Gotham",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/lego-batman-3-beyond-gotham-344.png"
+    },
+    {
+      "name": "LEGO City Undercover",
+      "slug": "lego-city-undercover-261",
+      "matchedName": "LEGO City Undercover",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/lego-city-undercover-261.jpg"
+    },
+    {
+      "name": "LEGO DC Super-Villains",
+      "slug": "lego-dc-super-villains-540",
+      "matchedName": "LEGO DC Super-Villains",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/lego-dc-super-villains-540.jpg"
+    },
+    {
+      "name": "LEGO DC Super-Villains Deluxe Edition",
+      "slug": "lego-dc-super-villains-deluxe-edition-418",
+      "matchedName": "LEGO DC Super-Villains",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/lego-dc-super-villains-deluxe-edition-418.jpg"
+    },
+    {
+      "name": "LEGO Harry Potter Collection",
+      "slug": "lego-harry-potter-collection-145",
+      "matchedName": "LEGO Harry Potter Collection",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/lego-harry-potter-collection-145.png"
+    },
+    {
+      "name": "LEGO Marvel Avengers Deluxe Edition",
+      "slug": "lego-marvel-avengers-deluxe-edition-170",
+      "matchedName": "LEGO Marvel's Avengers",
+      "similarity": 0.75,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/lego-marvel-avengers-deluxe-edition-170.jpg"
+    },
+    {
+      "name": "LEGO Marvel Super Heroes",
+      "slug": "lego-marvel-super-heroes-242",
+      "matchedName": "LEGO Marvel Super Heroes",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/lego-marvel-super-heroes-242.png"
+    },
+    {
+      "name": "LEGO Marvel Super Heroes 2",
+      "slug": "lego-marvel-super-heroes-2-489",
+      "matchedName": "LEGO Marvel Super Heroes 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/lego-marvel-super-heroes-2-489.jpg"
+    },
+    {
+      "name": "LEGO Marvel Super Heroes 2 Deluxe Edition",
+      "slug": "lego-marvel-super-heroes-2-deluxe-edition-624",
+      "matchedName": "LEGO Marvel Super Heroes 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/lego-marvel-super-heroes-2-deluxe-edition-624.jpg"
+    },
+    {
+      "name": "LEGO Marvel's Avengers",
+      "slug": "lego-marvel-s-avengers-181",
+      "matchedName": "LEGO Marvel's Avengers",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/lego-marvel-s-avengers-181.jpg"
+    },
+    {
+      "name": "LEGO The Hobbit",
+      "slug": "lego-the-hobbit-362",
+      "matchedName": "LEGO The Hobbit",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/lego-the-hobbit-362.png"
+    },
+    {
+      "name": "LEGO The Incredibles",
+      "slug": "lego-the-incredibles-151",
+      "matchedName": "LEGO The Incredibles",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/lego-the-incredibles-151.png"
+    },
+    {
+      "name": "LEGO Worlds",
+      "slug": "lego-worlds-464",
+      "matchedName": "LEGO Worlds",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/lego-worlds-464.jpg"
+    },
+    {
+      "name": "Life is Strange 2",
+      "slug": "life-is-strange-2-620",
+      "matchedName": "Life Is Strange 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/life-is-strange-2-620.png"
+    },
+    {
+      "name": "Life is Strange Before the Storm Complete Season",
+      "slug": "life-is-strange-before-the-storm-complete-season-321",
+      "matchedName": "Life is Strange: Before the Storm",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/life-is-strange-before-the-storm-complete-season-321.png"
+    },
+    {
+      "name": "Life is Strange Before the Storm Deluxe Edition",
+      "slug": "life-is-strange-before-the-storm-deluxe-edition-400",
+      "matchedName": "Life Is Strange: Before the Storm - Deluxe Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/life-is-strange-before-the-storm-deluxe-edition-400.png"
+    },
+    {
+      "name": "Life is Strange Complete Season Episodes 1-5",
+      "slug": "life-is-strange-complete-season-episodes-1-5-095",
+      "matchedName": "Life Is Strange",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/life-is-strange-complete-season-episodes-1-5-095.jpg"
+    },
+    {
+      "name": "Little Mouse's Encyclopedia",
+      "slug": "little-mouse-s-encyclopedia-179",
+      "matchedName": "Little Mouse's Encyclopedia",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/little-mouse-s-encyclopedia-179.jpg"
+    },
+    {
+      "name": "Little Nightmares II",
+      "slug": "little-nightmares-ii-247",
+      "matchedName": "Little Nightmares II",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/little-nightmares-ii-247.png"
+    },
+    {
+      "name": "Livelock",
+      "slug": "livelock-034",
+      "matchedName": "Livelock",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/livelock-034.jpg"
+    },
+    {
+      "name": "Lornsword Winter Chronicle",
+      "slug": "lornsword-winter-chronicle-131",
+      "matchedName": "Lornsword Winter Chronicle",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/lornsword-winter-chronicle-131.jpg"
+    },
+    {
+      "name": "Mad Max",
+      "slug": "mad-max-127",
+      "matchedName": "Mad Max",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/mad-max-127.png"
+    },
+    {
+      "name": "Madden NFL 17",
+      "slug": "madden-nfl-17-100",
+      "matchedName": "Madden NFL 17",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/madden-nfl-17-100.png"
+    },
+    {
+      "name": "Madden NFL 20",
+      "slug": "madden-nfl-20-392",
+      "matchedName": "Madden NFL 20",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/madden-nfl-20-392.png"
+    },
+    {
+      "name": "Madden NFL 21",
+      "slug": "madden-nfl-21-455",
+      "matchedName": "Madden NFL 21",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/madden-nfl-21-455.png"
+    },
+    {
+      "name": "Mafia III Definitive Edition",
+      "slug": "mafia-iii-definitive-edition-603",
+      "matchedName": "Mafia III: Definitive Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/mafia-iii-definitive-edition-603.png"
+    },
+    {
+      "name": "Mafia III Definitive Edition",
+      "slug": "mafia-iii-definitive-edition-515",
+      "matchedName": "Mafia III: Definitive Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/mafia-iii-definitive-edition-515.png"
+    },
+    {
+      "name": "Mafia Trilogy",
+      "slug": "mafia-trilogy-286",
+      "matchedName": "Mafia",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/mafia-trilogy-286.png"
+    },
+    {
+      "name": "Maneater",
+      "slug": "maneater-406",
+      "matchedName": "Maneater",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/maneater-406.png"
+    },
+    {
+      "name": "Mass Effect Andromeda Deluxe Recruit Edition + Dragon Age Inquisition GOTY",
+      "slug": "mass-effect-andromeda-deluxe-recruit-edition-dragon-age-inquisition-goty-311",
+      "matchedName": "Mass Effect: Andromeda",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/mass-effect-andromeda-deluxe-recruit-edition-dragon-age-inquisition-goty-311.png"
+    },
+    {
+      "name": "Max The Curse of Brotherhood",
+      "slug": "max-the-curse-of-brotherhood-195",
+      "matchedName": "Max: The Curse of Brotherhood",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/max-the-curse-of-brotherhood-195.png"
+    },
+    {
+      "name": "Max The Curse of Brotherhood",
+      "slug": "max-the-curse-of-brotherhood-528",
+      "matchedName": "Max: The Curse of Brotherhood",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/max-the-curse-of-brotherhood-528.png"
+    },
+    {
+      "name": "MechWarrior 5 Mercenaries",
+      "slug": "mechwarrior-5-mercenaries-071",
+      "matchedName": "Mechwarrior 5: Mercenaries",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/mechwarrior-5-mercenaries-071.png"
+    },
+    {
+      "name": "Mega Man 11",
+      "slug": "mega-man-11-046",
+      "matchedName": "Mega Man 11",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/mega-man-11-046.png"
+    },
+    {
+      "name": "Mega Man Legacy Collection",
+      "slug": "mega-man-legacy-collection-403",
+      "matchedName": "Mega Man Legacy Collection",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/mega-man-legacy-collection-403.png"
+    },
+    {
+      "name": "Mega Man X Legacy Collection",
+      "slug": "mega-man-x-legacy-collection-306",
+      "matchedName": "Mega Man X Legacy Collection",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/mega-man-x-legacy-collection-306.png"
+    },
+    {
+      "name": "Mega Man X Legacy Collection 2",
+      "slug": "mega-man-x-legacy-collection-2-043",
+      "matchedName": "Mega Man X Legacy Collection 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/mega-man-x-legacy-collection-2-043.png"
+    },
+    {
+      "name": "Melty Blood Type Lumina",
+      "slug": "melty-blood-type-lumina-478",
+      "matchedName": "Melty Blood: Type Lumina",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/melty-blood-type-lumina-478.jpg"
+    },
+    {
+      "name": "Metro 2033 Redux",
+      "slug": "metro-2033-redux-194",
+      "matchedName": "Metro 2033 Redux",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/metro-2033-redux-194.jpg"
+    },
+    {
+      "name": "Metro Exodus Gold Edition",
+      "slug": "metro-exodus-gold-edition-178",
+      "matchedName": "Metro Exodus",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/metro-exodus-gold-edition-178.jpg"
+    },
+    {
+      "name": "Metro Last Light Redux",
+      "slug": "metro-last-light-redux-611",
+      "matchedName": "Metro: Last Light Redux",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/metro-last-light-redux-611.jpg"
+    },
+    {
+      "name": "Metro Redux",
+      "slug": "metro-redux-617",
+      "matchedName": "Metro 2033 Redux",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/metro-redux-617.jpg"
+    },
+    {
+      "name": "Microsoft Flight Simulator",
+      "slug": "microsoft-flight-simulator-227",
+      "matchedName": "Microsoft Flight Simulator",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/microsoft-flight-simulator-227.png"
+    },
+    {
+      "name": "Middle-earth Shadow of War",
+      "slug": "middle-earth-shadow-of-war-601",
+      "matchedName": "Middle-earth: Shadow of War",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/middle-earth-shadow-of-war-601.png"
+    },
+    {
+      "name": "Middle-earth Shadow of War Definitive Edition",
+      "slug": "middle-earth-shadow-of-war-definitive-edition-101",
+      "matchedName": "Middle-earth: Shadow of War",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/middle-earth-shadow-of-war-definitive-edition-101.png"
+    },
+    {
+      "name": "Mighty No. 9",
+      "slug": "mighty-no-9-589",
+      "matchedName": "Mighty No. 9",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/mighty-no-9-589.png"
+    },
+    {
+      "name": "Minecraft",
+      "slug": "minecraft-419",
+      "matchedName": "Minecraft",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/minecraft-419.png"
+    },
+    {
+      "name": "Minecraft",
+      "slug": "minecraft-150",
+      "matchedName": "Minecraft",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/minecraft-150.png"
+    },
+    {
+      "name": "Minecraft",
+      "slug": "minecraft-558",
+      "matchedName": "Minecraft",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/minecraft-558.png"
+    },
+    {
+      "name": "Minecraft Dungeons",
+      "slug": "minecraft-dungeons-351",
+      "matchedName": "Minecraft Dungeons",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/minecraft-dungeons-351.png"
+    },
+    {
+      "name": "Mirror's Edge Catalyst",
+      "slug": "mirror-s-edge-catalyst-500",
+      "matchedName": "Mirror's Edge: Catalyst",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/mirror-s-edge-catalyst-500.png"
+    },
+    {
+      "name": "Monopoly Family Fun Pack",
+      "slug": "monopoly-family-fun-pack-359",
+      "matchedName": "Monopoly",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/monopoly-family-fun-pack-359.png"
+    },
+    {
+      "name": "Monopoly Plus",
+      "slug": "monopoly-plus-372",
+      "matchedName": "Monopoly Plus",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/monopoly-plus-372.png"
+    },
+    {
+      "name": "Monster Hunter World",
+      "slug": "monster-hunter-world-302",
+      "matchedName": "Monster Hunter: World",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/monster-hunter-world-302.png"
+    },
+    {
+      "name": "Morkredd",
+      "slug": "morkredd-538",
+      "matchedName": "Morkredd",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/morkredd-538.png"
+    },
+    {
+      "name": "Mortal Kombat 11",
+      "slug": "mortal-kombat-11-508",
+      "matchedName": "Mortal Kombat 11",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/mortal-kombat-11-508.png"
+    },
+    {
+      "name": "Mortal Kombat 11 Ultimate",
+      "slug": "mortal-kombat-11-ultimate-033",
+      "matchedName": "Mortal Kombat 11",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/mortal-kombat-11-ultimate-033.png"
+    },
+    {
+      "name": "Mortal Kombat X",
+      "slug": "mortal-kombat-x-124",
+      "matchedName": "Mortal Kombat X",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/mortal-kombat-x-124.jpg"
+    },
+    {
+      "name": "MotoGP 21",
+      "slug": "motogp-21-454",
+      "matchedName": "MotoGP 21",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/motogp-21-454.png"
+    },
+    {
+      "name": "Mount & Blade Warband",
+      "slug": "mount-blade-warband-493",
+      "matchedName": "Mount & Blade: Warband",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/mount-blade-warband-493.png"
+    },
+    {
+      "name": "Ms. Splosion Man",
+      "slug": "ms-splosion-man-050",
+      "matchedName": "Ms. Splosion Man",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/ms-splosion-man-050.png"
+    },
+    {
+      "name": "MudRunner a Spintires Game",
+      "slug": "mudrunner-a-spintires-game-049",
+      "matchedName": "Expeditions: A MudRunner Game",
+      "similarity": 0.75,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/mudrunner-a-spintires-game-049.png"
+    },
+    {
+      "name": "MudRunner American Wilds",
+      "slug": "mudrunner-american-wilds-605",
+      "matchedName": "MudRunner American Wilds",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/mudrunner-american-wilds-605.jpg"
+    },
+    {
+      "name": "Murdered Soul Suspect",
+      "slug": "murdered-soul-suspect-405",
+      "matchedName": "MURDERED: SOUL SUSPECT™",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/murdered-soul-suspect-405.png"
+    },
+    {
+      "name": "MX vs ATV Supercross Encore",
+      "slug": "mx-vs-atv-supercross-encore-130",
+      "matchedName": "MX vs. ATV Supercross Encore",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/mx-vs-atv-supercross-encore-130.png"
+    },
+    {
+      "name": "Naruto Shippuden Ultimate Ninja Storm 3 Full Burst",
+      "slug": "naruto-shippuden-ultimate-ninja-storm-3-full-burst-404",
+      "matchedName": "Naruto Shippūden: Ultimate Ninja Storm 3 - Full Burst",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/naruto-shippuden-ultimate-ninja-storm-3-full-burst-404.png"
+    },
+    {
+      "name": "Naruto Shippuden Ultimate Ninja Storm 4",
+      "slug": "naruto-shippuden-ultimate-ninja-storm-4-521",
+      "matchedName": "Naruto Shippuden: Ultimate Ninja STORM 4",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/naruto-shippuden-ultimate-ninja-storm-4-521.png"
+    },
+    {
+      "name": "Naruto Shippuden Ultimate Ninja Storm Legacy",
+      "slug": "naruto-shippuden-ultimate-ninja-storm-legacy-511",
+      "matchedName": "Naruto Shippuden: Ultimate Ninja STORM Legacy",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/naruto-shippuden-ultimate-ninja-storm-legacy-511.png"
+    },
+    {
+      "name": "Naruto Shippuden Ultimate Ninja Storm Trilogy",
+      "slug": "naruto-shippuden-ultimate-ninja-storm-trilogy-248",
+      "matchedName": "Naruto Shippuden: Ultimate Ninja STORM Trilogy",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/naruto-shippuden-ultimate-ninja-storm-trilogy-248.png"
+    },
+    {
+      "name": "Naruto Ultimate Ninja Storm",
+      "slug": "naruto-ultimate-ninja-storm-118",
+      "matchedName": "Naruto: Ultimate Ninja STORM",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/naruto-ultimate-ninja-storm-118.png"
+    },
+    {
+      "name": "NASCAR Heat 3 2019 Ultimate Edition",
+      "slug": "nascar-heat-3-2019-ultimate-edition-056",
+      "matchedName": "NASCAR Heat 3",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/nascar-heat-3-2019-ultimate-edition-056.jpg"
+    },
+    {
+      "name": "NASCAR Heat 4",
+      "slug": "nascar-heat-4-347",
+      "matchedName": "NASCAR Heat 4",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/nascar-heat-4-347.png"
+    },
+    {
+      "name": "NASCAR Heat 4 Gold Edition",
+      "slug": "nascar-heat-4-gold-edition-599",
+      "matchedName": "NASCAR Heat 4",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/nascar-heat-4-gold-edition-599.png"
+    },
+    {
+      "name": "NASCAR Heat 5",
+      "slug": "nascar-heat-5-436",
+      "matchedName": "NASCAR Heat 5",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/nascar-heat-5-436.png"
+    },
+    {
+      "name": "NBA 2K Playgrounds 2",
+      "slug": "nba-2k-playgrounds-2-218",
+      "matchedName": "NBA 2K Playgrounds 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/nba-2k-playgrounds-2-218.png"
+    },
+    {
+      "name": "NBA 2K19",
+      "slug": "nba-2k19-058",
+      "matchedName": "NBA 2K19",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/nba-2k19-058.png"
+    },
+    {
+      "name": "NBA 2K20",
+      "slug": "nba-2k20-512",
+      "matchedName": "NBA 2K20",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/nba-2k20-512.png"
+    },
+    {
+      "name": "NBA 2K22",
+      "slug": "nba-2k22-440",
+      "matchedName": "NBA 2K22",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/nba-2k22-440.png"
+    },
+    {
+      "name": "Need for Speed",
+      "slug": "need-for-speed-527",
+      "matchedName": "Need for Speed",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/need-for-speed-527.png"
+    },
+    {
+      "name": "Need for Speed Heat",
+      "slug": "need-for-speed-heat-591",
+      "matchedName": "Need for Speed: Heat",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/need-for-speed-heat-591.png"
+    },
+    {
+      "name": "Need for Speed Heat Deluxe Edition",
+      "slug": "need-for-speed-heat-deluxe-edition-137",
+      "matchedName": "Need for Speed: Heat",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/need-for-speed-heat-deluxe-edition-137.png"
+    },
+    {
+      "name": "Need for Speed Hot Pursuit Remastered",
+      "slug": "need-for-speed-hot-pursuit-remastered-459",
+      "matchedName": "Need for Speed: Hot Pursuit Remastered",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/need-for-speed-hot-pursuit-remastered-459.png"
+    },
+    {
+      "name": "Need for Speed Payback",
+      "slug": "need-for-speed-payback-573",
+      "matchedName": "Need for Speed: Payback",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/need-for-speed-payback-573.png"
+    },
+    {
+      "name": "Need for Speed Payback Deluxe Edition",
+      "slug": "need-for-speed-payback-deluxe-edition-525",
+      "matchedName": "Need for Speed: Payback",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/need-for-speed-payback-deluxe-edition-525.png"
+    },
+    {
+      "name": "Need for Speed Plants vs Zombies GW2 Unravel Three Game Bundle",
+      "slug": "need-for-speed-plants-vs-zombies-gw2-unravel-three-game-bundle-138",
+      "matchedName": "Need for Speed",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/need-for-speed-plants-vs-zombies-gw2-unravel-three-game-bundle-138.png"
+    },
+    {
+      "name": "Need for Speed Rivals",
+      "slug": "need-for-speed-rivals-238",
+      "matchedName": "Need for Speed: Rivals",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/need-for-speed-rivals-238.png"
+    },
+    {
+      "name": "Need for Speed Ultimate Bundle",
+      "slug": "need-for-speed-ultimate-bundle-305",
+      "matchedName": "Need for Speed",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/need-for-speed-ultimate-bundle-305.png"
+    },
+    {
+      "name": "Neighbours Back From Hell",
+      "slug": "neighbours-back-from-hell-184",
+      "matchedName": "Neighbours back From Hell",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/neighbours-back-from-hell-184.png"
+    },
+    {
+      "name": "Nickelodeon Kart Racers",
+      "slug": "nickelodeon-kart-racers-241",
+      "matchedName": "Nickelodeon Kart Racers",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/nickelodeon-kart-racers-241.png"
+    },
+    {
+      "name": "No Man's Sky",
+      "slug": "no-man-s-sky-074",
+      "matchedName": "No Man's Sky",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/no-man-s-sky-074.png"
+    },
+    {
+      "name": "Observer",
+      "slug": "observer-312",
+      "matchedName": "Observer",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/observer-312.png"
+    },
+    {
+      "name": "One Piece Burning Blood",
+      "slug": "one-piece-burning-blood-506",
+      "matchedName": "One Piece: Burning Blood",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/one-piece-burning-blood-506.jpg"
+    },
+    {
+      "name": "Orcs Must Die! 3",
+      "slug": "orcs-must-die-3-063",
+      "matchedName": "Orcs Must Die! 3",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/orcs-must-die-3-063.png"
+    },
+    {
+      "name": "Ori and the Blind Forest",
+      "slug": "ori-and-the-blind-forest-575",
+      "matchedName": "Ori and the Blind Forest",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/ori-and-the-blind-forest-575.png"
+    },
+    {
+      "name": "Ori and the Blind Forest Definitive Edition",
+      "slug": "ori-and-the-blind-forest-definitive-edition-228",
+      "matchedName": "Ori and the Blind Forest: Definitive Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/ori-and-the-blind-forest-definitive-edition-228.jpg"
+    },
+    {
+      "name": "Ori and the Will of the Wisps",
+      "slug": "ori-and-the-will-of-the-wisps-045",
+      "matchedName": "Ori and the Will of the Wisps",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/ori-and-the-will-of-the-wisps-045.png"
+    },
+    {
+      "name": "Outer Wilds",
+      "slug": "outer-wilds-427",
+      "matchedName": "Outer Wilds",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/outer-wilds-427.png"
+    },
+    {
+      "name": "Outlast",
+      "slug": "outlast-288",
+      "matchedName": "Outlast",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/outlast-288.png"
+    },
+    {
+      "name": "Outlast + Outlast Whistleblower",
+      "slug": "outlast-outlast-whistleblower-579",
+      "matchedName": "Outlast: Whistleblower",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/outlast-outlast-whistleblower-579.jpg"
+    },
+    {
+      "name": "Outlast II",
+      "slug": "outlast-ii-456",
+      "matchedName": "Outlast",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/outlast-ii-456.png"
+    },
+    {
+      "name": "Party Hard 2",
+      "slug": "party-hard-2-204",
+      "matchedName": "Party Hard 2 ",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/party-hard-2-204.png"
+    },
+    {
+      "name": "Pathologic 2",
+      "slug": "pathologic-2-125",
+      "matchedName": "Pathologic 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/pathologic-2-125.png"
+    },
+    {
+      "name": "Pathologic 2 Bundle",
+      "slug": "pathologic-2-bundle-020",
+      "matchedName": "Pathologic 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/pathologic-2-bundle-020.png"
+    },
+    {
+      "name": "Paw Patrol On a Roll!",
+      "slug": "paw-patrol-on-a-roll-460",
+      "matchedName": "Paw Patrol: On A Roll",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/paw-patrol-on-a-roll-460.png"
+    },
+    {
+      "name": "Payday 2 Crimewave Edition",
+      "slug": "payday-2-crimewave-edition-534",
+      "matchedName": "Payday 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/payday-2-crimewave-edition-534.png"
+    },
+    {
+      "name": "Payday 2 Crimewave Edition The Big Score",
+      "slug": "payday-2-crimewave-edition-the-big-score-518",
+      "matchedName": "Payday 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/payday-2-crimewave-edition-the-big-score-518.png"
+    },
+    {
+      "name": "Payday 2 F*ck Cancer Big Mike Mask",
+      "slug": "payday-2-f-ck-cancer-big-mike-mask-335",
+      "matchedName": "Payday 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/payday-2-f-ck-cancer-big-mike-mask-335.png"
+    },
+    {
+      "name": "PC Building Simulator",
+      "slug": "pc-building-simulator-543",
+      "matchedName": "PC Building Simulator",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/pc-building-simulator-543.png"
+    },
+    {
+      "name": "Peggle 2",
+      "slug": "peggle-2-399",
+      "matchedName": "Peggle 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/peggle-2-399.jpg"
+    },
+    {
+      "name": "PGA Tour 2K21",
+      "slug": "pga-tour-2k21-501",
+      "matchedName": "PGA TOUR 2K21",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/pga-tour-2k21-501.png"
+    },
+    {
+      "name": "Planet Coaster Console Edition",
+      "slug": "planet-coaster-console-edition-211",
+      "matchedName": "Planet Coaster",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/planet-coaster-console-edition-211.png"
+    },
+    {
+      "name": "Planet Coaster Deluxe Edition",
+      "slug": "planet-coaster-deluxe-edition-348",
+      "matchedName": "Planet Coaster",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/planet-coaster-deluxe-edition-348.png"
+    },
+    {
+      "name": "Planet Coaster Spooky & Adventure Bundle",
+      "slug": "planet-coaster-spooky-adventure-bundle-358",
+      "matchedName": "Planet Coaster",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/planet-coaster-spooky-adventure-bundle-358.png"
+    },
+    {
+      "name": "Plants vs Zombies Garden Warfare",
+      "slug": "plants-vs-zombies-garden-warfare-117",
+      "matchedName": "Plants vs. Zombies: Garden Warfare",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/plants-vs-zombies-garden-warfare-117.png"
+    },
+    {
+      "name": "Plants vs Zombies Garden Warfare 2",
+      "slug": "plants-vs-zombies-garden-warfare-2-475",
+      "matchedName": "Plants vs. Zombies: Garden Warfare 2 - Deluxe Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/plants-vs-zombies-garden-warfare-2-475.png"
+    },
+    {
+      "name": "Prey",
+      "slug": "prey-542",
+      "matchedName": "Prey",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/prey-542.png"
+    },
+    {
+      "name": "Project Cars",
+      "slug": "project-cars-446",
+      "matchedName": "Project CARS",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/project-cars-446.png"
+    },
+    {
+      "name": "Project Cars 2",
+      "slug": "project-cars-2-324",
+      "matchedName": "Project CARS 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/project-cars-2-324.jpg"
+    },
+    {
+      "name": "Project Wingman",
+      "slug": "project-wingman-267",
+      "matchedName": "Project Wingman",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/project-wingman-267.png"
+    },
+    {
+      "name": "Prototype",
+      "slug": "prototype-143",
+      "matchedName": "Prototype",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/prototype-143.png"
+    },
+    {
+      "name": "Prototype 2",
+      "slug": "prototype-2-609",
+      "matchedName": "Prototype 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/prototype-2-609.png"
+    },
+    {
+      "name": "Prototype Biohazard Bundle",
+      "slug": "prototype-biohazard-bundle-360",
+      "matchedName": "Prototype",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/prototype-biohazard-bundle-360.png"
+    },
+    {
+      "name": "Rabbids Invasion The Interactive TV Show",
+      "slug": "rabbids-invasion-the-interactive-tv-show-465",
+      "matchedName": "Rabbids Invasion: The Interactive TV Show",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/rabbids-invasion-the-interactive-tv-show-465.png"
+    },
+    {
+      "name": "Rare Replay",
+      "slug": "rare-replay-059",
+      "matchedName": "Rare Replay",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/rare-replay-059.png"
+    },
+    {
+      "name": "Recompile",
+      "slug": "recompile-520",
+      "matchedName": "Recompile",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/recompile-520.jpg"
+    },
+    {
+      "name": "ReCore Definitive Edition",
+      "slug": "recore-definitive-edition-452",
+      "matchedName": "ReCore: Definitive Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/recore-definitive-edition-452.jpg"
+    },
+    {
+      "name": "Red Dead Online",
+      "slug": "red-dead-online-505",
+      "matchedName": "Red Dead Online",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/red-dead-online-505.jpg"
+    },
+    {
+      "name": "Red Dead Redemption 2",
+      "slug": "red-dead-redemption-2-111",
+      "matchedName": "Red Dead Redemption II",
+      "similarity": 0.75,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/red-dead-redemption-2-111.png"
+    },
+    {
+      "name": "Refunct",
+      "slug": "refunct-207",
+      "matchedName": "Refunct",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/refunct-207.png"
+    },
+    {
+      "name": "Remnant From the Ashes",
+      "slug": "remnant-from-the-ashes-177",
+      "matchedName": "Remnant: From the Ashes",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/remnant-from-the-ashes-177.jpg"
+    },
+    {
+      "name": "Remnant From the Ashes",
+      "slug": "remnant-from-the-ashes-183",
+      "matchedName": "Remnant: From the Ashes",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/remnant-from-the-ashes-183.jpg"
+    },
+    {
+      "name": "Resident Evil",
+      "slug": "resident-evil-226",
+      "matchedName": "Resident Evil",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/resident-evil-226.png"
+    },
+    {
+      "name": "Resident Evil 0",
+      "slug": "resident-evil-0-035",
+      "matchedName": "Resident Evil 0",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/resident-evil-0-035.png"
+    },
+    {
+      "name": "Resident Evil 2",
+      "slug": "resident-evil-2-024",
+      "matchedName": "Resident Evil 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/resident-evil-2-024.png"
+    },
+    {
+      "name": "Resident Evil 2",
+      "slug": "resident-evil-2-401",
+      "matchedName": "Resident Evil 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/resident-evil-2-401.png"
+    },
+    {
+      "name": "Resident Evil 2 Deluxe Edition",
+      "slug": "resident-evil-2-deluxe-edition-524",
+      "matchedName": "Resident Evil 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/resident-evil-2-deluxe-edition-524.png"
+    },
+    {
+      "name": "Resident Evil 3",
+      "slug": "resident-evil-3-482",
+      "matchedName": "Resident Evil 3",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/resident-evil-3-482.png"
+    },
+    {
+      "name": "Resident Evil 4",
+      "slug": "resident-evil-4-180",
+      "matchedName": "Resident Evil 4",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/resident-evil-4-180.png"
+    },
+    {
+      "name": "Resident Evil 5",
+      "slug": "resident-evil-5-007",
+      "matchedName": "Resident Evil 5",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/resident-evil-5-007.png"
+    },
+    {
+      "name": "Resident Evil 6",
+      "slug": "resident-evil-6-110",
+      "matchedName": "Resident Evil 6",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/resident-evil-6-110.png"
+    },
+    {
+      "name": "Resident Evil 7 Biohazard Gold Edition",
+      "slug": "resident-evil-7-biohazard-gold-edition-197",
+      "matchedName": "Resident Evil 7: Biohazard",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/resident-evil-7-biohazard-gold-edition-197.jpg"
+    },
+    {
+      "name": "Resident Evil Revelations",
+      "slug": "resident-evil-revelations-106",
+      "matchedName": "Resident Evil: Revelations",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/resident-evil-revelations-106.png"
+    },
+    {
+      "name": "Resident Evil Revelations + Revelations 2",
+      "slug": "resident-evil-revelations-revelations-2-410",
+      "matchedName": "Resident Evil Revelations 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/resident-evil-revelations-revelations-2-410.png"
+    },
+    {
+      "name": "Resident Evil Revelations 2",
+      "slug": "resident-evil-revelations-2-468",
+      "matchedName": "Resident Evil Revelations 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/resident-evil-revelations-2-468.png"
+    },
+    {
+      "name": "Resident Evil Triple Pack",
+      "slug": "resident-evil-triple-pack-447",
+      "matchedName": "Resident Evil",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/resident-evil-triple-pack-447.png"
+    },
+    {
+      "name": "Retro Machina",
+      "slug": "retro-machina-254",
+      "matchedName": "Retro Machina",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/retro-machina-254.png"
+    },
+    {
+      "name": "Rise Eterna",
+      "slug": "rise-eterna-021",
+      "matchedName": "Rise Eterna",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/rise-eterna-021.jpg"
+    },
+    {
+      "name": "Rise of the Tomb Raider 20 Year Celebration",
+      "slug": "rise-of-the-tomb-raider-20-year-celebration-449",
+      "matchedName": "Rise of the Tomb Raider",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/rise-of-the-tomb-raider-20-year-celebration-449.png"
+    },
+    {
+      "name": "Risk of Rain 2",
+      "slug": "risk-of-rain-2-088",
+      "matchedName": "Risk of Rain 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/risk-of-rain-2-088.png"
+    },
+    {
+      "name": "Rogue Company Season One",
+      "slug": "rogue-company-season-one-364",
+      "matchedName": "Rogue Company",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/rogue-company-season-one-364.png"
+    },
+    {
+      "name": "Rogue Stormers",
+      "slug": "rogue-stormers-570",
+      "matchedName": "Rogue Stormers",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/rogue-stormers-570.png"
+    },
+    {
+      "name": "Rogue Wizards",
+      "slug": "rogue-wizards-495",
+      "matchedName": "Rogue Wizards",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/rogue-wizards-495.png"
+    },
+    {
+      "name": "Röki",
+      "slug": "roki-129",
+      "matchedName": "Röki",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/roki-129.png"
+    },
+    {
+      "name": "Rush A Disney Pixar Adventure",
+      "slug": "rush-a-disney-pixar-adventure-016",
+      "matchedName": "RUSH: A Disney • PIXAR Adventure",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/rush-a-disney-pixar-adventure-016.png"
+    },
+    {
+      "name": "Saints Row IV Re-Elected",
+      "slug": "saints-row-iv-re-elected-296",
+      "matchedName": "Saints Row IV",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/saints-row-iv-re-elected-296.png"
+    },
+    {
+      "name": "Saints Row IV Re-Elected & Gat Out of Hell",
+      "slug": "saints-row-iv-re-elected-gat-out-of-hell-380",
+      "matchedName": "Saints Row IV",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/saints-row-iv-re-elected-gat-out-of-hell-380.png"
+    },
+    {
+      "name": "Scribblenauts Mega Pack",
+      "slug": "scribblenauts-mega-pack-133",
+      "matchedName": "Scribblenauts Mega Pack",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/scribblenauts-mega-pack-133.png"
+    },
+    {
+      "name": "Sea of Thieves",
+      "slug": "sea-of-thieves-263",
+      "matchedName": "Sea of Thieves",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/sea-of-thieves-263.png"
+    },
+    {
+      "name": "Sekiro Shadows Die Twice",
+      "slug": "sekiro-shadows-die-twice-546",
+      "matchedName": "Sekiro: Shadows Die Twice",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/sekiro-shadows-die-twice-546.png"
+    },
+    {
+      "name": "Sekiro Shadows Die Twice",
+      "slug": "sekiro-shadows-die-twice-595",
+      "matchedName": "Sekiro: Shadows Die Twice",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/sekiro-shadows-die-twice-595.png"
+    },
+    {
+      "name": "Shadow of the Tomb Raider Definitive Edition",
+      "slug": "shadow-of-the-tomb-raider-definitive-edition-208",
+      "matchedName": "Shadow of the Tomb Raider",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/shadow-of-the-tomb-raider-definitive-edition-208.png"
+    },
+    {
+      "name": "She Sees Red",
+      "slug": "she-sees-red-149",
+      "matchedName": "She Sees Red",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/she-sees-red-149.png"
+    },
+    {
+      "name": "Skater XL",
+      "slug": "skater-xl-146",
+      "matchedName": "Skater XL",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/skater-xl-146.png"
+    },
+    {
+      "name": "Sky Rogue",
+      "slug": "sky-rogue-224",
+      "matchedName": "Sky Rogue",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/sky-rogue-224.png"
+    },
+    {
+      "name": "Sleeping Dogs Definitive Edition",
+      "slug": "sleeping-dogs-definitive-edition-096",
+      "matchedName": "Sleeping Dogs: Definitive Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/sleeping-dogs-definitive-edition-096.png"
+    },
+    {
+      "name": "Slime Rancher",
+      "slug": "slime-rancher-502",
+      "matchedName": "Slime Rancher",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/slime-rancher-502.png"
+    },
+    {
+      "name": "Sniper Elite III Ultimate Edition",
+      "slug": "sniper-elite-iii-ultimate-edition-009",
+      "matchedName": "Sniper Elite 3",
+      "similarity": 0.6666666666666666,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/sniper-elite-iii-ultimate-edition-009.png"
+    },
+    {
+      "name": "Sniper Elite V2 Remastered",
+      "slug": "sniper-elite-v2-remastered-556",
+      "matchedName": "Sniper Elite V2 Remastered",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/sniper-elite-v2-remastered-556.png"
+    },
+    {
+      "name": "SOMA",
+      "slug": "soma-320",
+      "matchedName": "SOMA",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/soma-320.png"
+    },
+    {
+      "name": "South Park The Fractured but Whole",
+      "slug": "south-park-the-fractured-but-whole-439",
+      "matchedName": "South Park The Fractured But Whole",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/south-park-the-fractured-but-whole-439.jpg"
+    },
+    {
+      "name": "Space Engineers",
+      "slug": "space-engineers-112",
+      "matchedName": "Space Engineers",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/space-engineers-112.png"
+    },
+    {
+      "name": "Space Engineers Ultimate Edition",
+      "slug": "space-engineers-ultimate-edition-243",
+      "matchedName": "Space Engineers",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/space-engineers-ultimate-edition-243.png"
+    },
+    {
+      "name": "SpeedRunners",
+      "slug": "speedrunners-442",
+      "matchedName": "SpeedRunners",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/speedrunners-442.png"
+    },
+    {
+      "name": "SpeedRunners Deluxe",
+      "slug": "speedrunners-deluxe-588",
+      "matchedName": "SpeedRunners",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/speedrunners-deluxe-588.png"
+    },
+    {
+      "name": "SpellForce III Soul Harvest",
+      "slug": "spellforce-iii-soul-harvest-352",
+      "matchedName": "SpellForce 3: Soul Harvest",
+      "similarity": 0.75,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/spellforce-iii-soul-harvest-352.png"
+    },
+    {
+      "name": "Spitlings",
+      "slug": "spitlings-134",
+      "matchedName": "Spitlings",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/spitlings-134.png"
+    },
+    {
+      "name": "SpongeBob SquarePants Battle for Bikini Bottom Rehydrated",
+      "slug": "spongebob-squarepants-battle-for-bikini-bottom-rehydrated-353",
+      "matchedName": "SpongeBob SquarePants: Battle for Bikini Bottom - Rehydrated",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/spongebob-squarepants-battle-for-bikini-bottom-rehydrated-353.png"
+    },
+    {
+      "name": "Star Wars Battlefront Deluxe Edition",
+      "slug": "star-wars-battlefront-deluxe-edition-402",
+      "matchedName": "Star Wars: Battlefront II - Elite Trooper Deluxe Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/star-wars-battlefront-deluxe-edition-402.png"
+    },
+    {
+      "name": "Star Wars Battlefront II",
+      "slug": "star-wars-battlefront-ii-514",
+      "matchedName": "Star Wars: Battlefront II",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/star-wars-battlefront-ii-514.png"
+    },
+    {
+      "name": "Star Wars Battlefront II Celebration Edition",
+      "slug": "star-wars-battlefront-ii-celebration-edition-529",
+      "matchedName": "Star Wars: Battlefront II - Celebration Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/star-wars-battlefront-ii-celebration-edition-529.jpg"
+    },
+    {
+      "name": "Star Wars Jedi Fallen Order",
+      "slug": "star-wars-jedi-fallen-order-337",
+      "matchedName": "Star Wars Jedi: Fallen Order",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/star-wars-jedi-fallen-order-337.png"
+    },
+    {
+      "name": "Star Wars Jedi Fallen Order Deluxe Edition",
+      "slug": "star-wars-jedi-fallen-order-deluxe-edition-037",
+      "matchedName": "Star Wars Jedi: Fallen Order",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/star-wars-jedi-fallen-order-deluxe-edition-037.png"
+    },
+    {
+      "name": "Star Wars Jedi Fallen Order Deluxe Edition",
+      "slug": "star-wars-jedi-fallen-order-deluxe-edition-345",
+      "matchedName": "Star Wars Jedi: Fallen Order",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/star-wars-jedi-fallen-order-deluxe-edition-345.png"
+    },
+    {
+      "name": "Star Wars Squadrons",
+      "slug": "star-wars-squadrons-283",
+      "matchedName": "Star Wars: Squadrons",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/star-wars-squadrons-283.png"
+    },
+    {
+      "name": "State of Decay Year-One Survival Edition",
+      "slug": "state-of-decay-year-one-survival-edition-479",
+      "matchedName": "State of Decay: Year-One",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/state-of-decay-year-one-survival-edition-479.png"
+    },
+    {
+      "name": "Steep",
+      "slug": "steep-576",
+      "matchedName": "Steep",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/steep-576.png"
+    },
+    {
+      "name": "Stick Fight The Game",
+      "slug": "stick-fight-the-game-373",
+      "matchedName": "Stick Fight: The Game",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/stick-fight-the-game-373.png"
+    },
+    {
+      "name": "Stranded Deep",
+      "slug": "stranded-deep-271",
+      "matchedName": "Stranded Deep",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/stranded-deep-271.jpg"
+    },
+    {
+      "name": "Subnautica",
+      "slug": "subnautica-319",
+      "matchedName": "Subnautica",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/subnautica-319.png"
+    },
+    {
+      "name": "Subnautica Below Zero",
+      "slug": "subnautica-below-zero-251",
+      "matchedName": "Subnautica: Below Zero",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/subnautica-below-zero-251.png"
+    },
+    {
+      "name": "Sundered Eldritch Edition",
+      "slug": "sundered-eldritch-edition-038",
+      "matchedName": "Sundered: Eldritch Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/sundered-eldritch-edition-038.png"
+    },
+    {
+      "name": "Sunset Overdrive",
+      "slug": "sunset-overdrive-397",
+      "matchedName": "Sunset Overdrive",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/sunset-overdrive-397.png"
+    },
+    {
+      "name": "Super Lucky's Tale",
+      "slug": "super-lucky-s-tale-115",
+      "matchedName": "Super Lucky's Tale",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/super-lucky-s-tale-115.png"
+    },
+    {
+      "name": "Super Meat Boy Forever",
+      "slug": "super-meat-boy-forever-457",
+      "matchedName": "Super Meat Boy Forever",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/super-meat-boy-forever-457.png"
+    },
+    {
+      "name": "Super Monkey Ball Banana Mania Digital Deluxe Edition",
+      "slug": "super-monkey-ball-banana-mania-digital-deluxe-edition-602",
+      "matchedName": "Super Monkey Ball Banana Mania",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/super-monkey-ball-banana-mania-digital-deluxe-edition-602.jpg"
+    },
+    {
+      "name": "Superliminal",
+      "slug": "superliminal-396",
+      "matchedName": "Superliminal",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/superliminal-396.png"
+    },
+    {
+      "name": "Supraland",
+      "slug": "supraland-054",
+      "matchedName": "Supraland",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/supraland-054.png"
+    },
+    {
+      "name": "Surviving Mars",
+      "slug": "surviving-mars-450",
+      "matchedName": "Surviving Mars",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/surviving-mars-450.png"
+    },
+    {
+      "name": "Tango Fiesta",
+      "slug": "tango-fiesta-322",
+      "matchedName": "Tango Fiesta",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/tango-fiesta-322.png"
+    },
+    {
+      "name": "Tekken 6",
+      "slug": "tekken-6-522",
+      "matchedName": "Tekken 6",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/tekken-6-522.png"
+    },
+    {
+      "name": "Tekken 7",
+      "slug": "tekken-7-361",
+      "matchedName": "Tekken 7",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/tekken-7-361.jpg"
+    },
+    {
+      "name": "Tennis World Tour 2 Complete Edition",
+      "slug": "tennis-world-tour-2-complete-edition-006",
+      "matchedName": "Tennis World Tour 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/tennis-world-tour-2-complete-edition-006.jpg"
+    },
+    {
+      "name": "Terraria",
+      "slug": "terraria-472",
+      "matchedName": "Terraria",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/terraria-472.png"
+    },
+    {
+      "name": "The Ascent",
+      "slug": "the-ascent-259",
+      "matchedName": "The Ascent",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-ascent-259.png"
+    },
+    {
+      "name": "The Crew",
+      "slug": "the-crew-467",
+      "matchedName": "The Crew",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-crew-467.png"
+    },
+    {
+      "name": "The Crew 2",
+      "slug": "the-crew-2-075",
+      "matchedName": "The Crew 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-crew-2-075.png"
+    },
+    {
+      "name": "The Crew 2 Gold Edition",
+      "slug": "the-crew-2-gold-edition-268",
+      "matchedName": "The Crew 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-crew-2-gold-edition-268.png"
+    },
+    {
+      "name": "The Disney Afternoon Collection",
+      "slug": "the-disney-afternoon-collection-563",
+      "matchedName": "The Disney Afternoon Collection",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-disney-afternoon-collection-563.png"
+    },
+    {
+      "name": "The Elder Scrolls Online",
+      "slug": "the-elder-scrolls-online-412",
+      "matchedName": "The Elder Scrolls Online",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-elder-scrolls-online-412.png"
+    },
+    {
+      "name": "The Elder Scrolls V Skyrim Special Edition",
+      "slug": "the-elder-scrolls-v-skyrim-special-edition-625",
+      "matchedName": "The Elder Scrolls V: Skyrim - Special Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-elder-scrolls-v-skyrim-special-edition-625.png"
+    },
+    {
+      "name": "The Evil Within Digital Bundle",
+      "slug": "the-evil-within-digital-bundle-560",
+      "matchedName": "The Evil Within",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-evil-within-digital-bundle-560.png"
+    },
+    {
+      "name": "The Jackbox Party Pack",
+      "slug": "the-jackbox-party-pack-221",
+      "matchedName": "The Jackbox Party Pack",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-jackbox-party-pack-221.png"
+    },
+    {
+      "name": "The Jackbox Party Pack 3",
+      "slug": "the-jackbox-party-pack-3-072",
+      "matchedName": "The Jackbox Party Pack 3",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-jackbox-party-pack-3-072.png"
+    },
+    {
+      "name": "The Jackbox Party Pack 5",
+      "slug": "the-jackbox-party-pack-5-389",
+      "matchedName": "The Jackbox Party Pack 5",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-jackbox-party-pack-5-389.png"
+    },
+    {
+      "name": "The Jackbox Party Pack 6",
+      "slug": "the-jackbox-party-pack-6-010",
+      "matchedName": "The Jackbox Party Pack 6",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-jackbox-party-pack-6-010.png"
+    },
+    {
+      "name": "The Jackbox Party Pack 7",
+      "slug": "the-jackbox-party-pack-7-444",
+      "matchedName": "The Jackbox Party Pack 7",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-jackbox-party-pack-7-444.png"
+    },
+    {
+      "name": "The Jackbox Party Quadpack",
+      "slug": "the-jackbox-party-quadpack-428",
+      "matchedName": "The Jackbox Party Pack",
+      "similarity": 0.75,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-jackbox-party-quadpack-428.png"
+    },
+    {
+      "name": "The Jackbox Party Quintpack",
+      "slug": "the-jackbox-party-quintpack-188",
+      "matchedName": "The Jackbox Party Pack",
+      "similarity": 0.75,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-jackbox-party-quintpack-188.png"
+    },
+    {
+      "name": "The Jackbox Party Trilogy",
+      "slug": "the-jackbox-party-trilogy-431",
+      "matchedName": "The Jackbox Party Pack",
+      "similarity": 0.75,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-jackbox-party-trilogy-431.png"
+    },
+    {
+      "name": "The LEGO Ninjago Movie Video Game",
+      "slug": "the-lego-ninjago-movie-video-game-461",
+      "matchedName": "The LEGO Ninjago Movie Videogame",
+      "similarity": 0.8,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-lego-ninjago-movie-video-game-461.jpg"
+    },
+    {
+      "name": "The Long Dark",
+      "slug": "the-long-dark-015",
+      "matchedName": "The Long Dark",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-long-dark-015.png"
+    },
+    {
+      "name": "The Medium",
+      "slug": "the-medium-578",
+      "matchedName": "The Medium",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-medium-578.jpg"
+    },
+    {
+      "name": "The Outer Worlds",
+      "slug": "the-outer-worlds-430",
+      "matchedName": "The Outer Worlds",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-outer-worlds-430.png"
+    },
+    {
+      "name": "The Serious Sam Collection",
+      "slug": "the-serious-sam-collection-069",
+      "matchedName": "Serious Sam: The Random Encounter",
+      "similarity": 0.75,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-serious-sam-collection-069.png"
+    },
+    {
+      "name": "The Sims 4",
+      "slug": "the-sims-4-003",
+      "matchedName": "The Sims 4",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-sims-4-003.png"
+    },
+    {
+      "name": "The Sims 4 + Cats & Dogs",
+      "slug": "the-sims-4-cats-dogs-250",
+      "matchedName": "The Sims 4",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-sims-4-cats-dogs-250.png"
+    },
+    {
+      "name": "The Sims 4 Deluxe Party Edition",
+      "slug": "the-sims-4-deluxe-party-edition-144",
+      "matchedName": "The Sims 4",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-sims-4-deluxe-party-edition-144.png"
+    },
+    {
+      "name": "The Sinking City Necronomicon Edition",
+      "slug": "the-sinking-city-necronomicon-edition-237",
+      "matchedName": "The Sinking City: Necronomicon Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-sinking-city-necronomicon-edition-237.png"
+    },
+    {
+      "name": "The Walking Dead A New Frontier",
+      "slug": "the-walking-dead-a-new-frontier-555",
+      "matchedName": "The Walking Dead: A New Frontier",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-walking-dead-a-new-frontier-555.png"
+    },
+    {
+      "name": "The Walking Dead Michonne A Telltale Miniseries",
+      "slug": "the-walking-dead-michonne-a-telltale-miniseries-561",
+      "matchedName": "The Walking Dead: Michonne",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-walking-dead-michonne-a-telltale-miniseries-561.png"
+    },
+    {
+      "name": "The Walking Dead The Complete First Season",
+      "slug": "the-walking-dead-the-complete-first-season-483",
+      "matchedName": "The Walking Dead: The Final Season",
+      "similarity": 0.8,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-walking-dead-the-complete-first-season-483.png"
+    },
+    {
+      "name": "The Walking Dead The Telltale Definitive Series",
+      "slug": "the-walking-dead-the-telltale-definitive-series-257",
+      "matchedName": "The Walking Dead: The Telltale Definitive Series",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-walking-dead-the-telltale-definitive-series-257.png"
+    },
+    {
+      "name": "The Walking Dead The Telltale Series The Final Season",
+      "slug": "the-walking-dead-the-telltale-series-the-final-season-013",
+      "matchedName": "The Walking Dead: The Telltale Definitive Series",
+      "similarity": 0.8333333333333334,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-walking-dead-the-telltale-series-the-final-season-013.png"
+    },
+    {
+      "name": "The Witcher 3 Wild Hunt Game of the Year Edition",
+      "slug": "the-witcher-3-wild-hunt-game-of-the-year-edition-230",
+      "matchedName": "The Witcher 3: Wild Hunt - Game of the Year Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-witcher-3-wild-hunt-game-of-the-year-edition-230.png"
+    },
+    {
+      "name": "The Witness",
+      "slug": "the-witness-548",
+      "matchedName": "The Witness",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-witness-548.png"
+    },
+    {
+      "name": "The Yakuza Remastered Collection",
+      "slug": "the-yakuza-remastered-collection-085",
+      "matchedName": "'the",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/the-yakuza-remastered-collection-085.png"
+    },
+    {
+      "name": "theHunter Call of the Wild Reserve Bundle",
+      "slug": "thehunter-call-of-the-wild-reserve-bundle-291",
+      "matchedName": "theHunter: Call of the Wild™",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/thehunter-call-of-the-wild-reserve-bundle-291.png"
+    },
+    {
+      "name": "Thief",
+      "slug": "thief-256",
+      "matchedName": "Thief",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/thief-256.jpg"
+    },
+    {
+      "name": "Titan Quest",
+      "slug": "titan-quest-121",
+      "matchedName": "Titan Quest",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/titan-quest-121.png"
+    },
+    {
+      "name": "Titanfall 2",
+      "slug": "titanfall-2-172",
+      "matchedName": "Titanfall 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/titanfall-2-172.png"
+    },
+    {
+      "name": "Titanfall 2 Ultimate Edition",
+      "slug": "titanfall-2-ultimate-edition-018",
+      "matchedName": "Titanfall 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/titanfall-2-ultimate-edition-018.png"
+    },
+    {
+      "name": "Tom Clancy's Ghost Recon Breakpoint",
+      "slug": "tom-clancy-s-ghost-recon-breakpoint-421",
+      "matchedName": "Tom Clancy's Ghost Recon Breakpoint",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/tom-clancy-s-ghost-recon-breakpoint-421.png"
+    },
+    {
+      "name": "Tom Clancy's Ghost Recon Breakpoint Gold Edition",
+      "slug": "tom-clancy-s-ghost-recon-breakpoint-gold-edition-270",
+      "matchedName": "Tom Clancy's Ghost Recon Breakpoint",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/tom-clancy-s-ghost-recon-breakpoint-gold-edition-270.png"
+    },
+    {
+      "name": "Tom Clancy's Ghost Recon Breakpoint Ultimate Edition",
+      "slug": "tom-clancy-s-ghost-recon-breakpoint-ultimate-edition-342",
+      "matchedName": "Tom Clancy's Ghost Recon Breakpoint",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/tom-clancy-s-ghost-recon-breakpoint-ultimate-edition-342.png"
+    },
+    {
+      "name": "Tom Clancy's Ghost Recon Wildlands",
+      "slug": "tom-clancy-s-ghost-recon-wildlands-425",
+      "matchedName": "Tom Clancy's Ghost Recon Wildlands",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/tom-clancy-s-ghost-recon-wildlands-425.png"
+    },
+    {
+      "name": "Tom Clancy's Ghost Recon Wildlands Gold Edition",
+      "slug": "tom-clancy-s-ghost-recon-wildlands-gold-edition-301",
+      "matchedName": "Tom Clancy's Ghost Recon Wildlands",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/tom-clancy-s-ghost-recon-wildlands-gold-edition-301.png"
+    },
+    {
+      "name": "Tom Clancy's Rainbow Six Siege",
+      "slug": "tom-clancy-s-rainbow-six-siege-303",
+      "matchedName": "Tom Clancy's Rainbow Six Siege",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/tom-clancy-s-rainbow-six-siege-303.png"
+    },
+    {
+      "name": "Tom Clancy's Rainbow Six Siege Deluxe Edition",
+      "slug": "tom-clancy-s-rainbow-six-siege-deluxe-edition-585",
+      "matchedName": "Tom Clancy's Rainbow Six Siege",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/tom-clancy-s-rainbow-six-siege-deluxe-edition-585.png"
+    },
+    {
+      "name": "Tom Clancy's The Division",
+      "slug": "tom-clancy-s-the-division-473",
+      "matchedName": "Tom Clancy's The Division",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/tom-clancy-s-the-division-473.png"
+    },
+    {
+      "name": "Tom Clancy's The Division 2",
+      "slug": "tom-clancy-s-the-division-2-190",
+      "matchedName": "Tom Clancy’s The Division 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/tom-clancy-s-the-division-2-190.png"
+    },
+    {
+      "name": "Tom Clancy's The Division 2 Gold Edition",
+      "slug": "tom-clancy-s-the-division-2-gold-edition-384",
+      "matchedName": "Tom Clancy’s The Division 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/tom-clancy-s-the-division-2-gold-edition-384.png"
+    },
+    {
+      "name": "Tom Clancy's The Division 2 Warlords of New York",
+      "slug": "tom-clancy-s-the-division-2-warlords-of-new-york-429",
+      "matchedName": "Tom Clancy’s The Division 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/tom-clancy-s-the-division-2-warlords-of-new-york-429.png"
+    },
+    {
+      "name": "Tom Clancy's The Division 2 Warlords of New York Ultimate Edition",
+      "slug": "tom-clancy-s-the-division-2-warlords-of-new-york-ultimate-edition-480",
+      "matchedName": "Tom Clancy’s The Division 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/tom-clancy-s-the-division-2-warlords-of-new-york-ultimate-edition-480.png"
+    },
+    {
+      "name": "Tomb Raider",
+      "slug": "tomb-raider-128",
+      "matchedName": "Tomb Raider",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/tomb-raider-128.jpg"
+    },
+    {
+      "name": "Tomb Raider Definitive Edition",
+      "slug": "tomb-raider-definitive-edition-109",
+      "matchedName": "Tomb Raider: Definitive Edition",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/tomb-raider-definitive-edition-109.jpg"
+    },
+    {
+      "name": "Tour de France 2020",
+      "slug": "tour-de-france-2020-284",
+      "matchedName": "Tour de France 2020",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/tour-de-france-2020-284.jpg"
+    },
+    {
+      "name": "Toy Soldiers",
+      "slug": "toy-soldiers-142",
+      "matchedName": "Toy Soldiers",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/toy-soldiers-142.png"
+    },
+    {
+      "name": "TransOcean The Shipping Company",
+      "slug": "transocean-the-shipping-company-329",
+      "matchedName": "TransOcean: The Shipping Company",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/transocean-the-shipping-company-329.jpg"
+    },
+    {
+      "name": "Trials Rising",
+      "slug": "trials-rising-196",
+      "matchedName": "Trials Rising",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/trials-rising-196.png"
+    },
+    {
+      "name": "Trials Rising Gold Edition",
+      "slug": "trials-rising-gold-edition-086",
+      "matchedName": "Trials Rising",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/trials-rising-gold-edition-086.png"
+    },
+    {
+      "name": "Tricky Towers",
+      "slug": "tricky-towers-313",
+      "matchedName": "Tricky Towers",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/tricky-towers-313.png"
+    },
+    {
+      "name": "Trine 4 The Nightmare Prince",
+      "slug": "trine-4-the-nightmare-prince-295",
+      "matchedName": "Trine 4: The Nightmare Prince",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/trine-4-the-nightmare-prince-295.png"
+    },
+    {
+      "name": "Trivial Pursuit Live!",
+      "slug": "trivial-pursuit-live-199",
+      "matchedName": "Trivial Pursuit: Live!",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/trivial-pursuit-live-199.png"
+    },
+    {
+      "name": "Tropico 5 Penultimate Edition",
+      "slug": "tropico-5-penultimate-edition-526",
+      "matchedName": "Tropico 5",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/tropico-5-penultimate-edition-526.png"
+    },
+    {
+      "name": "Tropico 6",
+      "slug": "tropico-6-223",
+      "matchedName": "Tropico 6",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/tropico-6-223.png"
+    },
+    {
+      "name": "Two Point Hospital",
+      "slug": "two-point-hospital-487",
+      "matchedName": "Two Point Hospital",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/two-point-hospital-487.png"
+    },
+    {
+      "name": "Ultimate Chicken Horse",
+      "slug": "ultimate-chicken-horse-064",
+      "matchedName": "Ultimate Chicken Horse",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/ultimate-chicken-horse-064.png"
+    },
+    {
+      "name": "Ultimate Fishing Simulator",
+      "slug": "ultimate-fishing-simulator-036",
+      "matchedName": "Ultimate Fishing Simulator",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/ultimate-fishing-simulator-036.png"
+    },
+    {
+      "name": "Ultimate Marvel vs. Capcom 3",
+      "slug": "ultimate-marvel-vs-capcom-3-356",
+      "matchedName": "Ultimate Marvel vs. Capcom 3",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/ultimate-marvel-vs-capcom-3-356.png"
+    },
+    {
+      "name": "Ultimate Ski Jumping 2020",
+      "slug": "ultimate-ski-jumping-2020-272",
+      "matchedName": "Ultimate Ski Jumping 2020",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/ultimate-ski-jumping-2020-272.png"
+    },
+    {
+      "name": "Uno",
+      "slug": "uno-530",
+      "matchedName": "UNO",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/uno-530.png"
+    },
+    {
+      "name": "Unravel",
+      "slug": "unravel-580",
+      "matchedName": "Unravel",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/unravel-580.png"
+    },
+    {
+      "name": "Unravel Two",
+      "slug": "unravel-two-030",
+      "matchedName": "Unravel Two",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/unravel-two-030.jpg"
+    },
+    {
+      "name": "Unravel Yarny Bundle",
+      "slug": "unravel-yarny-bundle-350",
+      "matchedName": "Unravel",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/unravel-yarny-bundle-350.png"
+    },
+    {
+      "name": "Valiant Hearts The Great War",
+      "slug": "valiant-hearts-the-great-war-509",
+      "matchedName": "Valiant Hearts: The Great War™ / Soldats Inconnus : Mémoires de la Grande Guerre™",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/valiant-hearts-the-great-war-509.png"
+    },
+    {
+      "name": "Valorant Gift Card",
+      "slug": "valorant-gift-card-600",
+      "matchedName": "Valorant",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/valorant-gift-card-600.png"
+    },
+    {
+      "name": "Vampyr",
+      "slug": "vampyr-517",
+      "matchedName": "Vampyr",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/vampyr-517.png"
+    },
+    {
+      "name": "Varenje",
+      "slug": "varenje-083",
+      "matchedName": "Varenje",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/varenje-083.png"
+    },
+    {
+      "name": "Verlet Swing",
+      "slug": "verlet-swing-545",
+      "matchedName": "Verlet Swing",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/verlet-swing-545.png"
+    },
+    {
+      "name": "Victor Vran",
+      "slug": "victor-vran-537",
+      "matchedName": "Victor Vran",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/victor-vran-537.png"
+    },
+    {
+      "name": "Victoria II",
+      "slug": "victoria-ii-584",
+      "matchedName": "Victoria II",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/victoria-ii-584.png"
+    },
+    {
+      "name": "Visage",
+      "slug": "visage-067",
+      "matchedName": "Visage",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/visage-067.png"
+    },
+    {
+      "name": "Warhammer Chaosbane",
+      "slug": "warhammer-chaosbane-330",
+      "matchedName": "Warhammer: Chaosbane",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/warhammer-chaosbane-330.png"
+    },
+    {
+      "name": "Warhammer Vermintide 2",
+      "slug": "warhammer-vermintide-2-598",
+      "matchedName": "Warhammer: Vermintide 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/warhammer-vermintide-2-598.jpg"
+    },
+    {
+      "name": "Warhammer Vermintide 2 Premium Edition",
+      "slug": "warhammer-vermintide-2-premium-edition-222",
+      "matchedName": "Warhammer: Vermintide 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/warhammer-vermintide-2-premium-edition-222.jpg"
+    },
+    {
+      "name": "Warsaw",
+      "slug": "warsaw-308",
+      "matchedName": "Warsaw Rising: City of Heroes",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/warsaw-308.png"
+    },
+    {
+      "name": "Wasteland 3",
+      "slug": "wasteland-3-382",
+      "matchedName": "Wasteland 3",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/wasteland-3-382.png"
+    },
+    {
+      "name": "Watch Dogs 2",
+      "slug": "watch-dogs-2-200",
+      "matchedName": "Watch Dogs 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/watch-dogs-2-200.jpg"
+    },
+    {
+      "name": "Watch Dogs 2 Deluxe Edition",
+      "slug": "watch-dogs-2-deluxe-edition-571",
+      "matchedName": "Watch Dogs 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/watch-dogs-2-deluxe-edition-571.jpg"
+    },
+    {
+      "name": "Watch Dogs 2 Gold Edition",
+      "slug": "watch-dogs-2-gold-edition-408",
+      "matchedName": "Watch Dogs 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/watch-dogs-2-gold-edition-408.jpg"
+    },
+    {
+      "name": "Watch Dogs Complete Edition",
+      "slug": "watch-dogs-complete-edition-413",
+      "matchedName": "Watch Dogs",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/watch-dogs-complete-edition-413.png"
+    },
+    {
+      "name": "Watch Dogs Legion",
+      "slug": "watch-dogs-legion-437",
+      "matchedName": "Watch Dogs: Legion",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/watch-dogs-legion-437.jpg"
+    },
+    {
+      "name": "Watch Dogs Legion Assassin's Creed Valhalla Bundle",
+      "slug": "watch-dogs-legion-assassin-s-creed-valhalla-bundle-152",
+      "matchedName": "Watch Dogs: Legion",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/watch-dogs-legion-assassin-s-creed-valhalla-bundle-152.jpg"
+    },
+    {
+      "name": "Watch Dogs Legion Deluxe Edition",
+      "slug": "watch-dogs-legion-deluxe-edition-280",
+      "matchedName": "Watch Dogs: Legion",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/watch-dogs-legion-deluxe-edition-280.jpg"
+    },
+    {
+      "name": "Watch Dogs Legion Gold Edition",
+      "slug": "watch-dogs-legion-gold-edition-462",
+      "matchedName": "Watch Dogs: Legion",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/watch-dogs-legion-gold-edition-462.jpg"
+    },
+    {
+      "name": "Watch Dogs Legion Ultimate Edition",
+      "slug": "watch-dogs-legion-ultimate-edition-023",
+      "matchedName": "Watch Dogs: Legion",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/watch-dogs-legion-ultimate-edition-023.jpg"
+    },
+    {
+      "name": "Weird West",
+      "slug": "weird-west-331",
+      "matchedName": "Weird West",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/weird-west-331.png"
+    },
+    {
+      "name": "Werewolf The Apocalypse Earthblood",
+      "slug": "werewolf-the-apocalypse-earthblood-260",
+      "matchedName": "Werewolf: The Apocalypse - Earthblood",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/werewolf-the-apocalypse-earthblood-260.png"
+    },
+    {
+      "name": "Werewolf The Apocalypse Earthblood Champion of Gaia Edition",
+      "slug": "werewolf-the-apocalypse-earthblood-champion-of-gaia-edition-607",
+      "matchedName": "Werewolf: The Apocalypse - Earthblood",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/werewolf-the-apocalypse-earthblood-champion-of-gaia-edition-607.png"
+    },
+    {
+      "name": "Werewolf The Apocalypse Earthblood Champion of Gaia Edition",
+      "slug": "werewolf-the-apocalypse-earthblood-champion-of-gaia-edition-414",
+      "matchedName": "Werewolf: The Apocalypse - Earthblood",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/werewolf-the-apocalypse-earthblood-champion-of-gaia-edition-414.png"
+    },
+    {
+      "name": "Windbound",
+      "slug": "windbound-496",
+      "matchedName": "Windbound",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/windbound-496.png"
+    },
+    {
+      "name": "Wolfenstein The New Order",
+      "slug": "wolfenstein-the-new-order-349",
+      "matchedName": "Wolfenstein: The New Order",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/wolfenstein-the-new-order-349.png"
+    },
+    {
+      "name": "Wolfenstein The New Order + The Old Blood",
+      "slug": "wolfenstein-the-new-order-the-old-blood-338",
+      "matchedName": "Wolfenstein: The New Order",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/wolfenstein-the-new-order-the-old-blood-338.png"
+    },
+    {
+      "name": "Wolfenstein The Old Blood",
+      "slug": "wolfenstein-the-old-blood-557",
+      "matchedName": "Wolfenstein: The Old Blood ",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/wolfenstein-the-old-blood-557.png"
+    },
+    {
+      "name": "Woodle Tree 2 Deluxe",
+      "slug": "woodle-tree-2-deluxe-057",
+      "matchedName": "Woodle Tree 2: Deluxe Plus",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/woodle-tree-2-deluxe-057.png"
+    },
+    {
+      "name": "WRC 6",
+      "slug": "wrc-6-566",
+      "matchedName": "WRC 6",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/wrc-6-566.png"
+    },
+    {
+      "name": "WRC 7 The Official Game",
+      "slug": "wrc-7-the-official-game-171",
+      "matchedName": "WRC 7",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/wrc-7-the-official-game-171.jpg"
+    },
+    {
+      "name": "WRC FIA World Rally Championship 7 5 6 Bundle",
+      "slug": "wrc-fia-world-rally-championship-7-5-6-bundle-193",
+      "matchedName": "WRC FIA World Rally Championship",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/wrc-fia-world-rally-championship-7-5-6-bundle-193.png"
+    },
+    {
+      "name": "Wreckfest",
+      "slug": "wreckfest-395",
+      "matchedName": "Wreckfest",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/wreckfest-395.png"
+    },
+    {
+      "name": "Wreckfest Complete Edition",
+      "slug": "wreckfest-complete-edition-240",
+      "matchedName": "Wreckfest",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/wreckfest-complete-edition-240.png"
+    },
+    {
+      "name": "X-Morph Defense",
+      "slug": "x-morph-defense-432",
+      "matchedName": "X-Morph: Defense",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/x-morph-defense-432.jpg"
+    },
+    {
+      "name": "Xbox Game Pass Ultimate 3 Meses",
+      "slug": "xbox-game-pass-ultimate-3-meses-614",
+      "matchedName": "Xbox Game Pass",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/xbox-game-pass-ultimate-3-meses-614.png"
+    },
+    {
+      "name": "XCOM 2",
+      "slug": "xcom-2-586",
+      "matchedName": "XCOM 2",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/xcom-2-586.png"
+    },
+    {
+      "name": "Yaga",
+      "slug": "yaga-553",
+      "matchedName": "Yaga",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/yaga-553.png"
+    },
+    {
+      "name": "Yakuza Like a Dragon",
+      "slug": "yakuza-like-a-dragon-214",
+      "matchedName": "Yakuza: Like A Dragon",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/yakuza-like-a-dragon-214.png"
+    },
+    {
+      "name": "Yestermorrow",
+      "slug": "yestermorrow-157",
+      "matchedName": "YesterMorrow",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/yestermorrow-157.jpg"
+    },
+    {
+      "name": "Yonder The Cloud Catcher Chronicles",
+      "slug": "yonder-the-cloud-catcher-chronicles-203",
+      "matchedName": "Yonder: The Cloud Catcher Chronicles",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/yonder-the-cloud-catcher-chronicles-203.png"
+    },
+    {
+      "name": "Zombie Army 4 Dead War",
+      "slug": "zombie-army-4-dead-war-390",
+      "matchedName": "Zombie Army 4: Dead War",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/zombie-army-4-dead-war-390.png"
+    },
+    {
+      "name": "Zombie Army Trilogy",
+      "slug": "zombie-army-trilogy-026",
+      "matchedName": "Zombie Army Trilogy",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/zombie-army-trilogy-026.png"
+    },
+    {
+      "name": "Zoo Tycoon",
+      "slug": "zoo-tycoon-274",
+      "matchedName": "Zoo Tycoon",
+      "similarity": 1,
+      "newImageUrl": "https://qktctzsdfqhezhbeshru.supabase.co/storage/v1/object/public/product-images/covers/zoo-tycoon-274.jpg"
+    }
+  ]
+}
