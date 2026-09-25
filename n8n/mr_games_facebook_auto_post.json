@@ -7,13 +7,13 @@
           "interval": [
             {
               "field": "cronExpression",
-              "expression": "30 11,18 * * *"
+              "expression": "30 18 * * *"
             }
           ]
         }
       },
       "id": "df50dc37-971d-4037-a8d9-f180b93540f1",
-      "name": "Horario 11:30 y 18:30",
+      "name": "Horario 18:30 (Calentamiento)",
       "type": "n8n-nodes-base.scheduleTrigger",
       "typeVersion": 1.2,
       "position": [
