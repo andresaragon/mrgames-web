@@ -1,0 +1,391 @@
+{
+  "name": "Mr Games · Publicación automática Facebook",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "30 11,18 * * *"
+            }
+          ]
+        }
+      },
+      "id": "df50dc37-971d-4037-a8d9-f180b93540f1",
+      "name": "Horario 11:30 y 18:30",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "amount": "={{ Math.floor(Math.random() * 10) }}",
+        "unit": "minutes"
+      },
+      "id": "9652fc78-bd74-4852-bd7c-95b0a5e7f4fc",
+      "name": "Jitter 0-9 min",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        220,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "with franja as (\n  select case when extract(hour from now() at time zone 'America/Bogota') < 15\n              then 'am' else 'pm' end as slot\n),\nultima_plataforma as (\n  select pr.platform\n  from public.fb_posts f join public.products pr on pr.id = f.product_id\n  where f.status = 'publicado'\n  order by f.created_at desc limit 1\n)\nselect p.id, p.name, p.slug, p.price, p.platform, p.image_url,\n       h.last_posted_at, (select slot from franja) as slot\nfrom public.products p\nleft join lateral (\n  select max(f.created_at) as last_posted_at\n  from public.fb_posts f\n  where f.product_id = p.id and f.status = 'publicado'\n) h on true\nwhere p.active\n  and p.image_url is not null\n  and p.stock > 0\n  and p.price > 0\n  and not exists (select 1 from public.fb_posts e\n                  where e.product_id = p.id and e.status = 'error'\n                    and e.created_at > now() - interval '7 days')\n  and not exists (select 1 from public.fb_posts d\n                  where d.status = 'publicado'\n                    and d.post_date = (now() at time zone 'America/Bogota')::date\n                    and d.slot = (select slot from franja))\norder by h.last_posted_at nulls first,\n         (p.platform is not distinct from (select platform from ultima_plataforma)),\n         random()\nlimit 1;",
+        "options": {}
+      },
+      "id": "97c4bb24-1b08-443e-9b76-2aa5424f04a3",
+      "name": "Seleccionar juego",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [
+        440,
+        300
+      ],
+      "credentials": {
+        "postgres": {
+          "id": "REEMPLAZAR",
+          "name": "Supabase Mr Games (session pooler)"
+        }
+      },
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "ed20f866-f9b3-4a3b-a940-a1916e2266cb",
+              "leftValue": "={{ $json.id }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "exists",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "id": "e06b4da7-804f-41d0-9780-cdef6f103f42",
+      "name": "¿Hay juego?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        660,
+        300
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "f4389f2f-2f4e-4316-abc8-e162ae9543bf",
+      "name": "Nada que publicar",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        880,
+        460
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Copy determinístico con variación controlada.\n// Precio, nombre y enlaces salen de la BD: nunca los redacta un LLM.\nconst p = $input.first().json;\n\nif (!p.slug || !p.image_url || !(Number(p.price) > 0)) {\n  throw new Error(`Producto ${p.id} con datos incompletos (slug/imagen/precio)`);\n}\n\nconst pick = (arr) => arr[Math.floor(Math.random() * arr.length)];\nconst cop = (n) => '$' + Math.round(Number(n)).toLocaleString('es-CO') + ' COP';\n\nconst ganchos = [\n  '🎮 ¿Ya lo tienes en tu colección?',\n  '🔥 Este no puede faltar en tu biblioteca.',\n  '👾 Fin de semana resuelto.',\n  '🕹️ Para los que juegan en serio.',\n  '⚡ Llegó la hora de darle play.',\n  '🏆 Un clásico que sigue dando guerra.',\n  '🎯 ¿Buscabas tu próximo juego? Aquí está.',\n];\n\nconst combos = [\n  '🎁 Arma tu Combo: tu 2do y 3er juego llevan bono o regalo.',\n  '🧩 ¿Uno solo? Arma tu Combo y el 2do y 3er juego vienen con bono o regalo.',\n  '💥 Combo Mr Games: suma un 2do y 3er juego y te llevas bono o regalo.',\n];\n\nconst ctas = [\n  'Escríbenos por WhatsApp y te lo apartamos',\n  'Pregunta disponibilidad por WhatsApp',\n  'Haz tu pedido por WhatsApp',\n];\n\n// Claves adaptadas exactamente a los valores de products.platform en Supabase\nconst tagsPlataforma = {\n  'Xbox': ['#Xbox', '#XboxColombia', '#XboxSeriesX', '#XboxOne'],\n  'PlayStation 5': ['#PS5', '#PlayStation5', '#PlayStationColombia'],\n  'Nintendo Switch': ['#NintendoSwitch', '#SwitchColombia', '#Nintendo'],\n  'PC': ['#PCGaming', '#Steam', '#PCGamerColombia'],\n};\nconst tagsGenerales = ['#Videojuegos', '#GamerColombia', '#JuegosColombia', '#Gaming'];\n\nconst plat = tagsPlataforma[p.platform] || ['#Xbox', '#XboxColombia'];\nconst hashtags = ['#MrGames', pick(plat), pick(tagsGenerales)]\n  .filter((t, i, a) => a.indexOf(t) === i)\n  .join(' ');\n\nconst waTexto = encodeURIComponent(`Hola Mr Games, me interesa ${p.name} (${p.platform}).`);\nconst waLink = `https://wa.me/573175942917?text=${waTexto}`;\nconst ficha = `https://mrgames.com.co/producto/${p.slug}`;\n\nconst caption = [\n  pick(ganchos),\n  '',\n  `🎮 ${p.name}${p.platform ? ' · ' + p.platform : ''}`,\n  `💰 ${cop(p.price)}`,\n  '',\n  pick(combos),\n  '',\n  `🛒 Ficha completa: ${ficha}`,\n  `💬 ${pick(ctas)}: ${waLink}`,\n  '',\n  hashtags,\n].join('\\n');\n\nif (caption.length > 2000) throw new Error('Caption demasiado largo');\n\nreturn [{ json: { ...p, caption } }];"
+      },
+      "id": "4dd18bce-78ac-428d-bc85-8d38dd2941e5",
+      "name": "Armar copy",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        880,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://graph.facebook.com/v26.0/REEMPLAZAR_PAGE_ID/photos",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpQueryAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ url: $json.image_url, caption: $json.caption, published: true }) }}",
+        "options": {
+          "timeout": 45000
+        }
+      },
+      "id": "72120026-367d-4243-b7b1-6388b71214dc",
+      "name": "Publicar en Facebook",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1100,
+        200
+      ],
+      "credentials": {
+        "httpQueryAuth": {
+          "id": "REEMPLAZAR",
+          "name": "Meta Page Token (access_token)"
+        }
+      },
+      "onError": "continueErrorOutput",
+      "retryOnFail": false
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "insert into public.fb_posts (product_id, slot, status, fb_post_id, caption)\nvalues ($1, $2, 'publicado', $3, $4);",
+        "options": {
+          "queryReplacement": "={{ [ $('Armar copy').first().json.id, $('Armar copy').first().json.slot, $json.post_id || $json.id, $('Armar copy').first().json.caption ] }}"
+        }
+      },
+      "id": "2657aa19-8add-4fac-9c5a-02db30edb659",
+      "name": "Registrar publicado",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [
+        1340,
+        100
+      ],
+      "credentials": {
+        "postgres": {
+          "id": "REEMPLAZAR",
+          "name": "Supabase Mr Games (session pooler)"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Clasifica el error del Graph API para decidir la alerta.\nconst item = $input.first().json;\nconst crudo = JSON.stringify(item);\nconst prod = $('Armar copy').first().json;\n\nconst m = crudo.match(/\\\\?\"code\\\\?\"\\s*:\\s*(\\d+)/);\nconst code = m ? Number(m[1]) : 0;\nconst msg = (item.error && (item.error.message || item.error.description)) || crudo.slice(0, 500);\n\nlet categoria = 'desconocido';\nlet severidad = 'media';\nif ([190, 102, 10, 200].includes(code)) { categoria = 'token_o_permisos'; severidad = 'critica'; }\nelse if (code === 368) { categoria = 'bloqueo_por_politicas_spam'; severidad = 'critica'; }\nelse if ([4, 17, 32, 613].includes(code)) { categoria = 'rate_limit'; severidad = 'media'; }\nelse if ([324, 100].includes(code)) { categoria = 'imagen_o_parametros'; severidad = 'media'; }\nelse if (code === 0 && /ETIMEDOUT|ECONNRESET|ENOTFOUND|timeout|socket/i.test(crudo)) {\n  categoria = 'red_o_timeout'; severidad = 'alta';\n}\n\nreturn [{ json: {\n  product_id: prod.id,\n  name: prod.name,\n  slot: prod.slot,\n  error_code: code,\n  error_category: categoria,\n  severidad,\n  error_message: String(msg).slice(0, 1000),\n} }];"
+      },
+      "id": "149b28bf-ddc9-459a-90fb-f19f640141e5",
+      "name": "Clasificar error",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1340,
+        320
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "with prev as (\n  select count(*) as c from public.fb_posts\n  where status = 'error' and error_code = $2\n    and created_at > now() - interval '24 hours'\n),\nins as (\n  insert into public.fb_posts (product_id, slot, status, error_code, error_category, error_message)\n  values ($1, $3, 'error', $2, $4, $5)\n  returning id\n)\nselect (select c from prev) = 0 as alertar, (select id from ins) as log_id;",
+        "options": {
+          "queryReplacement": "={{ [ $json.product_id, $json.error_code, $json.slot, $json.error_category, $json.error_message ] }}"
+        }
+      },
+      "id": "b7944581-bf9c-4a78-bdfa-a07a91cba022",
+      "name": "Registrar error + dedupe",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [
+        1560,
+        320
+      ],
+      "credentials": {
+        "postgres": {
+          "id": "REEMPLAZAR",
+          "name": "Supabase Mr Games (session pooler)"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "69dc1e59-de58-425f-a9a6-7e75c1771ae7",
+              "leftValue": "={{ $json.alertar }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "id": "bdaf68a4-1301-411f-b580-90988baae6aa",
+      "name": "¿Alertar?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1780,
+        320
+      ]
+    },
+    {
+      "parameters": {
+        "fromEmail": "n8n@mrgames.com.co",
+        "toEmail": "santiagoaragon.sistemas@gmail.com",
+        "subject": "={{ '⚠️ [Mr Games FB] ' + $('Clasificar error').first().json.error_category + ' (código ' + $('Clasificar error').first().json.error_code + ')' }}",
+        "emailFormat": "text",
+        "text": "={{ 'Falló la publicación automática en Facebook.\\n\\nJuego: ' + $('Clasificar error').first().json.name + '\\nFranja: ' + $('Clasificar error').first().json.slot + '\\nSeveridad: ' + $('Clasificar error').first().json.severidad + '\\nCategoría: ' + $('Clasificar error').first().json.error_category + '\\nCódigo Meta: ' + $('Clasificar error').first().json.error_code + '\\n\\nDetalle:\\n' + $('Clasificar error').first().json.error_message + '\\n\\nSi la categoría es red_o_timeout, REVISA LA PÁGINA antes de republicar: el post pudo haber salido.\\nNo se enviará otra alerta de este mismo código durante 24 h.' }}",
+        "options": {}
+      },
+      "id": "60a808d7-3f7e-45a7-903c-e255ee68326e",
+      "name": "Email de alerta",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        2000,
+        300
+      ],
+      "credentials": {
+        "smtp": {
+          "id": "REEMPLAZAR",
+          "name": "SMTP VPS"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Horario 11:30 y 18:30": {
+      "main": [
+        [
+          {
+            "node": "Jitter 0-9 min",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Jitter 0-9 min": {
+      "main": [
+        [
+          {
+            "node": "Seleccionar juego",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Seleccionar juego": {
+      "main": [
+        [
+          {
+            "node": "¿Hay juego?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "¿Hay juego?": {
+      "main": [
+        [
+          {
+            "node": "Armar copy",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Nada que publicar",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Armar copy": {
+      "main": [
+        [
+          {
+            "node": "Publicar en Facebook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Publicar en Facebook": {
+      "main": [
+        [
+          {
+            "node": "Registrar publicado",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Clasificar error",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Clasificar error": {
+      "main": [
+        [
+          {
+            "node": "Registrar error + dedupe",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Registrar error + dedupe": {
+      "main": [
+        [
+          {
+            "node": "¿Alertar?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "¿Alertar?": {
+      "main": [
+        [
+          {
+            "node": "Email de alerta",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/Bogota",
+    "saveDataErrorExecution": "all",
+    "saveDataSuccessExecution": "all"
+  },
+  "active": false,
+  "pinData": {}
+}

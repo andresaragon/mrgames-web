@@ -1,0 +1,58 @@
+{
+  "name": "Mr Games · Error handler",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "ed9cd749-396b-45ea-aba1-c195d1eea855",
+      "name": "Error Trigger",
+      "type": "n8n-nodes-base.errorTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "fromEmail": "n8n@mrgames.com.co",
+        "toEmail": "santiagoaragon.sistemas@gmail.com",
+        "subject": "={{ '🛑 [n8n] Falló: ' + $json.workflow.name }}",
+        "emailFormat": "text",
+        "text": "={{ 'Workflow: ' + $json.workflow.name + '\\nNodo: ' + ($json.execution.lastNodeExecuted || '?') + '\\nError: ' + ($json.execution.error && $json.execution.error.message) + '\\nEjecución: ' + $json.execution.url }}",
+        "options": {}
+      },
+      "id": "cd5542d9-681b-4243-8921-ca569217ca5a",
+      "name": "Email fallo general",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        240,
+        0
+      ],
+      "credentials": {
+        "smtp": {
+          "id": "REEMPLAZAR",
+          "name": "SMTP VPS"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Error Trigger": {
+      "main": [
+        [
+          {
+            "node": "Email fallo general",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "active": false,
+  "pinData": {}
+}
