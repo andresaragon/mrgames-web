@@ -26,16 +26,28 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const [loaded, setLoaded] = useState(false)
 
   useEffect(() => {
-    const stored = localStorage.getItem('mrgames-cart')
-    if (stored) {
-      setItems(JSON.parse(stored))
+    try {
+      const stored = localStorage.getItem('mrgames-cart')
+      if (stored) {
+        const parsed = JSON.parse(stored)
+        if (Array.isArray(parsed)) {
+          setItems(parsed)
+        }
+      }
+    } catch (err) {
+      console.error('Error al recuperar el carrito de localStorage:', err)
+    } finally {
+      setLoaded(true)
     }
-    setLoaded(true)
   }, [])
 
   useEffect(() => {
     if (loaded) {
-      localStorage.setItem('mrgames-cart', JSON.stringify(items))
+      try {
+        localStorage.setItem('mrgames-cart', JSON.stringify(items))
+      } catch (err) {
+        console.error('Error al guardar el carrito en localStorage:', err)
+      }
     }
   }, [items, loaded])
 

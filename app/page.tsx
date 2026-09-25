@@ -2,6 +2,8 @@ import { createClient } from '@/utils/supabase/server'
 import { cookies } from 'next/headers'
 import Link from 'next/link'
 import Image from 'next/image'
+import { Suspense } from 'react'
+import CatalogFilters from '@/components/CatalogFilters'
 
 interface Product {
   id: string
@@ -13,17 +15,23 @@ interface Product {
   condition: string
 }
 
+const PAGE_SIZE = 24
+
 export default async function Home({
   searchParams,
 }: {
-  searchParams: Promise<{ q?: string; platform?: string }>
+  searchParams: Promise<{ q?: string; platform?: string; page?: string }>
 }) {
-  const { q, platform } = await searchParams
+  const { q, platform, page } = await searchParams
+  const currentPage = Math.max(1, parseInt(page || '1', 10) || 1)
+  const from = (currentPage - 1) * PAGE_SIZE
+  const to = from + PAGE_SIZE - 1
+
   const cookieStore = await cookies()
   const supabase = createClient(cookieStore)
   let query = supabase
     .from('products')
-    .select('id, name, slug, price, image_url, platform, condition')
+    .select('id, name, slug, price, image_url, platform, condition', { count: 'exact' })
     .eq('active', true)
     .order('created_at', { ascending: false })
   if (q) {
@@ -32,9 +40,21 @@ export default async function Home({
   if (platform) {
     query = query.eq('platform', platform)
   }
-  const { data: products, error } = await query
+  const { data: products, count, error } = await query.range(from, to)
   if (error) {
     console.error(error)
+  }
+
+  const totalItems = count || 0
+  const totalPages = Math.max(1, Math.ceil(totalItems / PAGE_SIZE))
+
+  const buildPageUrl = (targetPage: number) => {
+    const params = new URLSearchParams()
+    if (q) params.set('q', q)
+    if (platform) params.set('platform', platform)
+    if (targetPage > 1) params.set('page', targetPage.toString())
+    const queryString = params.toString()
+    return queryString ? `/?${queryString}` : '/'
   }
   return (
     <>
@@ -57,69 +77,171 @@ export default async function Home({
       </div>
       <main className="max-w-6xl mx-auto p-6">
         <h2 className="font-display mb-6 text-2xl font-bold uppercase tracking-wide md:text-3xl">Catálogo</h2>
-        <form action="/" method="get" className="mb-8 flex flex-wrap gap-3">
-          <input
-            type="text"
-            name="q"
-            defaultValue={q}
-            placeholder="Buscar juego..."
-            className="input-field flex-1 min-w-[200px]"
-          />
-          <select name="platform" defaultValue={platform || ''} className="input-field w-auto min-w-[170px]">
-            <option value="">Todas las plataformas</option>
-            <option value="Xbox">Xbox</option>
-            <option value="PS5">PS5</option>
-            <option value="PC">PC</option>
-            <option value="Nintendo Switch">Nintendo Switch</option>
-          </select>
-          <button type="submit" className="btn-primary">
-            Buscar
-          </button>
-        </form>
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
-          {products?.map((product: Product) => (
-            <Link
-              key={product.id}
-              href={`/producto/${product.slug}`}
-              className="card-glow group block overflow-hidden rounded-xl"
-            >
-              <div className="relative aspect-[2/3] overflow-hidden bg-navy-900">
-                {product.image_url ? (
-                  <Image
-                    src={product.image_url}
-                    alt={product.name}
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    sizes="(max-width: 768px) 50vw, 25vw"
-                  />
-                ) : (
-                  <div className="flex h-full w-full items-center justify-center text-sm text-gray-600">Sin imagen</div>
-                )}
-                <div className="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-              </div>
-              <div className="p-3 md:p-4">
-                <h3 className="line-clamp-2 text-sm font-semibold md:text-base">{product.name}</h3>
-                <p className="mt-1 text-xs text-gray-500">
-                  {product.platform} · {product.condition}
-                </p>
-                <div className="mt-2 flex items-center justify-between">
-                  {product.price > 0 ? (
-                    <p className="font-display text-base font-bold text-red-400 md:text-lg">
-                      ${product.price.toLocaleString('es-CO')}
-                    </p>
-                  ) : (
-                    <p className="font-display text-xs font-bold uppercase tracking-wider text-emerald-400 md:text-sm">
-                      Consultar
-                    </p>
-                  )}
-                  <span className="text-[11px] font-medium text-gray-400 group-hover:text-red-400">
-                    Ver →
-                  </span>
-                </div>
-              </div>
-            </Link>
-          ))}
+        <Suspense fallback={<div className="mb-8 h-28 w-full animate-pulse rounded-xl bg-navy-900/40" />}>
+          <CatalogFilters initialQuery={q} initialPlatform={platform} />
+        </Suspense>
+        <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between text-xs text-gray-400">
+          <p>
+            {totalItems > 0 ? (
+              <>
+                Mostrando <span className="font-semibold text-white">{from + 1}</span>–
+                <span className="font-semibold text-white">{Math.min(to + 1, totalItems)}</span> de{' '}
+                <span className="font-semibold text-white">{totalItems}</span> títulos
+              </>
+            ) : (
+              '0 títulos encontrados'
+            )}
+          </p>
+          {totalPages > 1 && (
+            <p>
+              Página <span className="font-semibold text-white">{currentPage}</span> de{' '}
+              <span className="font-semibold text-white">{totalPages}</span>
+            </p>
+          )}
         </div>
+
+        {products && products.length > 0 ? (
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
+            {products.map((product: Product, index: number) => (
+              <Link
+                key={product.id}
+                href={`/producto/${product.slug}`}
+                className="card-glow group block overflow-hidden rounded-xl"
+              >
+                <div className="relative aspect-[2/3] overflow-hidden bg-navy-900">
+                  {product.image_url ? (
+                    <Image
+                      src={product.image_url}
+                      alt={product.name}
+                      fill
+                      priority={index < 4}
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                    />
+                  ) : (
+                    <div className="flex h-full w-full items-center justify-center text-sm text-gray-600">Sin imagen</div>
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                </div>
+                <div className="p-3 md:p-4">
+                  <h3 className="line-clamp-2 text-sm font-semibold md:text-base">{product.name}</h3>
+                  <p className="mt-1 text-xs text-gray-500">
+                    {product.platform} · {product.condition}
+                  </p>
+                  <div className="mt-2 flex items-center justify-between">
+                    {product.price > 0 ? (
+                      <p className="font-display text-base font-bold text-red-400 md:text-lg">
+                        ${product.price.toLocaleString('es-CO')}
+                      </p>
+                    ) : (
+                      <p className="font-display text-xs font-bold uppercase tracking-wider text-emerald-400 md:text-sm">
+                        Consultar
+                      </p>
+                    )}
+                    <span className="text-[11px] font-medium text-gray-400 group-hover:text-red-400">
+                      Ver →
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        ) : (
+          <div className="rounded-xl border border-navy-700 bg-navy-800/40 p-12 text-center">
+            <p className="font-display text-lg font-bold uppercase tracking-wide text-gray-200">
+              No se encontraron videojuegos
+            </p>
+            <p className="mx-auto mt-2 max-w-md text-sm text-gray-400">
+              {q || platform
+                ? 'No encontramos coincidencias para tu búsqueda o filtro seleccionado.'
+                : 'El catálogo no tiene productos disponibles en este momento.'}
+            </p>
+            {(q || platform) && (
+              <Link
+                href="/"
+                className="mt-5 inline-flex items-center gap-2 rounded-lg border border-red-600/40 bg-red-600/10 px-4 py-2 text-sm font-semibold text-red-400 hover:bg-red-600 hover:text-white transition-all"
+              >
+                Limpiar filtros y ver todo el catálogo
+              </Link>
+            )}
+          </div>
+        )}
+
+        {totalPages > 1 && (
+          <nav aria-label="Paginación del catálogo" className="mt-12 flex flex-wrap items-center justify-center gap-2">
+            {currentPage > 1 ? (
+              <Link
+                href={buildPageUrl(currentPage - 1)}
+                className="rounded-lg border border-navy-700 bg-navy-800 px-4 py-2 text-sm font-semibold text-gray-300 transition-colors hover:border-red-600/40 hover:text-white"
+              >
+                ← Anterior
+              </Link>
+            ) : (
+              <span className="cursor-not-allowed rounded-lg border border-navy-800 bg-navy-900/40 px-4 py-2 text-sm font-semibold text-gray-600">
+                ← Anterior
+              </span>
+            )}
+
+            <div className="flex items-center gap-1">
+              {(() => {
+                const pages: (number | string)[] = []
+                if (totalPages <= 7) {
+                  for (let i = 1; i <= totalPages; i++) pages.push(i)
+                } else {
+                  if (currentPage <= 4) {
+                    for (let i = 1; i <= 5; i++) pages.push(i)
+                    pages.push('...')
+                    pages.push(totalPages)
+                  } else if (currentPage >= totalPages - 3) {
+                    pages.push(1)
+                    pages.push('...')
+                    for (let i = totalPages - 4; i <= totalPages; i++) pages.push(i)
+                  } else {
+                    pages.push(1)
+                    pages.push('...')
+                    pages.push(currentPage - 1)
+                    pages.push(currentPage)
+                    pages.push(currentPage + 1)
+                    pages.push('...')
+                    pages.push(totalPages)
+                  }
+                }
+                return pages.map((p, idx) =>
+                  typeof p === 'number' ? (
+                    <Link
+                      key={`page-${p}`}
+                      href={buildPageUrl(p)}
+                      className={`min-w-[38px] rounded-lg border px-3 py-2 text-center text-sm font-semibold transition-all ${
+                        p === currentPage
+                          ? 'border-red-600 bg-red-600 text-white shadow-lg shadow-red-600/30'
+                          : 'border-navy-700 bg-navy-800 text-gray-300 hover:border-red-600/40 hover:text-white'
+                      }`}
+                    >
+                      {p}
+                    </Link>
+                  ) : (
+                    <span key={`dots-${idx}`} className="px-2 text-sm text-gray-500">
+                      …
+                    </span>
+                  )
+                )
+              })()}
+            </div>
+
+            {currentPage < totalPages ? (
+              <Link
+                href={buildPageUrl(currentPage + 1)}
+                className="rounded-lg border border-navy-700 bg-navy-800 px-4 py-2 text-sm font-semibold text-gray-300 transition-colors hover:border-red-600/40 hover:text-white"
+              >
+                Siguiente →
+              </Link>
+            ) : (
+              <span className="cursor-not-allowed rounded-lg border border-navy-800 bg-navy-900/40 px-4 py-2 text-sm font-semibold text-gray-600">
+                Siguiente →
+              </span>
+            )}
+          </nav>
+        )}
       </main>
     </>
   )

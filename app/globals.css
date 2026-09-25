@@ -68,3 +68,12 @@ body {
 .card-glow {
   @apply border border-navy-700/80 bg-navy-900/40 backdrop-blur-sm transition-all duration-300 hover:border-red-500/50 hover:shadow-[0_8px_30px_-8px_rgba(192,57,43,0.5)] hover:-translate-y-1;
 }
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
