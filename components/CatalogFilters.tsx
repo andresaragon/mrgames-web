@@ -157,7 +157,7 @@ export default function CatalogFilters({
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Buscar por título (ej: GTA, FIFA, Zelda, Elden Ring, Mario)..."
-            className="input-field pl-12 pr-24 py-3.5 text-sm md:text-base bg-navy-900/80 border-navy-700/80 focus:border-red-500"
+            className="w-full rounded-xl border border-navy-700/80 bg-navy-900/80 py-3.5 pl-12 pr-24 text-sm md:text-base text-gray-100 placeholder:text-gray-500 outline-none transition-all duration-200 focus:border-red-500 focus:ring-2 focus:ring-red-500/30"
           />
 
           <div className="absolute right-3 flex items-center gap-2">
