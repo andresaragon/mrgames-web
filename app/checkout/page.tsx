@@ -1,12 +1,14 @@
 "use client"
-import { useState } from "react"
+
+import { useState, useEffect } from "react"
+import Link from "next/link"
 import { useCart } from "@/context/CartContext"
 import { createOrder } from "./actions"
-
-const WHATSAPP_NUMBER = "573175942917" // reemplaza con tu número real (indicativo país + número, sin +)
+import { getComboInquiryUrl } from "@/utils/whatsapp"
 
 export default function CheckoutPage() {
   const { items, clearCart, total } = useCart()
+  const [checkoutId, setCheckoutId] = useState("")
   const [customerName, setCustomerName] = useState("")
   const [customerPhone, setCustomerPhone] = useState("")
   const [loading, setLoading] = useState(false)
@@ -18,66 +20,116 @@ export default function CheckoutPage() {
     whatsappUrl: string
   } | null>(null)
 
+  useEffect(() => {
+    setCheckoutId(crypto.randomUUID())
+  }, [])
+
   const handleSubmit = async () => {
-    if (!customerName || !customerPhone) {
-      setError("Completa tu nombre y teléfono")
+    if (!customerName.trim()) {
+      setError("Completa tu nombre completo")
+      return
+    }
+    const phoneDigits = customerPhone.replace(/\D/g, "")
+    if (phoneDigits.length < 7) {
+      setError("Ingresa un número de teléfono o WhatsApp válido (ej. 300 123 4567)")
       return
     }
     setLoading(true)
     setError("")
+
+    const currentCheckoutId = checkoutId || crypto.randomUUID()
+    if (!checkoutId) {
+      setCheckoutId(currentCheckoutId)
+    }
+
     try {
       const result = await createOrder({
-        customerName,
-        customerPhone,
+        checkoutId: currentCheckoutId,
+        customerName: customerName.trim(),
+        customerPhone: customerPhone.trim(),
         paymentMethod: "whatsapp",
         items: items.map((i) => ({ id: i.id, quantity: i.quantity })),
       })
-      const lines = result.items.map(
-        (i) => `- ${i.name} x${i.quantity}: $${(i.unit_price * i.quantity).toLocaleString("es-CO")}`
+
+      const whatsappUrl = getComboInquiryUrl(
+        result.orderId,
+        result.items,
+        customerName.trim(),
+        result.total
       )
-      const message = [
-        `Hola, quiero coordinar mi pedido #${result.orderId.slice(0, 8)}:`,
-        ...lines,
-        `Total: $${result.total.toLocaleString("es-CO")}`,
-        `Nombre: ${customerName}`,
-      ].join("\n")
-      const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
+
       clearCart()
       window.open(whatsappUrl, "_blank")
-      setConfirmedOrder({ orderId: result.orderId, total: result.total, items: result.items, whatsappUrl })
-    } catch (err) {
-      setError("Hubo un error al crear el pedido, intenta de nuevo")
+      setConfirmedOrder({
+        orderId: result.orderId,
+        total: result.total,
+        items: result.items,
+        whatsappUrl,
+      })
+      // Prepara un nuevo ID para solicitudes subsecuentes en la misma sesión
+      setCheckoutId(crypto.randomUUID())
+    } catch (err: unknown) {
+      const message =
+        err instanceof Error
+          ? err.message
+          : "Hubo un error al procesar tu solicitud, intenta de nuevo"
+      setError(message)
     } finally {
       setLoading(false)
     }
   }
 
-if (confirmedOrder) {
+  if (confirmedOrder) {
     return (
       <main className="max-w-3xl mx-auto p-6 text-center">
         <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-green-600/20 text-3xl text-green-400 shadow-[0_0_30px_-6px_rgba(34,197,94,0.6)]">
           ✓
         </div>
-        <h1 className="font-display mb-2 text-2xl font-bold uppercase md:text-3xl">¡Pedido registrado!</h1>
+        <h1 className="font-display mb-2 text-2xl font-bold uppercase md:text-3xl">
+          ¡Cotización registrada!
+        </h1>
         <p className="mb-6 text-gray-400">
-          Pedido #{confirmedOrder.orderId.slice(0, 8)} por{" "}
-          <span className="font-semibold text-red-400">${confirmedOrder.total.toLocaleString('es-CO')}</span>
+          Solicitud #{confirmedOrder.orderId.slice(0, 8)}
+          {confirmedOrder.total > 0 && (
+            <>
+              {" "}por{" "}
+              <span className="font-semibold text-red-400">
+                ${confirmedOrder.total.toLocaleString("es-CO")} (ref.)
+              </span>
+            </>
+          )}
         </p>
         <div className="card-glow mb-6 rounded-xl p-4 text-left">
+          <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-gray-400">
+            Juegos en tu solicitud:
+          </p>
           {confirmedOrder.items.map((item, i) => (
             <p key={i} className="text-sm text-gray-300">
-              {item.name} x{item.quantity} — ${(item.unit_price * item.quantity).toLocaleString('es-CO')}
+              {item.name} x{item.quantity}
+              {item.unit_price > 0
+                ? ` — $${(item.unit_price * item.quantity).toLocaleString("es-CO")}`
+                : " — A cotizar"}
             </p>
           ))}
         </div>
         <p className="mb-4 text-gray-400">
-          Se abrió WhatsApp en otra pestaña para coordinar tu pedido. Si no se abrió automáticamente:
+          Se abrió WhatsApp para coordinar tu combo con MrGames. Si no se abrió automáticamente:
         </p>
-        <a href={confirmedOrder.whatsappUrl} target="_blank" rel="noopener noreferrer" className="btn-primary inline-block">Abrir WhatsApp</a>
+        <a
+          href={confirmedOrder.whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-primary inline-block"
+        >
+          Abrir WhatsApp
+        </a>
         <div className="mt-6">
-          <a href="/" className="text-sm text-gray-400 underline transition-colors hover:text-red-400">
+          <Link
+            href="/"
+            className="text-sm text-gray-400 underline transition-colors hover:text-red-400"
+          >
             Volver al catálogo
-          </a>
+          </Link>
         </div>
       </main>
     )
@@ -86,43 +138,76 @@ if (confirmedOrder) {
   if (items.length === 0) {
     return (
       <main className="max-w-3xl mx-auto p-6">
-        <p className="text-gray-400">Tu carrito está vacío.</p>
+        <h1 className="font-display text-2xl font-bold uppercase mb-4">Cotizar combo</h1>
+        <p className="text-gray-400">
+          Tu combo está vacío.{" "}
+          <Link href="/" className="text-red-400 underline hover:text-red-300">
+            Explorar catálogo
+          </Link>
+        </p>
       </main>
     )
   }
 
   return (
     <main className="max-w-3xl mx-auto p-6">
-      <h1 className="font-display mb-6 text-2xl font-bold uppercase md:text-3xl">Finalizar pedido</h1>
+      <h1 className="font-display mb-2 text-2xl font-bold uppercase md:text-3xl">
+        Cotizar combo por WhatsApp
+      </h1>
+      <p className="mb-6 text-sm text-gray-400">
+        Ingresa tus datos para coordinar la entrega. Te abriremos WhatsApp con la lista de tus juegos lista para enviar.
+      </p>
+
       <div className="mb-6 space-y-4">
-        <input
-          type="text"
-          placeholder="Tu nombre"
-          value={customerName}
-          onChange={(e) => setCustomerName(e.target.value)}
-          className="input-field"
-        />
-        <input
-          type="tel"
-          placeholder="Tu teléfono (ej. 3001234567)"
-          value={customerPhone}
-          onChange={(e) => setCustomerPhone(e.target.value)}
-          className="input-field"
-        />
+        <div>
+          <label className="mb-1 block text-xs font-semibold uppercase tracking-wider text-gray-400">
+            Tu nombre completo
+          </label>
+          <input
+            type="text"
+            placeholder="Ej. Helen Brito"
+            value={customerName}
+            onChange={(e) => setCustomerName(e.target.value)}
+            className="input-field"
+          />
+        </div>
+        <div>
+          <label className="mb-1 block text-xs font-semibold uppercase tracking-wider text-gray-400">
+            Teléfono o WhatsApp
+          </label>
+          <input
+            type="tel"
+            placeholder="Ej. 300 123 4567"
+            value={customerPhone}
+            onChange={(e) => setCustomerPhone(e.target.value)}
+            className="input-field"
+          />
+        </div>
       </div>
-      <div className="card-glow mb-6 rounded-xl p-4">
-        <p className="text-sm font-semibold text-gray-300">Vamos a coordinar tu pedido por WhatsApp</p>
-        <p className="mt-1 text-sm text-gray-500">
-          Al confirmar, se abrirá WhatsApp con el detalle de tu pedido listo para enviar.
+
+      <div className="card-glow mb-6 rounded-xl border-emerald-500/30 bg-emerald-950/20 p-4">
+        <p className="text-sm font-semibold text-emerald-400">
+          Atención personalizada y precio final
+        </p>
+        <p className="mt-1 text-sm text-gray-300">
+          Al enviar la solicitud, MrGames te confirmará la disponibilidad exacta de cada juego y te aplicará las promociones vigentes.
         </p>
       </div>
+
       {error && <p className="mb-4 text-red-400">{error}</p>}
+
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <p className="font-display text-xl font-bold">
-          Total: <span className="text-red-400">${total.toLocaleString("es-CO")}</span>
-        </p>
+        <div>
+          <p className="font-display text-xl font-bold">
+            Total de referencia:{" "}
+            <span className="text-red-400">${total.toLocaleString("es-CO")}</span>
+          </p>
+          <p className="text-xs text-gray-500">
+            Sujeto a descuentos por bonos y modalidad elegida.
+          </p>
+        </div>
         <button onClick={handleSubmit} disabled={loading} className="btn-primary">
-          {loading ? "Procesando..." : "Confirmar pedido"}
+          {loading ? "Procesando..." : "Enviar cotización por WhatsApp →"}
         </button>
       </div>
     </main>

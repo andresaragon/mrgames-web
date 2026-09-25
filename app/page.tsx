@@ -51,7 +51,7 @@ export default async function Home({
             Tu próximo juego <span className="text-red-500">te espera</span>
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-gray-400 md:text-lg">
-            Códigos digitales nuevos y usados, consolas y cuentas compartidas — con pago en línea o coordinado por WhatsApp.
+            Catálogo de videojuegos destacados y cuentas compartidas — consulta disponibilidad inmediata o arma tu combo en WhatsApp.
           </p>
         </div>
       </div>
@@ -102,9 +102,20 @@ export default async function Home({
                 <p className="mt-1 text-xs text-gray-500">
                   {product.platform} · {product.condition}
                 </p>
-                <p className="font-display mt-2 text-lg font-bold text-red-400">
-                  ${product.price.toLocaleString('es-CO')}
-                </p>
+                <div className="mt-2 flex items-center justify-between">
+                  {product.price > 0 ? (
+                    <p className="font-display text-base font-bold text-red-400 md:text-lg">
+                      ${product.price.toLocaleString('es-CO')}
+                    </p>
+                  ) : (
+                    <p className="font-display text-xs font-bold uppercase tracking-wider text-emerald-400 md:text-sm">
+                      Consultar
+                    </p>
+                  )}
+                  <span className="text-[11px] font-medium text-gray-400 group-hover:text-red-400">
+                    Ver →
+                  </span>
+                </div>
               </div>
             </Link>
           ))}

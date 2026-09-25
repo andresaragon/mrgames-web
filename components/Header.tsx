@@ -47,7 +47,7 @@ export default function Header() {
                 </span>
               )}
             </span>
-            <span className="hidden sm:inline font-medium">Carrito</span>
+            <span className="hidden sm:inline font-medium">Mi Combo</span>
           </Link>
         </div>
       </div>

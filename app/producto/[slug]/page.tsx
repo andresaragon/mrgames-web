@@ -1,7 +1,7 @@
 import { createClient } from '@/utils/supabase/server'
 import { cookies } from 'next/headers'
 import { notFound } from 'next/navigation'
-import AddToCartButton from '@/components/AddToCartButton'
+import ProductActions from '@/components/ProductActions'
 import Image from 'next/image'
 
 export default async function ProductPage({
@@ -42,14 +42,35 @@ export default async function ProductPage({
           {product.platform} · {product.condition}
         </p>
         <h1 className="font-display mt-2 text-3xl font-bold md:text-4xl">{product.name}</h1>
-        <p className="font-display mt-4 text-3xl font-bold text-red-400">
-          ${product.price.toLocaleString('es-CO')}
+        {product.price > 0 ? (
+          <div className="mt-4">
+            <span className="text-xs uppercase tracking-wider text-gray-400">Precio de referencia</span>
+            <p className="font-display text-3xl font-bold text-red-400">
+              ${product.price.toLocaleString('es-CO')} <span className="text-sm font-normal text-gray-400">COP</span>
+            </p>
+          </div>
+        ) : (
+          <div className="mt-4">
+            <p className="font-display text-2xl font-bold text-red-400">
+              Precio a consultar
+            </p>
+            <span className="text-xs text-gray-400">Varía según modalidad (código digital o cuenta compartida)</span>
+          </div>
+        )}
+        <p className="mt-4 leading-relaxed text-gray-300">
+          {product.description || "Juego digital original garantizado para Xbox One y Xbox Series X|S. Consulta disponibilidad para entrega inmediata por WhatsApp."}
         </p>
-        <p className="mt-4 leading-relaxed text-gray-300">{product.description}</p>
-        <p className={`mt-4 text-sm font-medium ${product.stock > 0 ? 'text-green-400' : 'text-red-400'}`}>
-          {product.stock > 0 ? `${product.stock} disponibles` : 'Agotado'}
-        </p>
-        <AddToCartButton id={product.id} name={product.name} price={product.price} slug={product.slug} />
+        <div className="mt-4 inline-flex items-center gap-2 self-start rounded-full border border-emerald-500/30 bg-emerald-950/40 px-3 py-1 text-xs font-semibold text-emerald-400">
+          <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+          Disponible para entrega / coordinación inmediata
+        </div>
+        <ProductActions
+          id={product.id}
+          name={product.name}
+          price={product.price}
+          slug={product.slug}
+          platform={product.platform}
+        />
       </div>
     </main>
   )
