@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Suspense } from 'react'
 import CatalogFilters from '@/components/CatalogFilters'
+import HowItWorks from '@/components/HowItWorks'
 
 interface Product {
   id: string
@@ -75,6 +76,7 @@ export default async function Home({
           </p>
         </div>
       </div>
+      <HowItWorks />
       <main className="max-w-6xl mx-auto p-6">
         <h2 className="font-display mb-6 text-2xl font-bold uppercase tracking-wide md:text-3xl">Catálogo</h2>
         <Suspense fallback={<div className="mb-8 h-28 w-full animate-pulse rounded-xl bg-navy-900/40" />}>
