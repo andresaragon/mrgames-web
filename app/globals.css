@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --color-navy-950: #060a12;
-  --color-navy-900: #0a0f1a;
-  --color-navy-800: #0d1b2a;
-  --color-navy-700: #16273a;
-  --color-red-700: #9c2c20;
-  --color-red-600: #c0392b;
-  --color-red-500: #e14a3a;
-  --color-red-400: #ff6b57;
+  --color-navy-950: #050811;
+  --color-navy-900: #0a0f1d;
+  --color-navy-800: #0f172a;
+  --color-navy-700: #1e293b;
+  --color-red-700: #c9183b;
+  --color-red-600: #e61944;
+  --color-red-500: #ff2b56;
+  --color-red-400: #ff5277;
   --background: var(--color-navy-950);
   --foreground: #f3f4f6;
 }
@@ -54,7 +54,7 @@ body {
 }
 
 .btn-primary {
-  @apply inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-b from-red-500 to-red-600 px-6 py-3 font-bold text-white shadow-[0_4px_20px_-4px_rgba(192,57,43,0.6)] transition-all duration-200 hover:shadow-[0_6px_28px_-4px_rgba(231,76,60,0.8)] hover:brightness-110 active:scale-[0.97] disabled:opacity-50 disabled:pointer-events-none disabled:shadow-none;
+  @apply inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-b from-red-500 to-red-600 px-6 py-3 font-bold text-white shadow-[0_4px_24px_-4px_rgba(255,43,86,0.5)] transition-all duration-200 hover:shadow-[0_6px_32px_-4px_rgba(255,43,86,0.7)] hover:brightness-110 active:scale-[0.97] disabled:opacity-50 disabled:pointer-events-none disabled:shadow-none;
 }
 
 .btn-secondary {
@@ -66,7 +66,7 @@ body {
 }
 
 .card-glow {
-  @apply border border-navy-700/80 bg-navy-900/40 backdrop-blur-sm transition-all duration-300 hover:border-red-500/50 hover:shadow-[0_8px_30px_-8px_rgba(192,57,43,0.5)] hover:-translate-y-1;
+  @apply border border-navy-700/80 bg-navy-900/40 backdrop-blur-sm transition-all duration-300 hover:border-red-500/50 hover:shadow-[0_8px_32px_-8px_rgba(255,43,86,0.35)] hover:-translate-y-1;
 }
 
 .no-scrollbar::-webkit-scrollbar {

@@ -45,3 +45,35 @@ export function getComboInquiryUrl(
 
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(messageParts.join("\n"))}`
 }
+
+/**
+ * Genera el enlace de WhatsApp para consultas generales de atención al cliente.
+ */
+export function getGeneralInquiryUrl(customMessage?: string): string {
+  const message =
+    customMessage ||
+    "¡Hola MrGames! Tengo una consulta sobre el catálogo de videojuegos y disponibilidad."
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
+}
+
+/**
+ * Genera el enlace de WhatsApp rápido para cotizar el combo actual desde el botón flotante.
+ */
+export function getQuickComboUrl(
+  items: Array<{ name: string; quantity: number; price?: number }>,
+  total?: number
+): string {
+  const lines = items.map((i) => `- ${i.name} x${i.quantity}`)
+  const totalLine =
+    total && total > 0 ? `Total ref: $${total.toLocaleString("es-CO")}` : ""
+  const messageParts = [
+    "¡Hola MrGames! Tengo estos juegos en mi combo y quiero cotizarlos:",
+    ...lines,
+  ]
+  if (totalLine) {
+    messageParts.push(totalLine)
+  }
+  messageParts.push("\n¿Qué descuento especial o bonos me aplican por armar este combo?")
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(messageParts.join("\n"))}`
+}
+
