@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import { createClient } from '@/utils/supabase/server'
 import { cookies } from 'next/headers'
 import { notFound } from 'next/navigation'
@@ -16,6 +17,64 @@ interface Product {
   image_url: string | null
   platform: string | null
   condition: string
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}): Promise<Metadata> {
+  const { slug } = await params
+  const cookieStore = await cookies()
+  const supabase = createClient(cookieStore)
+
+  const { data: product } = await supabase
+    .from('products')
+    .select('name, description, image_url, platform, price')
+    .eq('slug', slug)
+    .eq('active', true)
+    .single()
+
+  if (!product) {
+    return {
+      title: 'Juego no encontrado',
+    }
+  }
+
+  const title = `${product.name} (${product.platform || 'Digital'})`
+  const description =
+    product.price > 0
+      ? `Juego digital garantizado para ${product.platform || 'tu consola'} · Ref. $${product.price.toLocaleString('es-CO')} COP. Consulta disponibilidad y cotiza combos por WhatsApp.`
+      : `Juego digital garantizado para ${product.platform || 'tu consola'}. Consulta disponibilidad y arma tu combo en WhatsApp.`
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title: `${product.name} | MrGames`,
+      description,
+      url: `https://mrgames.com.co/producto/${slug}`,
+      siteName: 'MrGames',
+      locale: 'es_CO',
+      type: 'website',
+      images: product.image_url
+        ? [
+            {
+              url: product.image_url,
+              width: 600,
+              height: 900,
+              alt: product.name,
+            },
+          ]
+        : [],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${product.name} | MrGames`,
+      description,
+      images: product.image_url ? [product.image_url] : [],
+    },
+  }
 }
 
 function getPlatformBadgeClasses(platform: string | null) {

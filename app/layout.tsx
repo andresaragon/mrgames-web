@@ -20,8 +20,37 @@ const rajdhani = Rajdhani({
 });
 
 export const metadata: Metadata = {
-  title: "MrGames — Tienda de Videojuegos",
-  description: "Videojuegos, consolas y cuentas compartidas para Xbox, PlayStation, Switch y PC.",
+  metadataBase: new URL('https://mrgames.com.co'),
+  title: {
+    default: "MrGames — Tienda de Videojuegos",
+    template: "%s | MrGames",
+  },
+  description:
+    "Catálogo de videojuegos y cuentas compartidas para Xbox, PlayStation, Switch y PC. Consulta disponibilidad inmediata o cotiza tu combo en WhatsApp.",
+  keywords: [
+    "videojuegos colombia",
+    "juegos xbox baratos",
+    "juegos ps5 colombia",
+    "cuentas compartidas",
+    "mr games",
+    "nintendo switch colombia",
+    "juegos digitales",
+  ],
+  openGraph: {
+    title: "MrGames — Tu próximo juego te espera",
+    description:
+      "Catálogo de más de 600 videojuegos destacados para Xbox, PlayStation, Switch y PC. Consulta disponibilidad y cotiza combos por WhatsApp.",
+    url: "https://mrgames.com.co",
+    siteName: "MrGames",
+    locale: "es_CO",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MrGames — Tienda de Videojuegos",
+    description:
+      "Catálogo de más de 600 videojuegos destacados para Xbox, PlayStation, Switch y PC.",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
