@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { Suspense } from 'react'
 import CatalogFilters from '@/components/CatalogFilters'
 import HowItWorks from '@/components/HowItWorks'
+import { getProductBadge } from '@/utils/badges'
 
 interface Product {
   id: string
@@ -104,28 +105,41 @@ export default async function Home({
 
         {products && products.length > 0 ? (
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
-            {products.map((product: Product, index: number) => (
-              <Link
-                key={product.id}
-                href={`/producto/${product.slug}`}
-                className="card-glow group block overflow-hidden rounded-xl"
-              >
-                <div className="relative aspect-[2/3] overflow-hidden bg-navy-900">
-                  {product.image_url ? (
-                    <Image
-                      src={product.image_url}
-                      alt={product.name}
-                      fill
-                      priority={index < 4}
-                      className="object-cover transition-transform duration-300 group-hover:scale-105"
-                      sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                    />
-                  ) : (
-                    <div className="flex h-full w-full items-center justify-center text-sm text-gray-600">Sin imagen</div>
-                  )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                </div>
-                <div className="p-3 md:p-4">
+            {products.map((product: Product, index: number) => {
+              const badge = getProductBadge(product.name, product.price)
+
+              return (
+                <Link
+                  key={product.id}
+                  href={`/producto/${product.slug}`}
+                  className="card-glow group block overflow-hidden rounded-xl"
+                >
+                  <div className="relative aspect-[2/3] overflow-hidden bg-navy-900">
+                    {badge && (
+                      <div className="absolute left-2.5 top-2.5 z-20">
+                        <span
+                          className={`inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider backdrop-blur-md ${badge.colorClasses}`}
+                        >
+                          <span>{badge.icon}</span>
+                          <span>{badge.label}</span>
+                        </span>
+                      </div>
+                    )}
+                    {product.image_url ? (
+                      <Image
+                        src={product.image_url}
+                        alt={product.name}
+                        fill
+                        priority={index < 4}
+                        className="object-cover transition-transform duration-300 group-hover:scale-105"
+                        sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                      />
+                    ) : (
+                      <div className="flex h-full w-full items-center justify-center text-sm text-gray-600">Sin imagen</div>
+                    )}
+                    <div className="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                  </div>
+                  <div className="p-3 md:p-4">
                   <h3 className="line-clamp-2 text-sm font-semibold md:text-base">{product.name}</h3>
                   <p className="mt-1 text-xs text-gray-500">
                     {product.platform} · {product.condition}
@@ -146,7 +160,8 @@ export default async function Home({
                   </div>
                 </div>
               </Link>
-            ))}
+            )
+          })}
           </div>
         ) : (
           <div className="rounded-xl border border-navy-700 bg-navy-800/40 p-12 text-center">

@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import ProductActions from '@/components/ProductActions'
+import { getProductBadge } from '@/utils/badges'
 
 interface Product {
   id: string
@@ -69,6 +70,7 @@ export default async function ProductPage({
     .limit(4)
 
   const platformBadge = getPlatformBadgeClasses(product.platform)
+  const productBadge = getProductBadge(product.name, product.price)
   const defaultDescription = `Juego digital garantizado para ${
     product.platform || 'tu consola'
   }. Consulta disponibilidad para entrega inmediata o arma tu combo en WhatsApp.`
@@ -129,6 +131,14 @@ export default async function ProductPage({
             <span className="rounded-full border border-navy-700 bg-navy-850 px-2.5 py-1 text-xs text-gray-400">
               {product.condition}
             </span>
+            {productBadge && (
+              <span
+                className={`inline-flex items-center gap-1 rounded-full border px-2.5 py-1 text-xs font-bold uppercase tracking-wider backdrop-blur-md ${productBadge.colorClasses}`}
+              >
+                <span>{productBadge.icon}</span>
+                <span>{productBadge.label}</span>
+              </span>
+            )}
           </div>
 
           <h1 className="font-display mt-3 text-3xl font-bold tracking-tight text-white md:text-4xl">
@@ -232,28 +242,41 @@ export default async function ProductPage({
           </div>
 
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
-            {relatedProducts.map((rel: Product) => (
-              <Link
-                key={rel.id}
-                href={`/producto/${rel.slug}`}
-                className="card-glow group block overflow-hidden rounded-xl"
-              >
-                <div className="relative aspect-[2/3] overflow-hidden bg-navy-900">
-                  {rel.image_url ? (
-                    <Image
-                      src={rel.image_url}
-                      alt={rel.name}
-                      fill
-                      className="object-cover transition-transform duration-300 group-hover:scale-105"
-                      sizes="(max-width: 640px) 50vw, 25vw"
-                    />
-                  ) : (
-                    <div className="flex h-full w-full items-center justify-center text-xs text-gray-600">
-                      Sin imagen
-                    </div>
-                  )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                </div>
+            {relatedProducts.map((rel: Product) => {
+              const relBadge = getProductBadge(rel.name, rel.price)
+
+              return (
+                <Link
+                  key={rel.id}
+                  href={`/producto/${rel.slug}`}
+                  className="card-glow group block overflow-hidden rounded-xl"
+                >
+                  <div className="relative aspect-[2/3] overflow-hidden bg-navy-900">
+                    {relBadge && (
+                      <div className="absolute left-2.5 top-2.5 z-20">
+                        <span
+                          className={`inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider backdrop-blur-md ${relBadge.colorClasses}`}
+                        >
+                          <span>{relBadge.icon}</span>
+                          <span>{relBadge.label}</span>
+                        </span>
+                      </div>
+                    )}
+                    {rel.image_url ? (
+                      <Image
+                        src={rel.image_url}
+                        alt={rel.name}
+                        fill
+                        className="object-cover transition-transform duration-300 group-hover:scale-105"
+                        sizes="(max-width: 640px) 50vw, 25vw"
+                      />
+                    ) : (
+                      <div className="flex h-full w-full items-center justify-center text-xs text-gray-600">
+                        Sin imagen
+                      </div>
+                    )}
+                    <div className="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                  </div>
                 <div className="p-3">
                   <h3 className="line-clamp-2 text-xs font-semibold md:text-sm text-gray-100 group-hover:text-red-400 transition-colors">
                     {rel.name}
@@ -277,7 +300,8 @@ export default async function ProductPage({
                   </div>
                 </div>
               </Link>
-            ))}
+            )
+          })}
           </div>
         </section>
       )}
