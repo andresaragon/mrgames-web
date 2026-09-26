@@ -51,7 +51,7 @@
       ],
       "credentials": {
         "postgres": {
-          "id": "REEMPLAZAR",
+          "id": "KScZxkY93eWNeb9J",
           "name": "Supabase Mr Games (session pooler)"
         }
       },
@@ -139,8 +139,8 @@
       ],
       "credentials": {
         "httpQueryAuth": {
-          "id": "REEMPLAZAR",
-          "name": "Meta Page Token (access_token)"
+          "id": "QinZAZOL4pfYWHN6",
+          "name": "Meta Page Token – Mr Games"
         }
       },
       "onError": "continueErrorOutput",
@@ -164,7 +164,7 @@
       ],
       "credentials": {
         "postgres": {
-          "id": "REEMPLAZAR",
+          "id": "KScZxkY93eWNeb9J",
           "name": "Supabase Mr Games (session pooler)"
         }
       }
@@ -200,7 +200,7 @@
       ],
       "credentials": {
         "postgres": {
-          "id": "REEMPLAZAR",
+          "id": "KScZxkY93eWNeb9J",
           "name": "Supabase Mr Games (session pooler)"
         }
       }
@@ -242,7 +242,7 @@
     },
     {
       "parameters": {
-        "fromEmail": "n8n@mrgames.com.co",
+        "fromEmail": "santiagoaragon.sistemas@gmail.com",
         "toEmail": "santiagoaragon.sistemas@gmail.com",
         "subject": "={{ '⚠️ [Mr Games FB] ' + $('Clasificar error').first().json.error_category + ' (código ' + $('Clasificar error').first().json.error_code + ')' }}",
         "emailFormat": "text",
@@ -259,14 +259,14 @@
       ],
       "credentials": {
         "smtp": {
-          "id": "REEMPLAZAR",
-          "name": "SMTP VPS"
+          "id": "YctVncYkJ7moIcy8",
+          "name": "Gmail SMTP"
         }
       }
     }
   ],
   "connections": {
-    "Horario 11:30 y 18:30": {
+    "Horario 18:30 (Calentamiento)": {
       "main": [
         [
           {

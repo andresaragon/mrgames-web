@@ -14,7 +14,7 @@
     },
     {
       "parameters": {
-        "fromEmail": "n8n@mrgames.com.co",
+        "fromEmail": "santiagoaragon.sistemas@gmail.com",
         "toEmail": "santiagoaragon.sistemas@gmail.com",
         "subject": "={{ '🛑 [n8n] Falló: ' + $json.workflow.name }}",
         "emailFormat": "text",
@@ -31,8 +31,8 @@
       ],
       "credentials": {
         "smtp": {
-          "id": "REEMPLAZAR",
-          "name": "SMTP VPS"
+          "id": "YctVncYkJ7moIcy8",
+          "name": "Gmail SMTP"
         }
       }
     }
