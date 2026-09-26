@@ -119,7 +119,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "https://graph.facebook.com/v26.0/61594696654645/photos",
+        "url": "https://graph.facebook.com/v26.0/1348267475036967/photos",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpQueryAuth",
         "sendBody": true,
