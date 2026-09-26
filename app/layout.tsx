@@ -4,6 +4,7 @@ import "./globals.css";
 import { CartProvider } from '@/context/CartContext'
 import Header from '@/components/Header'
 import FloatingWhatsApp from '@/components/FloatingWhatsApp'
+import Footer from '@/components/Footer'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -63,6 +64,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <CartProvider>
           <Header />
           {children}
+          <Footer />
           <FloatingWhatsApp />
         </CartProvider>
       </body>
