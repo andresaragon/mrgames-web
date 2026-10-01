@@ -6,6 +6,7 @@ export const metadata: Metadata = {
 }
 
 const WHATSAPP_NUMBER = "573235045163"
+const PHONE_DISPLAY = "+57 323 504 5163"
 const CONTACT_EMAIL = "santiagoaragon.sistemas@gmail.com"
 const whatsappMessage = encodeURIComponent("Hola, quiero hacer una solicitud sobre mis datos personales en MrGames")
 const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${whatsappMessage}`
@@ -43,7 +44,7 @@ export default function PrivacidadPage() {
             </li>
             <li>
               WhatsApp:{' '}
-              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="text-red-400 hover:underline">+57 317 594 2917</a>
+              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="text-red-400 hover:underline">{PHONE_DISPLAY}</a>
             </li>
           </ul>
         </section>
@@ -94,7 +95,7 @@ export default function PrivacidadPage() {
             <p>
               Escríbenos a{' '}
               <a href={`mailto:${CONTACT_EMAIL}`} className="text-red-400 hover:underline">{CONTACT_EMAIL}</a>{' '}
-              o por WhatsApp al +57 323 504 5163 indicando tu nombre, el número con el que nos contactaste y tu solicitud.
+              o por WhatsApp al {PHONE_DISPLAY} indicando tu nombre, el número con el que nos contactaste y tu solicitud.
               Respondemos consultas en un máximo de 10 días hábiles y reclamos en un máximo de 15 días hábiles, según la ley.
             </p>
           </div>
