@@ -94,7 +94,7 @@ export default function PrivacidadPage() {
             <p>
               Escríbenos a{' '}
               <a href={`mailto:${CONTACT_EMAIL}`} className="text-red-400 hover:underline">{CONTACT_EMAIL}</a>{' '}
-              o por WhatsApp al +57 317 594 2917 indicando tu nombre, el número con el que nos contactaste y tu solicitud.
+              o por WhatsApp al +57 323 504 5163 indicando tu nombre, el número con el que nos contactaste y tu solicitud.
               Respondemos consultas en un máximo de 10 días hábiles y reclamos en un máximo de 15 días hábiles, según la ley.
             </p>
           </div>
