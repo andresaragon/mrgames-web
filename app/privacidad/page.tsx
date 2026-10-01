@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Política de privacidad y tratamiento de datos personales de MrGames (Ley 1581 de 2012).',
 }
 
-const WHATSAPP_NUMBER = "573175942917"
+const WHATSAPP_NUMBER = "573235045163"
 const CONTACT_EMAIL = "santiagoaragon.sistemas@gmail.com"
 const whatsappMessage = encodeURIComponent("Hola, quiero hacer una solicitud sobre mis datos personales en MrGames")
 const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${whatsappMessage}`

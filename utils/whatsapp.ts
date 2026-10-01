@@ -1,4 +1,4 @@
-export const WHATSAPP_NUMBER = "573175942917"
+export const WHATSAPP_NUMBER = "573235045163"
 
 /**
  * Genera el enlace de WhatsApp para consultar la disponibilidad y precio

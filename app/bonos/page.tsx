@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "573175942917"
+const WHATSAPP_NUMBER = "573235045163"
 const whatsappMessage = encodeURIComponent("Hola, quiero saber más sobre los bonos y juegos de regalo de MrGames")
 const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${whatsappMessage}`
 
