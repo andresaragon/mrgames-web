@@ -25,7 +25,7 @@ export default function LoginPage() {
   }
 
   return (
-    <main className="mx-auto mt-16 max-w-sm p-6">
+    <main className="w-full mx-auto mt-16 max-w-sm p-6">
       <div className="card-glow rounded-xl p-6">
         <h1 className="font-display mb-6 text-center text-2xl font-bold uppercase">Acceso admin</h1>
         <div className="space-y-4">

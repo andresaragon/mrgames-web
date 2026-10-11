@@ -60,26 +60,16 @@ export default async function Home({
   }
   return (
     <>
-      <Link href="/bonos" className="block bg-red-600 py-2 text-center text-sm font-semibold text-white transition-colors hover:bg-red-500">
-        🎁 Gana bonos y juegos de regalo con tus compras — Ver cómo funciona →
-      </Link>
-      <div className="relative overflow-hidden border-b border-red-600/20 bg-gradient-to-b from-navy-800 via-navy-900 to-navy-950 px-6 py-16 text-center md:py-24">
-        <div className="pointer-events-none absolute -top-24 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-red-600/20 blur-3xl" />
-        <div className="relative">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-red-400">
-            Xbox · PlayStation · Switch · PC
-          </p>
-          <h1 className="font-display text-4xl font-bold uppercase tracking-wide text-white md:text-6xl">
-            Tu próximo juego <span className="text-red-500">te espera</span>
-          </h1>
-          <p className="mx-auto mt-4 max-w-xl text-gray-400 md:text-lg">
-            Catálogo de videojuegos destacados y cuentas compartidas — consulta disponibilidad inmediata o arma tu combo en WhatsApp.
-          </p>
-        </div>
+      <div className="arcade-scanlines border-b border-red-600/20 bg-gradient-to-b from-navy-800 to-navy-950 px-6 py-8 text-center md:py-14">
+        <h1 className="font-display text-balance text-4xl font-bold uppercase tracking-wide text-white md:text-6xl">
+          Tu próximo juego <span className="text-red-500">te espera</span>
+        </h1>
+        <p className="mx-auto mt-2 max-w-xl text-gray-300 md:text-lg">
+          Xbox, PlayStation, Switch y PC. Consulta o arma tu combo por WhatsApp.
+        </p>
       </div>
-      <HowItWorks />
-      <main className="max-w-6xl mx-auto p-6">
-        <h2 className="font-display mb-6 text-2xl font-bold uppercase tracking-wide md:text-3xl">Catálogo</h2>
+      <main className="mx-auto w-full max-w-6xl px-4 py-6 md:px-6">
+        <h2 className="sr-only">Catálogo</h2>
         <Suspense fallback={<div className="mb-8 h-28 w-full animate-pulse rounded-xl bg-navy-900/40" />}>
           <CatalogFilters initialQuery={q} initialPlatform={platform} />
         </Suspense>
@@ -137,7 +127,7 @@ export default async function Home({
                     ) : (
                       <div className="flex h-full w-full items-center justify-center text-sm text-gray-600">Sin imagen</div>
                     )}
-                    <div className="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-red-600/35 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                   </div>
                   <div className="p-3 md:p-4">
                   <h3 className="line-clamp-2 text-sm font-semibold md:text-base">{product.name}</h3>
@@ -146,7 +136,7 @@ export default async function Home({
                   </p>
                   <div className="mt-2 flex items-center justify-between">
                     {product.price > 0 ? (
-                      <p className="font-display text-base font-bold text-red-400 md:text-lg">
+                      <p className="font-display text-lg font-bold text-red-400 md:text-xl">
                         ${product.price.toLocaleString('es-CO')}
                       </p>
                     ) : (
@@ -260,6 +250,7 @@ export default async function Home({
           </nav>
         )}
       </main>
+      <HowItWorks />
     </>
   )
 }

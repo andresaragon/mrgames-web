@@ -77,3 +77,36 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* Sala de Arcade: líneas de barrido sutiles, solo en el hero */
+.arcade-scanlines {
+  position: relative;
+}
+.arcade-scanlines::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.03) 0,
+    rgba(255, 255, 255, 0.03) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-red-400);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -8,7 +8,7 @@ export default function CartPage() {
 
   if (items.length === 0) {
     return (
-      <main className="max-w-3xl mx-auto p-6 md:p-12 text-center">
+      <main className="w-full max-w-3xl mx-auto p-6 md:p-12 text-center">
         <div className="rounded-2xl border border-navy-700 bg-navy-900/60 p-12">
           <span className="text-5xl">🎮</span>
           <h1 className="font-display text-2xl font-bold uppercase mt-4 text-white md:text-3xl">
@@ -31,7 +31,7 @@ export default function CartPage() {
   const progressPercent = totalUnits === 1 ? 33 : totalUnits === 2 ? 66 : 100
 
   return (
-    <main className="max-w-3xl mx-auto p-6 md:p-10">
+    <main className="w-full max-w-3xl mx-auto p-6 md:p-10">
       <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h1 className="font-display text-2xl font-bold uppercase text-white md:text-3xl">

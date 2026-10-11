@@ -20,7 +20,7 @@ export default function BonosPage() {
         </div>
       </div>
 
-      <main className="max-w-5xl mx-auto p-6 md:p-10">
+      <main className="w-full max-w-5xl mx-auto p-6 md:p-10">
         <div className="card-glow mb-8 rounded-xl p-6 text-center">
           <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-red-400">Valor del bono</p>
           <p className="text-gray-300">

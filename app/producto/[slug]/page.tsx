@@ -135,7 +135,7 @@ export default async function ProductPage({
   }. Consulta disponibilidad para entrega inmediata o arma tu combo en WhatsApp.`
 
   return (
-    <main className="max-w-5xl mx-auto p-6 md:p-10">
+    <main className="w-full max-w-5xl mx-auto p-6 md:p-10">
       {/* Breadcrumbs de Navegación */}
       <nav aria-label="Migas de pan" className="mb-6 flex flex-wrap items-center gap-2 text-xs text-gray-400">
         <Link href="/" className="hover:text-white transition-colors">

@@ -156,7 +156,7 @@ export default function CatalogFilters({
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Buscar por título (ej: GTA, FIFA, Zelda, Elden Ring, Mario)..."
+            placeholder="Busca un juego (ej: FIFA, Zelda)"
             className="w-full rounded-xl border border-navy-700/80 bg-navy-900/80 py-3.5 pl-12 pr-24 text-sm md:text-base text-gray-100 placeholder:text-gray-500 outline-none transition-all duration-200 focus:border-red-500 focus:ring-2 focus:ring-red-500/30"
           />
 

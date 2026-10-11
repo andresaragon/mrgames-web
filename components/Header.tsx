@@ -22,8 +22,9 @@ export default function Header() {
           </span>
         </Link>
         <div className="flex items-center gap-4 md:gap-6">
-          <Link href="/bonos" className="hidden sm:inline text-sm font-semibold uppercase tracking-wide text-gray-300 transition-colors hover:text-red-400">
-            Bonos y regalos
+          <Link href="/bonos" className="inline-flex min-h-11 items-center whitespace-nowrap text-sm font-semibold uppercase tracking-wide text-gray-300 transition-colors hover:text-red-400">
+            <span className="sm:hidden">Bonos</span>
+            <span className="hidden sm:inline">Bonos y regalos</span>
           </Link>
           <Link href="/carrito" className="group flex items-center gap-2 rounded-lg px-3 py-2 text-gray-200 transition-colors hover:text-white">
             <span className="relative flex items-center">
@@ -48,6 +49,7 @@ export default function Header() {
               )}
             </span>
             <span className="hidden sm:inline font-medium">Mi Combo</span>
+            <span className="sr-only sm:hidden">Mi combo</span>
           </Link>
         </div>
       </div>
