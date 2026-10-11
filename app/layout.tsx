@@ -27,12 +27,11 @@ export const metadata: Metadata = {
     template: "%s | MrGames",
   },
   description:
-    "Catálogo de videojuegos y cuentas compartidas para Xbox, PlayStation, Switch y PC. Consulta disponibilidad inmediata o cotiza tu combo en WhatsApp.",
+    "Catálogo de videojuegos para Xbox, PlayStation, Switch y PC. Consulta disponibilidad por WhatsApp o cotiza tu combo.",
   keywords: [
     "videojuegos colombia",
     "juegos xbox baratos",
     "juegos ps5 colombia",
-    "cuentas compartidas",
     "mr games",
     "nintendo switch colombia",
     "juegos digitales",
