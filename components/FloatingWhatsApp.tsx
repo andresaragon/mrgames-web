@@ -60,7 +60,7 @@ export default function FloatingWhatsApp() {
           ) : (
             <>
               <span className="hidden sm:inline text-[10px] font-semibold uppercase tracking-wider text-emerald-100">
-                ¿Dudas? En línea
+                ¿Dudas?
               </span>
               <span className="font-display text-xs md:text-sm font-bold tracking-wide">
                 <span className="hidden sm:inline">Chatear en </span>WhatsApp →

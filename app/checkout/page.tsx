@@ -81,7 +81,7 @@ export default function CheckoutPage() {
 
   if (confirmedOrder) {
     return (
-      <main className="max-w-3xl mx-auto p-6 text-center">
+      <main className="w-full max-w-3xl mx-auto p-6 text-center">
         <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-green-600/20 text-3xl text-green-400 shadow-[0_0_30px_-6px_rgba(34,197,94,0.6)]">
           ✓
         </div>
@@ -137,7 +137,7 @@ export default function CheckoutPage() {
 
   if (items.length === 0) {
     return (
-      <main className="max-w-3xl mx-auto p-6">
+      <main className="w-full max-w-3xl mx-auto p-6">
         <h1 className="font-display text-2xl font-bold uppercase mb-4">Cotizar combo</h1>
         <p className="text-gray-400">
           Tu combo está vacío.{" "}
@@ -150,7 +150,7 @@ export default function CheckoutPage() {
   }
 
   return (
-    <main className="max-w-3xl mx-auto p-6">
+    <main className="w-full max-w-3xl mx-auto p-6">
       <h1 className="font-display mb-2 text-2xl font-bold uppercase md:text-3xl">
         Cotizar combo por WhatsApp
       </h1>

@@ -30,7 +30,7 @@ export default function PrivacidadPage() {
         </div>
       </div>
 
-      <main className="max-w-3xl mx-auto p-6 md:p-10 space-y-10 text-gray-300 leading-relaxed">
+      <main className="w-full max-w-3xl mx-auto p-6 md:p-10 space-y-10 text-gray-300 leading-relaxed">
         <section>
           <h2 className="font-display mb-4 text-2xl font-bold uppercase">Responsable del tratamiento</h2>
           <p>

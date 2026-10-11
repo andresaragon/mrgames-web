@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-10T00:00:00Z",
+  "title": "Design System: Mr Games",
+  "extensions": {
+    "colorMeta": {
+      "red-500": {"role":"primary","displayName":"Carmesí Neón","canonical":"#ff2b56","tonalRamp":["#3d0a15","#6b1226","#9a1a38","#c9183b","#e61944","#ff2b56","#ff5277","#ffa3b5"]},
+      "navy-950": {"role":"neutral","displayName":"Medianoche Espacial","canonical":"#050811","tonalRamp":["#050811","#0a0f1d","#0f172a","#1e293b","#334155","#64748b","#94a3b8","#f3f4f6"]},
+      "emerald-400": {"role":"secondary","displayName":"Esmeralda Consulta","canonical":"#34d399","tonalRamp":["#022c22","#065f46","#047857","#059669","#10b981","#34d399","#6ee7b7","#d1fae5"]}
+    },
+    "typographyMeta": {
+      "display": {"displayName":"Display","purpose":"Hero, títulos de sección y precios."},
+      "body": {"displayName":"Body","purpose":"Descripciones y ayudas."}
+    },
+    "shadows": [
+      {"name":"glow-action","value":"0 4px 24px -4px rgba(255,43,86,0.5)","purpose":"Botón primario en reposo."},
+      {"name":"glow-card","value":"0 8px 32px -8px rgba(255,43,86,0.35)","purpose":"Tarjeta de juego en hover."},
+      {"name":"header","value":"0 2px 20px -4px rgba(0,0,0,0.6)","purpose":"Separa el header pegajoso."}
+    ],
+    "motion": [
+      {"name":"fast","value":"200ms","purpose":"Botones y campos."},
+      {"name":"card","value":"300ms","purpose":"Hover de tarjetas."}
+    ],
+    "breakpoints": [
+      {"name":"sm","value":"640px"},
+      {"name":"md","value":"768px"}
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button", "kind": "button", "refersTo": "button-primary",
+      "description": "Acción principal, con glow carmesí.",
+      "html": "<button class=\"ds-btn-primary\">Consultar por WhatsApp</button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:none;border-radius:8px;background:linear-gradient(to bottom,#ff2b56,#e61944);color:#fff;font-weight:700;padding:12px 24px;box-shadow:0 4px 24px -4px rgba(255,43,86,.5);transition:all .2s;cursor:pointer}.ds-btn-primary:hover{box-shadow:0 6px 32px -4px rgba(255,43,86,.7);filter:brightness(1.1)}.ds-btn-primary:active{transform:scale(.97)}.ds-btn-primary:focus-visible{outline:2px solid #ff5277;outline-offset:2px}"
+    },
+    {
+      "name": "Secondary Button", "kind": "button", "refersTo": "button-secondary",
+      "description": "Acción secundaria con borde navy.",
+      "html": "<button class=\"ds-btn-secondary\">Ver combo</button>",
+      "css": ".ds-btn-secondary{display:inline-flex;align-items:center;gap:8px;border:1px solid #1e293b;border-radius:8px;background:rgba(10,15,29,.6);color:#e5e7eb;font-weight:600;padding:8px 16px;transition:all .2s;cursor:pointer}.ds-btn-secondary:hover{border-color:rgba(255,43,86,.6);color:#fff}.ds-btn-secondary:focus-visible{outline:2px solid #ff5277;outline-offset:2px}"
+    },
+    {
+      "name": "Input Field", "kind": "input", "refersTo": "input-field",
+      "description": "Campo de búsqueda y formularios.",
+      "html": "<input class=\"ds-input\" placeholder=\"Buscar juego...\">",
+      "css": ".ds-input{width:100%;box-sizing:border-box;border:1px solid #1e293b;border-radius:8px;background:rgba(10,15,29,.5);color:#f3f4f6;padding:12px;outline:none;transition:all .2s}.ds-input::placeholder{color:#6b7280}.ds-input:focus{border-color:#ff2b56;box-shadow:0 0 0 2px rgba(255,43,86,.3)}"
+    },
+    {
+      "name": "Game Card", "kind": "card", "refersTo": "card-glow",
+      "description": "Tarjeta de carátula con precio y glow en hover.",
+      "html": "<div class=\"ds-card\"><div class=\"ds-cover\"></div><div class=\"ds-card-body\"><h3>EA Sports FC 25</h3><p>Xbox</p><strong>$ 89.000</strong></div></div>",
+      "css": ".ds-card{width:200px;overflow:hidden;border:1px solid rgba(30,41,59,.8);border-radius:16px;background:rgba(10,15,29,.4);transition:all .3s;color:#f3f4f6}.ds-card:hover{border-color:rgba(255,43,86,.5);box-shadow:0 8px 32px -8px rgba(255,43,86,.35);transform:translateY(-4px)}.ds-cover{aspect-ratio:2/3;background:#0a0f1d}.ds-card-body{padding:12px}.ds-card-body h3{margin:0;font-size:14px;font-weight:600}.ds-card-body p{margin:4px 0 0;font-size:12px;color:#6b7280}.ds-card-body strong{display:block;margin-top:8px;font-size:18px;color:#ff5277}"
+    },
+    {
+      "name": "Badge", "kind": "chip", "refersTo": "card-glow",
+      "description": "Etiqueta sobre la carátula.",
+      "html": "<span class=\"ds-badge\">Top Ventas</span>",
+      "css": ".ds-badge{display:inline-flex;border:1px solid rgba(255,43,86,.4);border-radius:9999px;background:rgba(230,25,68,.2);color:#ff5277;padding:2px 8px;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}"
+    }
+  ],
+  "narrative": {
+    "northStar": "La Sala de Arcade",
+    "overview": "Un salón oscuro donde cada carátula brilla como una pantalla encendida y el rojo neón señala dónde actuar. El fondo medianoche desaparece para que el catálogo hable; el carmesí aparece solo donde hay decisión.",
+    "keyCharacteristics": ["Oscuro en capas: superficies navy planas, brillo carmesí como respuesta a la interacción.","Carátulas como protagonista; el chrome de la interfaz se queda atrás.","Display condensado en mayúsculas para títulos, precios y etiquetas de acción.","Verde esmeralda reservado para disponibilidad/consulta y WhatsApp."],
+    "rules": [
+      {"name":"The One Signal Rule","body":"El carmesí marca acción o precio. Si todo es rojo, nada lo es.","section":"colors"},
+      {"name":"The Green Is WhatsApp Rule","body":"El esmeralda se reserva para WhatsApp y disponibilidad; nunca decora.","section":"colors"},
+      {"name":"The Price Is Display Rule","body":"Los precios van en Rajdhani carmesí suave; es lo primero que se escanea después de la carátula.","section":"typography"},
+      {"name":"The Glow Is A Response Rule","body":"En reposo las superficies son planas; el brillo aparece al interactuar o en la acción principal.","section":"elevation"}
+    ],
+    "dos": ["Do usar #ff2b56 solo para acción, precio y énfasis puntual.","Do dejar que las carátulas 2:3 ocupen el protagonismo en rejillas de 2 columnas en móvil.","Do poner títulos y precios en Rajdhani, y la lectura en Geist.","Do reservar el glow para el botón primario y estados hover.","Do mantener el esmeralda para WhatsApp y disponibilidad."],
+    "donts": ["Don't usar fondos claros ni blancos: el sistema es oscuro.","Don't aplicar glow en reposo sobre superficies decorativas.","Don't usar más de un acento fuerte por pantalla.","Don't inventar urgencia, stock ni testimonios (ver PRODUCT.md).","Don't cortar ni deformar las carátulas."]
+  }
+}
