@@ -3,6 +3,7 @@
 import { cookies } from "next/headers"
 import { createClient } from "@/utils/supabase/server"
 import { createAdminClient } from "@/utils/supabase/admin"
+import { validarPedido } from "@/utils/validar-pedido"
 
 interface CartItemInput {
   id: string
@@ -23,30 +24,21 @@ interface CreateOrderInput {
  * y catálogo de referencia de MrGames con cierre y confirmación asistida en WhatsApp.
  */
 export async function createOrder(input: CreateOrderInput) {
-  if (!input.customerName || !input.customerName.trim()) {
-    throw new Error("El nombre es obligatorio")
+  const validacion = validarPedido(input)
+  if (!validacion.ok) {
+    throw new Error(validacion.error)
   }
-  if (!input.customerPhone || !input.customerPhone.trim()) {
-    throw new Error("El teléfono es obligatorio")
-  }
-  if (!input.items || !input.items.length) {
-    throw new Error("El combo de juegos está vacío")
-  }
-  for (const item of input.items) {
-    if (!Number.isInteger(item.quantity) || item.quantity <= 0) {
-      throw new Error("Cantidad inválida para los juegos seleccionados")
-    }
-  }
+  const valor = validacion.valor
 
   const admin = createAdminClient()
 
   // 1. Idempotencia: Si ya existe un registro con este checkoutId, retornarlo directamente
-  if (input.checkoutId) {
+  if (valor.checkoutId) {
     try {
       const { data: existingOrder, error: checkError } = await admin
         .from("orders")
         .select("id, total, order_items(product_id, quantity, unit_price, products(name))")
-        .eq("checkout_id", input.checkoutId)
+        .eq("checkout_id", valor.checkoutId)
         .maybeSingle()
 
       if (!checkError && existingOrder) {
@@ -79,7 +71,7 @@ export async function createOrder(input: CreateOrderInput) {
   const cookieStore = await cookies()
   const supabase = createClient(cookieStore)
 
-  const ids = input.items.map((i) => i.id)
+  const ids = valor.items.map((i) => i.id)
   const { data: products, error: productsError } = await supabase
     .from("products")
     .select("id, name, price")
@@ -90,7 +82,7 @@ export async function createOrder(input: CreateOrderInput) {
   }
 
   let total = 0
-  const orderItems = input.items.map((item) => {
+  const orderItems = valor.items.map((item) => {
     const product = products.find((p) => p.id === item.id)
     if (!product) throw new Error(`Juego no encontrado en el catálogo: ${item.id}`)
     const unitPrice = Number(product.price) || 0
@@ -105,9 +97,9 @@ export async function createOrder(input: CreateOrderInput) {
 
   // 3. Registrar la solicitud en orders (compatible con o sin columna checkout_id en Supabase)
   const baseOrderPayload = {
-    customer_name: input.customerName.trim(),
-    customer_phone: input.customerPhone.trim(),
-    payment_method: input.paymentMethod,
+    customer_name: valor.customerName,
+    customer_phone: valor.customerPhone,
+    payment_method: valor.paymentMethod,
     status: "coordinated",
     total,
   }
@@ -115,10 +107,10 @@ export async function createOrder(input: CreateOrderInput) {
   let order: { id: string } | null = null
   let orderError: { message: string; code?: string } | null = null
 
-  if (input.checkoutId) {
+  if (valor.checkoutId) {
     const res = await admin
       .from("orders")
-      .insert({ ...baseOrderPayload, checkout_id: input.checkoutId })
+      .insert({ ...baseOrderPayload, checkout_id: valor.checkoutId })
       .select("id")
       .single()
 
