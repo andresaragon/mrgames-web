@@ -1,6 +1,15 @@
+const fs = require('fs');
+const path = require('path');
 const https = require('https');
 
-const API_KEY = '668776fb9b06bbf2d051fa8236b4f8fe';
+// La clave se lee de .env.local (nunca en el codigo: este repo es publico).
+const envContent = fs.readFileSync(path.join(__dirname, '..', '.env.local'), 'utf-8');
+const keyMatch = envContent.match(/^STEAMGRIDDB_API_KEY=(.*)$/m);
+const API_KEY = keyMatch ? keyMatch[1].trim() : '';
+if (!API_KEY) {
+  console.error('ERROR: STEAMGRIDDB_API_KEY no encontrada en .env.local');
+  process.exit(1);
+}
 
 function get(url) {
   return new Promise((resolve, reject) => {
