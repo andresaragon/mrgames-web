@@ -67,23 +67,12 @@ export default function CatalogFilters({
   const currentPlatform = searchParams.get('platform') || initialPlatform || ''
 
   // Sincronizar estado local si cambia la URL externamente (ej. navegación atrás/adelante)
-  useEffect(() => {
-    setQuery(searchParams.get('q') || '')
-  }, [searchParams])
-
-  // Debounce para la búsqueda de texto (350ms)
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      const currentQ = searchParams.get('q') || ''
-      const trimmedQuery = query.trim()
-
-      if (trimmedQuery !== currentQ) {
-        updateFilters({ q: trimmedQuery, page: '1' })
-      }
-    }, 350)
-
-    return () => clearTimeout(timer)
-  }, [query])
+  const urlQuery = searchParams.get('q') || ''
+  const [syncedUrlQuery, setSyncedUrlQuery] = useState(initialQuery)
+  if (urlQuery !== syncedUrlQuery) {
+    setSyncedUrlQuery(urlQuery)
+    setQuery(urlQuery)
+  }
 
   const updateFilters = (updates: { q?: string; platform?: string; page?: string }) => {
     const params = new URLSearchParams(searchParams.toString())
@@ -116,6 +105,20 @@ export default function CatalogFilters({
       router.push(queryString ? `/?${queryString}` : '/', { scroll: false })
     })
   }
+
+  // Debounce para la búsqueda de texto (350ms)
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const currentQ = searchParams.get('q') || ''
+      const trimmedQuery = query.trim()
+
+      if (trimmedQuery !== currentQ) {
+        updateFilters({ q: trimmedQuery, page: '1' })
+      }
+    }, 350)
+
+    return () => clearTimeout(timer)
+  }, [query])
 
   const handlePlatformClick = (platformId: string) => {
     // Si pulsa el mismo chip activo (diferente de 'Todas'), lo apaga volviendo a 'Todas'

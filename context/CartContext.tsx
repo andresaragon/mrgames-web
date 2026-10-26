@@ -31,6 +31,8 @@ export function CartProvider({ children }: { children: ReactNode }) {
       if (stored) {
         const parsed = JSON.parse(stored)
         if (Array.isArray(parsed)) {
+          // Hidratar desde localStorage tras montar: leerlo en el render rompería la hidratación SSR.
+          // eslint-disable-next-line react-hooks/set-state-in-effect
           setItems(parsed)
         }
       }

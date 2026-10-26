@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import Link from "next/link"
 import { useCart } from "@/context/CartContext"
 import { createOrder } from "./actions"
@@ -8,7 +8,7 @@ import { getComboInquiryUrl } from "@/utils/whatsapp"
 
 export default function CheckoutPage() {
   const { items, clearCart, total } = useCart()
-  const [checkoutId, setCheckoutId] = useState("")
+  const [checkoutId, setCheckoutId] = useState(() => crypto.randomUUID())
   const [customerName, setCustomerName] = useState("")
   const [customerPhone, setCustomerPhone] = useState("")
   const [loading, setLoading] = useState(false)
@@ -19,10 +19,6 @@ export default function CheckoutPage() {
     items: { name: string; quantity: number; unit_price: number }[]
     whatsappUrl: string
   } | null>(null)
-
-  useEffect(() => {
-    setCheckoutId(crypto.randomUUID())
-  }, [])
 
   const handleSubmit = async () => {
     if (!customerName.trim()) {

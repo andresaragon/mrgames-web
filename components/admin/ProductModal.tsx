@@ -1,5 +1,5 @@
 "use client"
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Image from 'next/image'
 import { AdminProduct, saveAdminProduct, searchCoverSGDB } from '@/app/admin/actions'
 
@@ -10,6 +10,9 @@ interface ProductModalProps {
   onSaved: () => void
 }
 
+const DEFAULT_DESCRIPTION =
+  'Juego digital garantizado. Entrega inmediata y soporte guiado por WhatsApp de Mr Games.'
+
 function slugify(text: string) {
   return text
     .toLowerCase()
@@ -19,56 +22,36 @@ function slugify(text: string) {
     .replace(/(^-|-$)/g, '')
 }
 
-export default function ProductModal({
-  isOpen,
+// El formulario se monta al abrir el modal y se recrea al cambiar de producto (key), así que el
+// estado inicial sale de `product` y no hace falta sincronizarlo con un efecto.
+export default function ProductModal(props: ProductModalProps) {
+  if (!props.isOpen) return null
+  return <ProductForm key={props.product?.id ?? 'new'} {...props} />
+}
+
+function ProductForm({
   onClose,
   product,
   onSaved,
 }: ProductModalProps) {
   const isEditing = Boolean(product?.id)
 
-  const [name, setName] = useState('')
-  const [slug, setSlug] = useState('')
-  const [price, setPrice] = useState<number | string>(99000)
-  const [stock, setStock] = useState<number | string>(2)
-  const [platform, setPlatform] = useState('Xbox')
-  const [condition, setCondition] = useState('nuevo')
-  const [description, setDescription] = useState('')
-  const [imageUrl, setImageUrl] = useState('')
-  const [active, setActive] = useState(true)
+  const [name, setName] = useState(product?.name || '')
+  const [slug, setSlug] = useState(product?.slug || '')
+  const [price, setPrice] = useState<number | string>(product ? (product.price ?? 99000) : 99000)
+  const [stock, setStock] = useState<number | string>(product ? (product.stock ?? 2) : 2)
+  const [platform, setPlatform] = useState(product?.platform || 'Xbox')
+  const [condition, setCondition] = useState(product?.condition || 'nuevo')
+  const [description, setDescription] = useState(
+    product ? product.description || '' : DEFAULT_DESCRIPTION
+  )
+  const [imageUrl, setImageUrl] = useState(product?.image_url || '')
+  const [active, setActive] = useState(product?.active ?? true)
 
   const [saving, setSaving] = useState(false)
   const [searchingCover, setSearchingCover] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [sgdbFeedback, setSgdbFeedback] = useState<string | null>(null)
-
-  useEffect(() => {
-    if (product) {
-      setName(product.name || '')
-      setSlug(product.slug || '')
-      setPrice(product.price ?? 99000)
-      setStock(product.stock ?? 2)
-      setPlatform(product.platform || 'Xbox')
-      setCondition(product.condition || 'nuevo')
-      setDescription(product.description || '')
-      setImageUrl(product.image_url || '')
-      setActive(product.active ?? true)
-    } else {
-      setName('')
-      setSlug('')
-      setPrice(99000)
-      setStock(2)
-      setPlatform('Xbox')
-      setCondition('nuevo')
-      setDescription('Juego digital garantizado. Entrega inmediata y soporte guiado por WhatsApp de Mr Games.')
-      setImageUrl('')
-      setActive(true)
-    }
-    setError(null)
-    setSgdbFeedback(null)
-  }, [product, isOpen])
-
-  if (!isOpen) return null
 
   const handleNameChange = (val: string) => {
     setName(val)

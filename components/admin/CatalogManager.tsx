@@ -57,6 +57,11 @@ export default function CatalogManager({ initialData }: CatalogManagerProps) {
     return () => clearTimeout(handler)
   }, [q])
 
+  const showNotice = (type: 'success' | 'error', message: string) => {
+    setNotification({ type, message })
+    setTimeout(() => setNotification(null), 4000)
+  }
+
   // Cargar productos
   const loadProducts = useCallback(async () => {
     setLoading(true)
@@ -80,13 +85,10 @@ export default function CatalogManager({ initialData }: CatalogManagerProps) {
   }, [debouncedQ, platform, status, page])
 
   useEffect(() => {
+    // Petición al cambiar filtros o página: loadProducts marca `loading` al empezar.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     loadProducts()
   }, [loadProducts])
-
-  const showNotice = (type: 'success' | 'error', message: string) => {
-    setNotification({ type, message })
-    setTimeout(() => setNotification(null), 4000)
-  }
 
   // Toggle Activo / Pausado (Optimistic)
   const handleToggleActive = async (p: AdminProduct) => {
