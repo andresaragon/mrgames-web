@@ -68,11 +68,14 @@ describe("criterio 4: teléfono celular Colombia", () => {
     null,
   ])("rechaza %j", (t) => falla({ ...base(), customerPhone: t }))
 
-  it("acepta celular colombiano con o sin indicativo (+57) y con caracteres de separación", () => {
+  it("acepta celular colombiano con o sin indicativo (+57, 57, 0057) y con caracteres de separación (espacios, guiones, puntos, paréntesis)", () => {
     expect(validarPedido({ ...base(), customerPhone: "3001234567" }).ok).toBe(true)
     expect(validarPedido({ ...base(), customerPhone: "310 987 6543" }).ok).toBe(true)
+    expect(validarPedido({ ...base(), customerPhone: "300.123.4567" }).ok).toBe(true)
     expect(validarPedido({ ...base(), customerPhone: "+57 323 504 5163" }).ok).toBe(true)
+    expect(validarPedido({ ...base(), customerPhone: "+57.300.123.4567" }).ok).toBe(true)
     expect(validarPedido({ ...base(), customerPhone: "573235045163" }).ok).toBe(true)
+    expect(validarPedido({ ...base(), customerPhone: "0057 300 123 4567" }).ok).toBe(true)
     expect(validarPedido({ ...base(), customerPhone: "+57 (300) 123-4567" }).ok).toBe(true)
   })
 })

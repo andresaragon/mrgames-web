@@ -49,11 +49,13 @@ export function validarPedido(entrada: unknown): ResultadoValidacion {
     return { ok: false, error: "El nombre debe tener entre 2 y 80 caracteres" }
   }
 
-  // Criterio 4: customerPhone (normalizado sin espacios, guiones ni paréntesis; celular Colombia: ^(\+?57)?3[0-9]{9}$)
+  // Criterio 4: customerPhone (normalizado sin espacios, guiones, puntos ni paréntesis; 0057 -> +57; celular Colombia: ^(\+?57)?3[0-9]{9}$)
   if (typeof raw.customerPhone !== "string") {
     return { ok: false, error: "El teléfono debe ser una cadena de texto" }
   }
-  const customerPhone = raw.customerPhone.replace(/[\s\-()]/g, "")
+  const customerPhone = raw.customerPhone
+    .replace(/[\s\-.()]/g, "")
+    .replace(/^0057/, "+57")
   if (!PHONE_NORMALIZED_REGEX.test(customerPhone)) {
     return {
       ok: false,

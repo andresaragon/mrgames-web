@@ -25,7 +25,9 @@ export default function CheckoutPage() {
       setError("Completa tu nombre completo")
       return
     }
-    const cleanPhone = customerPhone.replace(/[\s\-()]/g, "")
+    const cleanPhone = customerPhone
+      .replace(/[\s\-.()]/g, "")
+      .replace(/^0057/, "+57")
     if (!/^(\+?57)?3[0-9]{9}$/.test(cleanPhone)) {
       setError("Ingresa un número celular colombiano válido (ej. 300 123 4567 o +57 300 123 4567)")
       return

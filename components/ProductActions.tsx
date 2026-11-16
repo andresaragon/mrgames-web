@@ -13,10 +13,14 @@ interface ProductActionsProps {
 }
 
 export default function ProductActions({ id, name, price, slug, platform }: ProductActionsProps) {
-  const { addItem } = useCart()
+  const { addItem, items } = useCart()
   const [added, setAdded] = useState(false)
 
+  const totalUnits = items.reduce((sum, item) => sum + item.quantity, 0)
+  const isMaxReached = totalUnits >= 10
+
   const handleAdd = () => {
+    if (isMaxReached) return
     addItem({ id, name, price, slug })
     setAdded(true)
     setTimeout(() => setAdded(false), 2000)
@@ -45,10 +49,18 @@ export default function ProductActions({ id, name, price, slug, platform }: Prod
 
       {/* Botón Secundario: Agregar a mi combo */}
       <button
+        type="button"
         onClick={handleAdd}
-        className="btn-secondary py-3 text-center sm:w-auto"
+        disabled={isMaxReached}
+        className={`btn-secondary py-3 text-center sm:w-auto transition-all ${
+          isMaxReached ? "opacity-40 cursor-not-allowed hover:border-navy-700" : ""
+        }`}
       >
-        {added ? "✓ ¡Agregado a tu combo!" : "+ Agregar a mi combo"}
+        {added
+          ? "✓ ¡Agregado a tu combo!"
+          : isMaxReached
+            ? "Combo completo (máx. 10)"
+            : "+ Agregar a mi combo"}
       </button>
     </div>
   )
