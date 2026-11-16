@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs"
 import path from "node:path"
 import { describe, expect, it } from "vitest"
-import { MAX_CANTIDAD, MAX_ITEMS, validarPedido } from "@/utils/validar-pedido"
+import { MAX_CANTIDAD, MAX_ITEMS, MAX_TOTAL_UNIDADES, validarPedido } from "@/utils/validar-pedido"
 
 const UUID = "123e4567-e89b-42d3-a456-426614174000"
 const base = () => ({
@@ -50,13 +50,30 @@ describe("criterio 3: nombre", () => {
   })
 })
 
-describe("criterio 4: teléfono", () => {
-  it.each(["", "abc", "123456", "1".repeat(16), "300-123-45a7", "300+1234567", 3001234567, null])("rechaza %j", (t) =>
-    falla({ ...base(), customerPhone: t })
-  )
-  it("acepta de 7 a 15 dígitos", () => {
-    expect(validarPedido({ ...base(), customerPhone: "1234567" }).ok).toBe(true)
-    expect(validarPedido({ ...base(), customerPhone: "1".repeat(15) }).ok).toBe(true)
+describe("criterio 4: teléfono celular Colombia", () => {
+  it.each([
+    "",
+    "abc",
+    "123456",
+    "1234567",
+    "6012345678",
+    "2001234567",
+    "+15551234567",
+    "300123456",
+    "30012345678",
+    "1".repeat(16),
+    "300-123-45a7",
+    "300+1234567",
+    3001234567,
+    null,
+  ])("rechaza %j", (t) => falla({ ...base(), customerPhone: t }))
+
+  it("acepta celular colombiano con o sin indicativo (+57) y con caracteres de separación", () => {
+    expect(validarPedido({ ...base(), customerPhone: "3001234567" }).ok).toBe(true)
+    expect(validarPedido({ ...base(), customerPhone: "310 987 6543" }).ok).toBe(true)
+    expect(validarPedido({ ...base(), customerPhone: "+57 323 504 5163" }).ok).toBe(true)
+    expect(validarPedido({ ...base(), customerPhone: "573235045163" }).ok).toBe(true)
+    expect(validarPedido({ ...base(), customerPhone: "+57 (300) 123-4567" }).ok).toBe(true)
   })
 })
 
@@ -87,6 +104,51 @@ describe("criterio 6: items", () => {
   )
   it(`acepta cantidad ${MAX_CANTIDAD}`, () => {
     expect(validarPedido({ ...base(), items: [{ id: "juego-1", quantity: MAX_CANTIDAD }] }).ok).toBe(true)
+  })
+})
+
+describe("criterio 6b: tope global de unidades acumuladas", () => {
+  it(`acepta pedidos con hasta ${MAX_TOTAL_UNIDADES} unidades en total`, () => {
+    expect(validarPedido({ ...base(), items: [{ id: "j1", quantity: MAX_TOTAL_UNIDADES }] }).ok).toBe(true)
+    expect(
+      validarPedido({
+        ...base(),
+        items: [
+          { id: "j1", quantity: 5 },
+          { id: "j2", quantity: 5 },
+        ],
+      }).ok
+    ).toBe(true)
+    expect(
+      validarPedido({
+        ...base(),
+        items: [
+          { id: "j1", quantity: 4 },
+          { id: "j2", quantity: 3 },
+          { id: "j3", quantity: 3 },
+        ],
+      }).ok
+    ).toBe(true)
+    const diez = Array.from({ length: MAX_TOTAL_UNIDADES }, (_, i) => ({ id: `j${i}`, quantity: 1 }))
+    expect(validarPedido({ ...base(), items: diez }).ok).toBe(true)
+  })
+
+  it(`rechaza pedidos que superen ${MAX_TOTAL_UNIDADES} unidades en total`, () => {
+    falla({
+      ...base(),
+      items: [
+        { id: "j1", quantity: 6 },
+        { id: "j2", quantity: 5 },
+      ],
+    })
+    falla({
+      ...base(),
+      items: [
+        { id: "j1", quantity: 4 },
+        { id: "j2", quantity: 4 },
+        { id: "j3", quantity: 3 },
+      ],
+    })
   })
 })
 

@@ -1,9 +1,10 @@
-export const MAX_ITEMS = 20
+export const MAX_ITEMS = 10
 export const MAX_CANTIDAD = 10
+export const MAX_TOTAL_UNIDADES = 10
 
 const UUID_REGEX = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i
 const CONTROL_CHARS_REGEX = /[\u0000-\u001f\u007f]/
-const PHONE_NORMALIZED_REGEX = /^\+?\d{7,15}$/
+const PHONE_NORMALIZED_REGEX = /^(\+?57)?3[0-9]{9}$/
 
 export interface ItemPedido {
   id: string
@@ -48,13 +49,16 @@ export function validarPedido(entrada: unknown): ResultadoValidacion {
     return { ok: false, error: "El nombre debe tener entre 2 y 80 caracteres" }
   }
 
-  // Criterio 4: customerPhone (normalizado sin espacios, guiones ni paréntesis; + opcional y 7-15 dígitos)
+  // Criterio 4: customerPhone (normalizado sin espacios, guiones ni paréntesis; celular Colombia: ^(\+?57)?3[0-9]{9}$)
   if (typeof raw.customerPhone !== "string") {
     return { ok: false, error: "El teléfono debe ser una cadena de texto" }
   }
   const customerPhone = raw.customerPhone.replace(/[\s\-()]/g, "")
   if (!PHONE_NORMALIZED_REGEX.test(customerPhone)) {
-    return { ok: false, error: "El teléfono debe contener entre 7 y 15 dígitos válidos" }
+    return {
+      ok: false,
+      error: "El teléfono debe ser un número celular colombiano válido de 10 dígitos (ej. 300 123 4567 o +57 300 123 4567)",
+    }
   }
 
   // Criterio 5: paymentMethod ("online" | "whatsapp")
@@ -107,6 +111,17 @@ export function validarPedido(entrada: unknown): ResultadoValidacion {
 
   if (itemsMap.size < 1 || itemsMap.size > MAX_ITEMS) {
     return { ok: false, error: `El pedido debe contener entre 1 y ${MAX_ITEMS} productos distintos` }
+  }
+
+  let totalUnidades = 0
+  for (const qty of itemsMap.values()) {
+    totalUnidades += qty
+  }
+  if (totalUnidades > MAX_TOTAL_UNIDADES) {
+    return {
+      ok: false,
+      error: `El pedido no puede superar un total acumulado de ${MAX_TOTAL_UNIDADES} unidades`,
+    }
   }
 
   const items: ItemPedido[] = Array.from(itemsMap.entries()).map(([id, quantity]) => ({

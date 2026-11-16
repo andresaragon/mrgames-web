@@ -143,9 +143,18 @@ export default function CartPage() {
                 <span className="w-6 text-center text-sm font-bold text-white">{item.quantity}</span>
                 <button
                   type="button"
-                  onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                  onClick={() => {
+                    if (totalUnits < 10 && item.quantity < 10) {
+                      updateQuantity(item.id, item.quantity + 1)
+                    }
+                  }}
+                  disabled={item.quantity >= 10 || totalUnits >= 10}
                   aria-label={`Aumentar cantidad de ${item.name}`}
-                  className="flex h-7 w-7 items-center justify-center rounded text-gray-300 hover:bg-navy-800 hover:text-white transition-colors"
+                  className={`flex h-7 w-7 items-center justify-center rounded text-gray-300 transition-colors ${
+                    item.quantity >= 10 || totalUnits >= 10
+                      ? 'opacity-30 cursor-not-allowed'
+                      : 'hover:bg-navy-800 hover:text-white'
+                  }`}
                 >
                   +
                 </button>
@@ -163,6 +172,11 @@ export default function CartPage() {
       </div>
 
       {/* Resumen y Botón de Cotización */}
+      {totalUnits >= 10 && (
+        <div className="mt-6 rounded-xl border border-amber-500/30 bg-amber-950/20 p-3 text-center text-xs font-semibold text-amber-300">
+          Has alcanzado el límite máximo de 10 unidades por cotización.
+        </div>
+      )}
       <div className="mt-8 rounded-2xl border border-navy-700/80 bg-navy-900/80 p-6 shadow-xl">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div>

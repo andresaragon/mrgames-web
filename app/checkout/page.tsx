@@ -25,9 +25,14 @@ export default function CheckoutPage() {
       setError("Completa tu nombre completo")
       return
     }
-    const phoneDigits = customerPhone.replace(/\D/g, "")
-    if (phoneDigits.length < 7) {
-      setError("Ingresa un número de teléfono o WhatsApp válido (ej. 300 123 4567)")
+    const cleanPhone = customerPhone.replace(/[\s\-()]/g, "")
+    if (!/^(\+?57)?3[0-9]{9}$/.test(cleanPhone)) {
+      setError("Ingresa un número celular colombiano válido (ej. 300 123 4567 o +57 300 123 4567)")
+      return
+    }
+    const totalQuantity = items.reduce((sum, item) => sum + item.quantity, 0)
+    if (totalQuantity > 10) {
+      setError("Tu pedido no puede superar un total acumulado de 10 unidades")
       return
     }
     setLoading(true)
